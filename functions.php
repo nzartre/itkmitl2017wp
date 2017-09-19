@@ -1,5 +1,5 @@
 <?php
-
+add_theme_support( 'post-thumbnails' ); 
 
 function home_inc() {
     wp_enqueue_style( 'kube', get_template_directory_uri().'/styles/kube.css');    

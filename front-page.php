@@ -68,46 +68,29 @@
 <section style="background-color: #d7d7d7" id="home-news-section">
     <h1 class="title">ข่าวสารและกิจกรรม</h1>
     <div class="owl-carousel" id="home-news">
+    <?php $the_query = new WP_Query(array(
+    'posts_per_page' => 5,
+    'category_name' => 'news', // this is the category SLUG
+    ));
+    if ($the_query->have_posts()) :
+	while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
         <div class="card news-card">
-            <img src="<?php echo get_theme_file_uri('img/300x200.png'); ?>" alt="">
+            <?php if(has_post_thumbnail()): ?>
+                <?php the_post_thumbnail( 'full', array('class' => 'featured-image', 'id' => 'main-feat-image')); ?>
+            <?php endif; ?>
             <div class="padded">
-                <h3>หลักสูตรอบรม</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna
-                </p>
-                <a href="./single.html" class="button round">ดูเพิ่มเติม</a>
+                <h3><?php the_title(); ?></h3>
+                <p><?php the_content('', FALSE, ''); ?></p>
+                <a href="<?php echo get_the_permalink() ?>" class="button round">ดูเพิ่มเติม</a>                
             </div>
         </div>
-        <div class="card news-card">
-            <img src="<?php echo get_theme_file_uri('img/300x200.png'); ?>" alt="">
-            <div class="padded">
-                <h3>หลักสูตรอบรม</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna
-                </p>
-                <a href="./single.html" class="button round">ดูเพิ่มเติม</a>
-            </div>
-        </div>
-        <div class="card news-card">
-            <img src="<?php echo get_theme_file_uri('img/300x200.png'); ?>" alt="">
-            <div class="padded">
-                <h3>หลักสูตรอบรม</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna
-                </p>
-                <a href="./single.html" class="button round">ดูเพิ่มเติม</a>
-            </div>
-        </div>
-        <div class="card news-card">
-            <img src="<?php echo get_theme_file_uri('img/300x200.png'); ?>" alt="">
-            <div class="padded">
-                <h3>หลักสูตรอบรม</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna
-                </p>
-                <a href="./single.html" class="button round">ดูเพิ่มเติม</a>
-            </div>
-        </div>
+
+    <?php
+    endwhile;
+    endif
+    ?>
+
     </div>
     <div style="text-align: center; margin: 2em 1em 1em">
         <a href="#" class="button outline">ข่าวสารและกิจกรรมทั้งหมด</a>
