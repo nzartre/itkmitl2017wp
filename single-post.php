@@ -5,7 +5,6 @@ get_header();
 if (have_posts()) :
     while (have_posts()) : the_post(); ?>
 
-        <h1>LOL</h1>
         <section class="single">
             <div class="page-content">
                 <div class="container">
