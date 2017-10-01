@@ -16,7 +16,7 @@
         <div class="container">
             <div class="logo">
                 <a href="<?php echo home_url() ?>">
-                    <img src="<?php echo get_theme_file_uri('img/nav-logo-white.png'); ?>" alt="IT KMITL">
+                    <img src="<?php echo get_theme_file_uri('img/nav-logo-blue.png'); ?>" alt="IT KMITL">
                 </a>
             </div>
             <div class="nav-links">
