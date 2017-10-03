@@ -17,7 +17,7 @@
             <?php endif; ?>
             <div class="padded">
                 <h3><?php the_title(); ?></h3>
-                <p><?php the_content('', FALSE, ''); ?></p>
+                <p><?php echo this_excerpt(200); ?></p>
                 <a href="<?php echo get_the_permalink() ?>" class="button round">ดูเพิ่มเติม</a>                
             </div>
         </div>

@@ -26,6 +26,16 @@ function nav_loader() {
 }
 add_action( 'init', 'nav_loader' );
 
+function this_excerpt($limit) {
+    return wp_trim_words(get_the_content(), $limit);
+}
+
+function wpdocs_excerpt_more( $more ) {
+    return '...';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+
 pll_register_string( 'Hero Text 1', 'คณะไอที', 'hero', false );
 pll_register_string( 'Hero Text 2', 'พระจอมเกล้าฯ ลาดกระบัง', 'hero', false );
 

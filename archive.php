@@ -15,7 +15,7 @@
                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </h2>
                             <p><?php the_content(''); ?></p>
-                            <span class="post-meta">3 มี.ค. 2560 | โดย <a href="#">งานทะเบียน</a></span>
+                            <span class="post-meta"><?php the_time('j F Y'); ?> | โดย <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author()?></a></span>
                         </article>
 
                         <?php endwhile;
