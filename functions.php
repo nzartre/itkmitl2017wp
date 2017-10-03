@@ -1,6 +1,8 @@
 <?php
+//Theme Support
 add_theme_support( 'post-thumbnails' ); 
 
+// Registration Section
 function home_inc() {
     wp_enqueue_style( 'kube', get_template_directory_uri().'/styles/kube.css');    
     wp_enqueue_style( 'fluidable', get_template_directory_uri().'/styles/fluidable.css');
@@ -26,6 +28,7 @@ function nav_loader() {
 }
 add_action( 'init', 'nav_loader' );
 
+//Post Helper function
 function this_excerpt($limit) {
     return wp_trim_words(get_the_content(), $limit);
 }
@@ -35,7 +38,7 @@ function wpdocs_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
-
+//Translation Section
 pll_register_string( 'Hero Text 1', 'คณะไอที', 'hero', false );
 pll_register_string( 'Hero Text 2', 'พระจอมเกล้าฯ ลาดกระบัง', 'hero', false );
 
