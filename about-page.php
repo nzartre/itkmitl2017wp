@@ -103,6 +103,30 @@ if (have_posts()) :
 						</li>
 					</ul><!-- ul.timeline -->
 				</div><!-- .timeline-wrapper -->
+				<section class="identity">
+					<div class="container">
+						<div class="col-group">
+							<div class="identity col-dt-4">
+								<h2>ค่านิยม</h2>
+								<h5>IT@WORKS</h5>
+								<hr>
+								<p>บุคลากร นักศึกษา และบัณฑิตของคณะ มีความสามารถทำงานได้จริง และเป็นมืออาชีพด้านเทคโนโลยีสารสนเทศ</p>
+							</div>
+							<div class="identity col-dt-4">
+								<h2>อัตลักษณ์</h2>
+								<h5>บัณฑิตพร้อมทำงาน (IT Prompt)</h5>
+								<hr>
+								<p>บัณฑิตมีความรู้และทักษะพร้อมในการทำงานที่ตรงกับสายงานและความเชี่ยวชาญเฉพาะทางตามหลักสูตรที่ศึกษา</p>
+							</div>
+							<div class="identity col-dt-4">
+								<h2>เอกลักษณ์</h2>
+								<h5>นวัตกรรมล้ำสมัย</h5>
+								<hr>
+								<p>คณะเน้นการใช้เทคโนโลยีและนวัตกรรมเพื่อสนับสนุนการเรียนการสอนที่มีประสิทธิภาพ และเป็นผู้นำในการวิจัยและพัฒนาเทคโนโลยีและนวัตกรรม</p>
+							</div>
+						</div>
+					</div>
+				</section><!-- section.identity -->
 			</div><!-- .page-content -->
 		</section>
 <?php
