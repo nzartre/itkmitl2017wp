@@ -14,34 +14,37 @@ if (have_posts()) :
 				</div>
 				<section class="about--stats">
 					<div class="container">
-						<div class="col-group">
-							<div class="col-mb-12 col-6 col-dt-3">
-								<img src="<?php echo get_theme_file_uri('img/about-foundation.png'); ?>" alt="about-foundation">
-								<h3>ก่อตั้งเมื่อ</h3>
-								<p>23 กุมภาพันธ์ 2539</p>
-							</div>
-							<div class="col-mb-12 col-6 col-dt-3">
-								<img src="<?php echo get_theme_file_uri('img/about-location.png'); ?>" alt="about-location">
-								<h3>สถานที่ตั้ง</h3>
-								<p>เขตลาดกระบัง กรุงเทพมหานคร</p>
-							</div>
-							<div class="col-mb-12 col-6 col-dt-3">
-								<img src="<?php echo get_theme_file_uri('img/about-students.png'); ?>" alt="about-students">
-								<h3>นักศึกษา</h3>
-								<p>จำนวน 1,200 คน</p>
-							</div>
-							<div class="col-mb-12 col-6 col-dt-3">
-								<img src="<?php echo get_theme_file_uri('img/about-courses.png'); ?>" alt="about-courses">
-								<h3>หลักสูตร</h3>
-								<p>จำนวน 5 หลักสูตร</p>
-							</div>
-						</div>
-					</div>
-				</section>
+						<a href="#scroll-history" class="stat-box">
+							<img src="<?php echo get_theme_file_uri('img/about-foundation.png'); ?>" alt="about-foundation">
+							<h3>ก่อตั้ง</h3>
+							<p>23 กุมภาพันธ์ 2539</p>
+						</a>
+						<a href="#" class="stat-box">
+							<img src="<?php echo get_theme_file_uri('img/about-location.png'); ?>" alt="about-location">
+							<h3>สถานที่ตั้ง</h3>
+							<p>ลาดกระบัง กรุงเทพฯ</p>
+						</a>
+						<a href="#" class="stat-box">
+							<img src="<?php echo get_theme_file_uri('img/about-personnel.png'); ?>" alt="about-personnel">
+							<h3>บุคลากร</h3>
+							<p>คณาจารย์ในคณะ</p>
+						</a>
+						<a href="#" class="stat-box">
+							<img src="<?php echo get_theme_file_uri('img/about-life.png'); ?>" alt="about-life">
+							<h3>Life@IT</h3>
+							<p>บรรยากาศในคณะ</p>
+						</a>
+						<a href="#" class="stat-box">
+							<img src="<?php echo get_theme_file_uri('img/about-contact.png'); ?>" alt="about-contact">
+							<h3>ติดต่อ</h3>
+							<p>การติดต่อคณะ</p>
+						</a>
+					</div><!-- .container -->
+				</section><!-- section.about——stats -->
 				<div class="about--dean">
 					<img src="<?php echo get_theme_file_uri('img/person.jpg'); ?>" alt="Dean">
 					<p class="large dean-words">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore laudantium fugit tempora temporibus debitis veritatis voluptates culpa ea, minus consequatur, hic quam mollitia ipsa dolor voluptatem vero! Voluptate, molestias!"</p>
-					<p class="big dean-name">รศ.ดร. นพพร โชติกกำธร</p>
+					<p class="big dean-name" id="scroll-history">รศ.ดร. นพพร โชติกกำธร</p>
 					<p class="dean-position">คณบดี</p>
 				</div>
 				<div class="timeline-wrapper">
