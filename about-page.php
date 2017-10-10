@@ -9,7 +9,7 @@ if (have_posts()) :
 	while (have_posts()) : the_post(); ?>
 		<section class="page page--about">
 			<div class="page-content">
-				<div class="about--hero">
+				<div class="page-hero about--hero">
 					<h2>เป็นองค์กรที่ใช้นวัตกรรม<br/>เพื่อความเป็นเลิศทางการศึกษา<br/>ด้านเทคโนโลยีสารสนเทศ</h2>
 				</div>
 				<section class="about--stats">
