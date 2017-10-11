@@ -16,15 +16,15 @@ if (have_posts()) :
 				<section class="research--lab">
 					<h1 class="title">ห้องปฏิบัติการ</h1>
 					<div class="container">
-						<a href="#" class="lab-box" style="background-image: url(<?php echo get_theme_file_uri('img/lab-isis.jpg'); ?>);">
+						<a href="#" class="bg-box lab-box" style="background-image: url(<?php echo get_theme_file_uri('img/lab-isis.jpg'); ?>);">
 							<h3>กลุ่ม ISIS</h3>
 							<p>กลุ่มวิทยาการสารสนเทศ (Information Science and Intelligent Systems Group) ประกอบด้วย 4 ห้องปฏิบัติการวิจัย</p>
 						</a>
-						<a href="#" class="lab-box" style="background-image: url(<?php echo get_theme_file_uri('img/lab-ni.jpg'); ?>);">
+						<a href="#" class="bg-box lab-box" style="background-image: url(<?php echo get_theme_file_uri('img/lab-ni.jpg'); ?>);">
 							<h3>กลุ่ม NI</h3>
 							<p>กลุ่มระบบเครือข่าย (Networking and Internet Group) ประกอบด้วย 3 ห้องปฏิบัติการวิจัย</p>
 						</a>
-						<a href="#" class="lab-box" style="background-image: url(<?php echo get_theme_file_uri('img/lab-met.jpg'); ?>);">
+						<a href="#" class="bg-box lab-box" style="background-image: url(<?php echo get_theme_file_uri('img/lab-met.jpg'); ?>);">
 							<h3>กลุ่ม MET</h3>
 							<p>กลุ่มสื่อประสม (Multimedia and Embedded Technologies Group) ประกอบด้วย 3 ห้องปฏิบัติการวิจัย</p>
 						</a>
