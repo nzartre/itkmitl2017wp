@@ -30,23 +30,22 @@ if (have_posts()) :
 						</a>
 					</div>
 				</section>
-				<hr class="container">
-				<section class="journal">
+				<div class="bg-box journal-box">
 					<div class="container">
 						<div class="col-group">
 							<div class="col-6">
-								<h3 class="title" style="text-align: left;">IT Journal</h3>
+								<h3 class="title">IT Journal</h3>
 								<p>คณะตระหนักถึงความสำคัญของบทความวิชาการที่มีคุณภาพทางด้านเทคโนโลยีสารสนเทศ ที่มีต่อการเรียนการสอน ตลอดจนการเผยแพร่ความรู้ความเข้าใจที่ถูกต้องแก่ประชาชนทั่วไป จึงได้จัดทำวารสารเทคโนโลยีสารสนเทศลาดกระบังขึ้น เพื่อส่งเสริมการผลิตและเผยแพร่บทความวิชาการ</p>
-								<a href="" class="button">วารสารเทคโนโลยีสารสนเทศลาดกระบัง</a>
+								<a href="" class="button outline inverted">วารสารเทคโนโลยีสารสนเทศลาดกระบัง</a>
 							</div>
 							<div class="col-6">
-								<h3 class="title" style="text-align: left;">ผลงานวิจัย</h3>
+								<h3 class="title">ผลงานวิจัย</h3>
 								<p>ผลงานบทความวิจัยของบุคลากรคณะ ทั้งประเภทการประชุมทางวิชาการ และประเภทวารสาร</p>
-								<a href="" class="button">ผลงานวิจัยของบุคลากร</a>
+								<a href="" class="button outline inverted">ผลงานวิจัยของบุคลากร</a>
 							</div>
 						</div>
 					</div>
-				</section>
+				</div>
 			</div><!-- .page-content -->
 		</section><!-- section.page.page-research -->
 <?php
