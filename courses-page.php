@@ -1,5 +1,5 @@
 <?php /*
-Template Name: Research page
+Template Name: Courses page
 Template Post Type: page
 */
 
@@ -23,13 +23,13 @@ if (have_posts()) :
 									<p>หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ<br/>
 									(Bachelor of Science Program in Information Technology)</p>
 									<div class="btn-wrap">
-										<a href="#" class="button outline inverted">สาขาวิชาเทคโนโลยีสารสนเทศ</a>
+										<a href="it-program" class="button outline inverted">สาขาวิชาเทคโนโลยีสารสนเทศ</a>
 									</div>
 									<div class="btn-wrap">
-										<a href="#" class="button outline inverted">สาขาวิชาวิทยาการข้อมูลและการวิเคราะห์เชิงธุรกิจ</a>
+										<a href="datasci-program" class="button outline inverted">สาขาวิชาวิทยาการข้อมูลและการวิเคราะห์เชิงธุรกิจ</a>
 									</div>
 									<div class="btn-wrap">
-										<a href="#" class="button outline inverted">สาขาเทคโนโลยีสารสนเทศทางธุรกิจ (หลักสูตรนานาชาติ)</a>
+										<a href="bit-program" class="button outline inverted">สาขาเทคโนโลยีสารสนเทศทางธุรกิจ (หลักสูตรนานาชาติ)</a>
 									</div>
 								</div>
 							</div>
@@ -39,7 +39,7 @@ if (have_posts()) :
 								<h3>หลักสูตรปริญญาโท</h3>
 								<p>หลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ<br/>
 								(Master of Science Program in Information Technology)</p>
-								<a href="#" class="button outline inverted">รายละเอียด</a>
+								<a href="master-degree" class="button outline inverted">รายละเอียด</a>
 							</div>
 							<div class="bg-box" style="background-image: url(<?php echo get_theme_file_uri('img/course-3.jpg'); ?>);">
 								<h3>หลักสูตรปริญญาเอก</h3>
