@@ -10,8 +10,9 @@ if (have_posts()) :
 		<section class="page page--acadserv">
 			<div class="page-content">
 				<div class="page-hero">
-					<h1 class="text-center">การอบรม</h1>
-					<h3 class="text-center">และบริการวิชาการแก่นักศึกษาและผู้ที่สนใจ</h3>
+					<h1>การอบรม</h1>
+					<h3>และบริการวิชาการแก่นักศึกษาและผู้ที่สนใจ</h3>
+					<a href="events" class="button outline inverted big">ปฏิทิน</a>
 				</div>
 				<section>
 					<div class="container">
