@@ -4,6 +4,8 @@
 <head>
     <meta charset=<?php bloginfo( 'charset' ); ?>>
     <meta name='viewport' content='width=device-width'>
+    <!-- Welcome you naughty coder! Unleash your inner curiosity and dig through our website. -->
+    <!-- BTW, check out our courses because people like you should find it happy to study here! -->
     <title>
         <?php bloginfo( 'name' ); ?>
     </title>
