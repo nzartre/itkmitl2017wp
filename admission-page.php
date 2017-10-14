@@ -55,7 +55,7 @@ if (have_posts()) :
 							</div>
 						</div>
 						<div class="admssn-box">
-							<div class="admssn-img" style="background-image: url(.<?php echo get_theme_file_uri('img/admssn-2.jpg'); ?>)"></div>
+							<div class="admssn-img" style="background-image: url(<?php echo get_theme_file_uri('img/admssn-2.jpg'); ?>)"></div>
 							<div class="admssn-text">
 								<h3>ปริญญาตรีแบบก้าวหน้า</h3>
 								<hr>
