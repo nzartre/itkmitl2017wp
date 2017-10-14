@@ -24,7 +24,7 @@ if (have_posts()) :
                             echo trim($output, $separator);
                         }
                     ?>
-                     | โดย <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a></span>
+                     | โดย <?php the_author(); ?></span>
                     <div class="col-group">
                         <div class="col-12 col-dt-9">
                             <?php if(has_post_thumbnail()): ?>
