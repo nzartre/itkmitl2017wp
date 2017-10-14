@@ -12,7 +12,7 @@ if (have_posts()) :
 				<div class="page-hero">
 					<h1>การอบรม</h1>
 					<h3>และบริการวิชาการแก่นักศึกษาและผู้ที่สนใจ</h3>
-					<a href="events" class="button outline inverted big">ปฏิทิน</a>
+					<a href="<?php get_site_url() ?>/events" class="button outline inverted big">ปฏิทิน</a>
 				</div>
 				<section>
 					<div class="container">
