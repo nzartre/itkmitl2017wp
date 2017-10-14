@@ -8,9 +8,10 @@ function home_inc() {
     wp_enqueue_style( 'fluidable', get_template_directory_uri().'/styles/fluidable.css');
     wp_enqueue_style( 'style', get_stylesheet_uri());
 
-    wp_enqueue_style( 'owl-theme', get_template_directory_uri().'/vendor/owl/assets/owl-theme.min.css');
-    wp_enqueue_style( 'owl-carousel', get_template_directory_uri().'/vendor/owl/assets/owl.carousel.min.css');    
-    wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri().'/vendor/owl/owl.carousel.min.js', array('jquery') );
+    // Owl files now load directly in homepage
+    // wp_enqueue_style( 'owl-theme', get_template_directory_uri().'/vendor/owl/assets/owl-theme.min.css');
+    // wp_enqueue_style( 'owl-carousel', get_template_directory_uri().'/vendor/owl/assets/owl.carousel.min.css');    
+    // wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri().'/vendor/owl/owl.carousel.min.js', array('jquery') );
 
     wp_enqueue_script( 'main-js', get_template_directory_uri().'/scripts/main.js', array('jquery'), null, true );
 }
