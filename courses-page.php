@@ -15,7 +15,6 @@ if (have_posts()) :
 				</div>
 				<section class="all-courses">
 					<div class="container">
-						<p class="text-center" id="course-overview">หลักสูตรที่มุ่งพัฒนาผู้เรียน ให้มีความรอบรู้อย่างกว้างขวาง มีโลกทัศน์ที่กว้างไกล มีความเข้าใจตนเอง ผู้อื่น และสังคม</p>
 						<div class="col-group">
 							<div class="col-12">
 								<div class="bg-box" style="background-image: url(<?php echo get_theme_file_uri('img/course-1.jpg'); ?>);">
