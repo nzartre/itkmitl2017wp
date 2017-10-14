@@ -8,24 +8,22 @@ jQuery(document).ready(function( $ ) {
         $('.mobile-nav').toggle();
     });
     
-    $(document).ready(function() {
-        $('#home-news').owlCarousel({
-            center: true,
-            items: 1,
-            margin: 10,
-            loop: 0,
-            lazyLoad: 1,
-            dots: 1,
-            responsive: {
-                720: {
-                    items: 3,
-                    nav: 0
-                },
-                1280: {
-                    items: 4
-                }
+    $('#home-news').owlCarousel({
+        center: true,
+        items: 1,
+        margin: 10,
+        loop: 0,
+        lazyLoad: 1,
+        dots: 1,
+        responsive: {
+            720: {
+                items: 3,
+                nav: 0
+            },
+            1280: {
+                items: 4
             }
-        });
+        }
     });
-	
+    
 });
