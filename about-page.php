@@ -19,7 +19,7 @@ if (have_posts()) :
 							<h3>ก่อตั้ง</h3>
 							<p>23 กุมภาพันธ์ 2539</p>
 						</a>
-						<a href="#" class="stat-box">
+						<a href="travel" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-location.png'); ?>" alt="about-location">
 							<h3>สถานที่ตั้ง</h3>
 							<p>ลาดกระบัง กรุงเทพฯ</p>
@@ -34,7 +34,7 @@ if (have_posts()) :
 							<h3>Life@IT</h3>
 							<p>บรรยากาศในคณะ</p>
 						</a>
-						<a href="#" class="stat-box">
+						<a href="phone" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-contact.png'); ?>" alt="about-contact">
 							<h3>ติดต่อ</h3>
 							<p>การติดต่อคณะ</p>
