@@ -45,11 +45,24 @@
                 </span>
                 <span class="bold-links">
                     <?php global $current_user; wp_get_current_user(); ?>
-                    <?php if ( is_user_logged_in() ) {
-                        echo '<a href="' . get_admin_url() . '" title="Admin area">' . $current_user->display_name . "</a>"; }
-                        else {
-                            wp_loginout();
-                    } ?>
+                    <?php if (function_exists('pll_get_post')): ?>
+                        <?php global $langSwitch;
+                        if (pll_current_language() == 'th') {
+                            if (is_front_page()) {
+                                $langSwitch = pll_home_url('en');
+                            } else {
+                                $langSwitch = get_permalink(pll_get_post( get_the_ID(), 'en' ));
+                            }
+                        } elseif (pll_current_language() == 'en') {
+                            if (is_front_page()) {
+                                $langSwitch = pll_home_url('th');
+                            } else {
+                                $langSwitch = get_permalink(pll_get_post( get_the_ID(), 'th' ));
+                            }
+                        }
+                        ?>
+                        <a href="<?php echo $langSwitch ?>">ไทย/EN</a>
+                    <?php endif; ?>
                 </span>
             </div>
             <img src="<?php echo get_theme_file_uri('img/nav-chevron.png'); ?>" alt="menu" class="nav-chevron" id="nav-chevron">
@@ -67,12 +80,7 @@
             
             echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
         ?>
-        <?php global $current_user; wp_get_current_user(); ?>
-        <?php if ( is_user_logged_in() ) {
-            echo '<a href="' . get_admin_url() . '" title="Admin area">Admin area</a>'; }
-            else {
-                wp_loginout();
-        } ?>
+        <a href="<?php echo $langSwitch ?>">ไทย/EN</a>
     </div>
     <div class="top-nav-secondary">
         <div class="links-wrap">
