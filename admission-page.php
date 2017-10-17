@@ -15,9 +15,9 @@ if (have_posts()) :
 				</div>
 				<section class="admission--admssn-types">
 					<div class="container">
-						<div class="admssn-box">
-							<div class="admssn-img" style="background-image: url(<?php echo get_theme_file_uri('img/admssn-1.jpg'); ?>)"></div>
-							<div class="admssn-text">
+						<div class="box-w-image">
+							<div class="the-img" style="background-image: url(<?php echo get_theme_file_uri('img/admssn-1.jpg'); ?>)"></div>
+							<div class="the-text">
 								<h3>ปริญญาตรี</h3>
 								<hr>
 								<ul class="unstyled">
@@ -54,9 +54,9 @@ if (have_posts()) :
 								</ul>
 							</div>
 						</div>
-						<div class="admssn-box">
-							<div class="admssn-img" style="background-image: url(<?php echo get_theme_file_uri('img/admssn-2.jpg'); ?>)"></div>
-							<div class="admssn-text">
+						<div class="box-w-image">
+							<div class="the-img" style="background-image: url(<?php echo get_theme_file_uri('img/admssn-2.jpg'); ?>)"></div>
+							<div class="the-text">
 								<h3>ปริญญาตรีแบบก้าวหน้า</h3>
 								<hr>
 								<ul class="unstyled">
@@ -73,9 +73,9 @@ if (have_posts()) :
 								</ul>
 							</div>
 						</div>
-						<div class="admssn-box">
-							<div class="admssn-img" style="background-image: url(<?php echo get_theme_file_uri('img/admssn-3.jpg'); ?>)"></div>
-							<div class="admssn-text">
+						<div class="box-w-image">
+							<div class="the-img" style="background-image: url(<?php echo get_theme_file_uri('img/admssn-3.jpg'); ?>)"></div>
+							<div class="the-text">
 								<h3>ปริญญาโทและเอก</h3>
 								<hr>
 								<ul class="unstyled">
