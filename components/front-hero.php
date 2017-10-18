@@ -8,7 +8,7 @@
     <div class="overlay"></div>
     <video autoplay loop id="hero-video"></video>
     <div class="container">
-        <div class="secondary-nav">
+        <div class="secondary-nav" style="display: none">
             <?php
                 $menuParameters = array(
                     'container'       => false,
