@@ -6,8 +6,7 @@
                     <div class="padded">
                         <img src="<?php echo get_theme_file_uri('img/card-icon.png'); ?>" class="icon" alt="">
                         <h3>หลักสูตรทั้งหมด</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna</p>
+                        <p>รายละเอียดหลักสูตรของคณะเทคโนโลยีสารสนเทศทั้งปริญญาตรี, ปริญญาโท และ ปริญญาเอก</p>
                         <a href="./page.html" class="button round">ดูเพิ่มเติม</a>
                     </div>
                 </div>
@@ -17,8 +16,7 @@
                     <div class="padded">
                         <img src="<?php echo get_theme_file_uri('img/card-icon.png'); ?>" class="icon" alt="">
                         <h3>หลักสูตรอบรม</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna</p>
+                        <p>โครงการอบรมความรู้ทางเทคโนโลยีสารสนเทศให้แก่สังคมเพื่อความพัฒนาคุณภาพสังคมอย่างยั่งยืน</p>
                         <a href="./page.html" class="button round">ดูเพิ่มเติม</a>
                     </div>
                 </div>
@@ -28,8 +26,7 @@
                     <div class="padded">
                         <img src="<?php echo get_theme_file_uri('img/card-icon.png'); ?>" class="icon" alt="">
                         <h3>ที่ตั้งและการเดินทาง</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna</p>
+                        <p>สถานที่ตั้งและข้อมูลแผนที่การเดินทางมาเพื่อติดต่อคณะเทคโนโลยีสารสนเทศ IT@KMITL</p>
                         <a href="./page.html" class="button round">ดูเพิ่มเติม</a>
                     </div>
                 </div>
