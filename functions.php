@@ -74,7 +74,7 @@ function insert_custom_title() {
 	      elseif ((is_single()) || (is_page()) && (!(is_front_page())) ) {
 	         wp_title(''); echo ' - '; }
 	      if (is_home()) {
-	         bloginfo('name'); echo ' - '; bloginfo('description'); }
+	         bloginfo('description'); }
 	      else {
 	          bloginfo('name'); }
 	      if ($paged>1) {
