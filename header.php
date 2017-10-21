@@ -6,7 +6,7 @@
     <meta name='viewport' content='width=device-width'>
     <!-- Welcome you naughty coder! Unleash your inner curiosity and dig through our website. -->
     <!-- BTW, check out our courses because people like you should find it happy to study here! -->
-    <meta property="og:url" content="<?php home_url(add_query_arg( array(), $wp->request )); ?>">
+    <meta property="og:url" content="<?php echo home_url(add_query_arg( array(), $wp->request )); ?>">
     <meta property="og:type" content="article">
     <?php if(has_post_thumbnail()) $ogimage = get_the_post_thumbnail_url(); else $ogimage = get_theme_file_uri('img/ogimage.png'); ?>
     <meta property="og:image" content="<?php echo $ogimage; ?>">
