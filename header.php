@@ -8,9 +8,11 @@
     <!-- BTW, check out our courses because people like you should find it happy to study here! -->
     <meta property="og:url" content="<?php home_url(add_query_arg( array(), $wp->request )); ?>">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="<?php echo get_theme_file_uri('img/ogimage.png'); ?>">
+    <?php if(has_post_thumbnail()) $ogimage = get_the_post_thumbnail_url(); else $ogimage = get_theme_file_uri('img/ogimage.png'); ?>
+    <meta property="og:image" content="<?php echo $ogimage; ?>">
     <meta property="og:video" content="<?php echo get_theme_file_uri('img/itkmitl-h264.mp4'); ?>">
     <meta property="og:locale" content="<?php echo get_locale() ?>">
+    <meta property="og:site_name" content="คณะเทคโนโลยีสารสนเทศ พระจอมเกล้าลาดกระบัง">
     <meta property="article:publisher" content="https://www.facebook.com/ITLadkrabang/">
     <?php wp_head(); ?>
     <?php if (is_front_page()) {
