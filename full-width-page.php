@@ -11,7 +11,7 @@ if (have_posts()) :
 			<div class="page-content">
 				<div class="paper">
 					<div class="container">
-						<?php if (the_title()): ?>
+						<?php if (get_the_title() != ''): ?>
 							<h1 class="page-title"><?php the_title(); ?></h1>
 							<img src="<?php echo get_template_directory_uri(); ?>/img/divider-short.png" alt="divider" class="divider-short">
 						<?php endif; ?>
