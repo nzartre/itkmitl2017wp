@@ -7,7 +7,7 @@ get_header();
 
 if (have_posts()) :
 	while (have_posts()) : the_post(); ?>
-		<section class="page page--acadserv">
+		<section class="page page--staff">
 			<div class="page-content">
 				<div class="paper">
 					<div class="container">
