@@ -2,7 +2,7 @@
 <div class="page-content">
     <div class="container">
         <h1 class="page-title"><?php the_title(); ?></h1>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/divider-short.png" alt="divider" class="divider-short">
+        <img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider" class="divider-short">
         <?php if(has_post_thumbnail()): ?>
 			<?php the_post_thumbnail( 'full', array('class' => 'featured-image', 'id' => 'main-feat-image')); ?>
 		<?php endif; ?>
