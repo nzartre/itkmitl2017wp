@@ -2,7 +2,7 @@
     <div class="each-course">
         <div class="col-group course-row">
             <div class="col-12 col-dt-8">
-                <img class="course clip" src="<?php echo get_theme_file_uri('img/courseAll.jpg'); ?>">
+                <img class="course clip" src="<?php echo get_theme_file_uri('img/home-banner-1.jpg'); ?>">
             </div>
             <div class="col-12 col-dt-4 course-text">
                 <div class="content-course" style="margin:auto;">
