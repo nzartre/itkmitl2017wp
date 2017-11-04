@@ -12,14 +12,14 @@
                     <?php
                 if (have_posts()) :
                     while (have_posts()) : the_post(); ?>
-                        <?php get_template_part('content', 'search') ?>
-                       <!--  <article>
+
+                        <article>
                             <h2 class="post-title">
                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </h2>
                             <p><?php the_content(''); ?></p>
                             <span class="post-meta"><?php the_time('j F Y'); ?></span>
-                        </article> -->
+                        </article>
 
                         <?php endwhile;
                 else :

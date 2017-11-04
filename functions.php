@@ -85,5 +85,5 @@ function insert_custom_title() {
       echo "<title>Page Not Found | "+ bloginfo('name') +"</title>";
 	endif;
 	rewind_posts();
-}
+}   
 ?>

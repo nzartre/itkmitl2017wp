@@ -16,11 +16,10 @@ if (have_posts()) :
                         $output = '';
 
                         if ($category_list) {
-
                             foreach ($category_list as $category) {
                                 $output .= "<a href='".get_category_link( $category->term_id )."'>".$category->cat_name."</a>".$separator;
                             }
-
+                            
                             echo trim($output, $separator);
                         }
                     ?>
