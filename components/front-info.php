@@ -1,7 +1,7 @@
 <section id="home-banner">
     <div class="col-group banner-row">
         <div class="col-12 col-dt-8">
-            <img class="banner clip" src="<?php echo get_theme_file_url('img/home-banner-1.jpg') ?>">
+            <img class="banner clip" src="<?php echo get_theme_file_uri('img/home-banner-1.jpg') ?>">
         </div>
         <div class="col-12 col-dt-4 banner-text">
             <div class="banner-content" style="margin:auto;">
@@ -13,7 +13,7 @@
     </div><!-- .col-group .banner-row -->
     <div class="col-group banner-row">
         <div class="col-12 col-dt-8 push-last">
-            <img class="banner clip clip-left" src="<?php echo get_theme_file_url('img/home-banner-2.jpg') ?>">
+            <img class="banner clip clip-left" src="<?php echo get_theme_file_uri('img/home-banner-2.jpg') ?>">
         </div>
         <div class="col-12 col-dt-4 banner-text push-first">
             <div class="banner-content left" style="margin:auto;">
@@ -25,7 +25,7 @@
     </div><!-- .col-group .banner-row -->
     <div class="col-group banner-row">
         <div class="col-12 col-dt-8">
-            <img class="banner clip" src="<?php echo get_theme_file_url('img/home-banner-3.jpg') ?>">
+            <img class="banner clip" src="<?php echo get_theme_file_uri('img/home-banner-3.jpg') ?>">
         </div>
         <div class="col-12 col-dt-4 banner-text">
             <div class="banner-content" style="margin:auto;">
