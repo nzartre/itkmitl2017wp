@@ -7,7 +7,7 @@
                         <img src="<?php echo get_theme_file_uri('img/card-icon.png'); ?>" class="icon" alt="">
                         <h3>หลักสูตรทั้งหมด</h3>
                         <p>รายละเอียดหลักสูตรของคณะเทคโนโลยีสารสนเทศทั้งปริญญาตรี, ปริญญาโท และ ปริญญาเอก</p>
-                        <a href="./page.html" class="button round">ดูเพิ่มเติม</a>
+                        <a href="program" class="button round">ดูเพิ่มเติม</a>
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                         <img src="<?php echo get_theme_file_uri('img/card-icon.png'); ?>" class="icon" alt="">
                         <h3>หลักสูตรอบรม</h3>
                         <p>โครงการอบรมความรู้ทางเทคโนโลยีสารสนเทศให้แก่สังคมเพื่อความพัฒนาคุณภาพสังคมอย่างยั่งยืน</p>
-                        <a href="./page.html" class="button round">ดูเพิ่มเติม</a>
+                        <a href="acad-services" class="button round">ดูเพิ่มเติม</a>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                         <img src="<?php echo get_theme_file_uri('img/card-icon.png'); ?>" class="icon" alt="">
                         <h3>ที่ตั้งและการเดินทาง</h3>
                         <p>สถานที่ตั้งและข้อมูลแผนที่การเดินทางมาเพื่อติดต่อคณะเทคโนโลยีสารสนเทศ IT@KMITL</p>
-                        <a href="./page.html" class="button round">ดูเพิ่มเติม</a>
+                        <a href="about/travel" class="button round">ดูเพิ่มเติม</a>
                     </div>
                 </div>
             </div>
