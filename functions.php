@@ -37,5 +37,6 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
 //Translation Section
 pll_register_string( 'Hero Text 1', 'คณะไอที', 'hero', false );
-pll_register_string( 'Hero Text 2', 'พระจอมเกล้าฯ ลาดกระบัง', 'hero', false );	
+pll_register_string( 'Hero Text 2', 'พระจอมเกล้าฯ ลาดกระบัง', 'hero', false );
+pll_register_string( 'Search not found', 'ไม่พบผลลัพธ์', 'WordPress', false );
 ?>
