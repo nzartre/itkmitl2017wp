@@ -22,6 +22,18 @@
     </div>
 </footer>
 <?php wp_footer(); ?>
+<div id="search-modal" class="modal-box hide">
+    <div class="modal">
+        <span class="close"></span>
+        <div class="modal-header text-center">
+            <?php pll_e("ค้นหา"); ?>
+        </div>
+        <div class="modal-body">
+            <p class="text-center"><?php pll_e("พิมพ์และกด Enter"); ?></p>
+            <?php get_search_form(); ?>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
