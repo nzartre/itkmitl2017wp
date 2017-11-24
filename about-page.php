@@ -29,7 +29,7 @@ if (have_posts()) :
 							<h3>บุคลากร</h3>
 							<p>คณาจารย์ในคณะ</p>
 						</a>
-						<a href="#" class="stat-box">
+						<a href="life" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-life.png'); ?>" alt="about-life">
 							<h3>Life@IT</h3>
 							<p>บรรยากาศในคณะ</p>
