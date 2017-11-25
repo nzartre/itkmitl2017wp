@@ -41,4 +41,5 @@ pll_register_string( 'Hero Text 2', 'พระจอมเกล้าฯ ลา
 pll_register_string( 'Search not found', 'ไม่พบผลลัพธ์', 'WordPress', false );
 pll_register_string( 'Type and hit enter', 'พิมพ์และกด Enter', 'WordPress', false );
 pll_register_string( 'Search', 'ค้นหา', 'nav', false );
+pll_register_string( 'Hub', 'บริการบุคลากร', 'page', false );
 ?>
