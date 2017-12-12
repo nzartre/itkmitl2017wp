@@ -9,7 +9,12 @@ gulp.task('sass', function() {
 		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 		.pipe(rename('style.css'))
 		.pipe(srcmaps.write('./'))
-		.pipe(gulp.dest('./'))
+		.pipe(gulp.dest('./'));
 })
 
-gulp.task('default', ['sass']);
+gulp.task('watch', function() {
+	gulp.watch('src-sass/**/*.sass', ['sass']);
+	console.log('Watching for changes...');
+})
+
+gulp.task('default', ['watch']);
