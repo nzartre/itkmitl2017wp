@@ -43,6 +43,6 @@ pll_register_string( 'Type and hit enter', 'พิมพ์และกด Enter
 pll_register_string( 'Search', 'ค้นหา', 'nav', false );
 pll_register_string( 'Hub', 'บริการบุคลากร', 'page', false );
 
-include_once('modules/create-staff-post-type.php');
+include_once('modules/staff-post-type.php');
 include_once('modules/staff-meta-box.php');
 ?>
