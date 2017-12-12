@@ -1,7 +1,7 @@
 # ITKMITL 2017 WordPress Theme
 A 2017 WordPress theme for Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang.
 
-## Features
+## Theme Features
 * Fast
 * Responsive
 * Kube CSS as a framework
@@ -13,7 +13,7 @@ A 2017 WordPress theme for Faculty of Information Technology, King Mongkut's Ins
 * Featured images in Single and Homepage
 * Tons of custom pages
 
-## Plugin Requirements
+## WP Plugin Requirements
 * [Polylang](https://wordpress.org/plugins/polylang/) - for translation
 * [menu shortcode](https://wordpress.org/plugins/menu-shortcode/) - for in-page menus
 * [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/) - event management
