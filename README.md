@@ -14,9 +14,9 @@ A 2017 WordPress theme for Faculty of Information Technology, King Mongkut's Ins
 * Tons of custom pages
 
 ## Plugin Requirements
-* (Polylang)[https://wordpress.org/plugins/polylang/] - for translation
-* (menu shortcode)[https://wordpress.org/plugins/menu-shortcode/] - for in-page menus
-* (The Events Calendar)[https://wordpress.org/plugins/the-events-calendar/] - event management
+* [Polylang](https://wordpress.org/plugins/polylang/) - for translation
+* [menu shortcode](https://wordpress.org/plugins/menu-shortcode/) - for in-page menus
+* [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/) - event management
 
 ## Development Requirements
 * Node + NPM
