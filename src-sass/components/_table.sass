@@ -1,0 +1,27 @@
+/* Table */
+
+@media screen and (max-width: 768px)
+	table
+		&.stack-on-tl
+			th:first-child, td:first-child
+				font-weight: bold
+			th, td
+				padding: 1rem 0
+				display: block
+				width: 100%
+	table.striped
+		&.stack-on-mb, &.stack-on-tl
+			tr:not(:last-child)
+				border-bottom: 1px solid #cbcbcb
+			th, td
+				padding: 1rem
+
+@media screen and (max-width: 414px)
+	table
+		&.stack-on-mb
+			th:first-child, td:first-child
+				font-weight: bold
+			th, td
+				padding: 1rem 0
+				display: block
+				width: 100%

@@ -1,0 +1,60 @@
+/* Research page */
+
+section.page--research
+	padding-left: 0
+	padding-right: 0
+	padding-bottom: 0
+	.page-content
+		padding-bottom: 0
+	.page-hero
+		background-image: url(../img/research-hero.jpg)
+
+section.research--lab
+	.container
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	a.lab-box
+		max-width: 300px
+		margin-bottom: 1em
+		h3
+			margin-bottom: 0.2em
+			color: #fff
+		&:hover
+			filter: saturate(1.5)
+			color: #fff
+div.journal-box
+	padding-top: 4em
+	padding-bottom: 4em
+	margin-bottom: 0
+	background-image: url(../img/research-bottom.jpg)
+	h3.title
+		color: #fff
+		text-align: left
+
+@media screen and (max-width: 1000px)
+	section.research--lab
+		.container
+			justify-content: center
+		.lab-box
+			margin-left: 1em
+			margin-right: 1em
+
+@media screen and (max-width: 768px)
+	section.research--lab
+		a.lab-box
+			width: 100%
+			max-width: 100%
+			margin-left: 0
+			margin-right: 0
+			&:last-child
+				margin-bottom: 0
+
+@media screen and (max-width: 699px)
+	div.journal-box
+		padding-top: 2em
+		padding-bottom: 2em
+		.col-6
+			margin-bottom: 2em
+			&:last-child
+				margin-bottom: 0

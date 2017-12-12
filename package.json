@@ -1,0 +1,19 @@
+{
+  "name": "itkmitl2017wp",
+  "version": "1.0.0",
+  "description": "ITKMITL 2017 WordPress theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DobaKung/itkmitl2017wp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DobaKung/itkmitl2017wp/issues"
+  },
+  "homepage": "https://github.com/DobaKung/itkmitl2017wp#readme"
+}

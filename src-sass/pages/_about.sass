@@ -1,0 +1,131 @@
+/* About page */
+
+section.page--about
+	padding-left: 0
+	padding-right: 0
+	padding-bottom: 0
+	.page-content
+		padding-bottom: 0
+.page-hero.about--hero
+	text-align: center
+	background-image: url(../img/itkmitl-panorama-1.jpg)
+	h2
+		margin: 0 auto
+		max-width: 500px
+		width: 100%
+section.about--stats
+	text-align: center
+	font-family: $font-main
+	.container
+		display: flex
+		justify-content: center
+		max-width: 1300px
+	.stat-box
+		display: block
+		width: 100%
+		max-width: 300px
+		padding: 1em
+		margin-left: 1em
+		margin-right: 1em
+		text-decoration: none
+		border-radius: 10px
+		box-shadow: 0 0.3em 1em rgba(0,0,0,0.07)
+		border-bottom: 2px solid #fff
+		transition: box-shadow .2s, transform .2s
+		&:hover
+			box-shadow: 0 0.6em 1.2em rgba(0,0,0,0.15)
+			transform: translateY(-0.2em)
+			border-bottom: 2px solid $color-main
+		p:last-child
+			margin-bottom: 0
+		h3
+			color: $color-main
+			margin-bottom: 0.2em
+		img
+			display: block
+			width: 90px
+			margin: 0 auto 1em
+.about--dean
+	padding: 3em 1em
+	text-align: center
+	background-image: url(../img/hero-blurred.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	img
+		width: 200px
+		display: block
+		margin: 0 auto 1.5em
+		border-radius: 50%
+		user-select: none
+		user-drag: none
+	p
+		max-width: 400px
+		margin: 0 auto
+		line-height: 1.3em
+		color: #fff
+		text-shadow: 0 3px 4px rgba(0,0,0,0.4)
+		&.dean-words
+			margin-bottom: 1em
+		&.dean-name, &.dean-position
+			font-family: $font-main
+section.identity
+	color: #fff
+	background-image: url(../img/hero-blurred.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding-top: 4em
+	padding-bottom: 4em
+	.identity
+		text-align: center
+	h2
+		color: #fff
+		margin-bottom: 0
+	h5
+		color: #fff
+		font-weight: 400
+	hr
+		border-color: #fff
+		max-width: 200px
+		margin-left: auto
+		margin-right: auto
+	p
+		font-weight: 300
+		letter-spacing: 0.01em
+		:last-child
+			margin-bottom: 0
+
+@media screen and (max-width: 1280px)
+	section.about--stats
+		.container
+			flex-wrap: wrap
+			.stat-box
+				width: 200px !important
+				margin-bottom: 1em
+
+@media screen and (max-width: 991px)
+	section.about--stats
+		.col-mb-12
+			margin-bottom: 1.5em
+	section.identity
+		.identity
+			max-width: 350px
+			margin: 0 auto 2em
+			&:last-child
+				margin-bottom: 0
+
+@media screen and (max-width: 414px)
+	.about--hero
+		h2
+			font-size: 1.5em
+	section.about--stats
+		padding-top: 2em
+	section.identity
+		padding-top: 2em
+		padding-bottom: 2em
+
+@media screen and (max-width: 374px)
+	.about--hero
+		h2
+			font-size: 1.8em

@@ -1,0 +1,195 @@
+@import vars
+@import fontface
+
+@import wordpress-utils
+
+@import components/hero
+@import components/nav
+@import components/card
+@import components/footer
+@import components/table
+@import components/bg-box
+@import components/page-hero
+@import components/box-w-image
+
+@import pages/home
+@import pages/about
+@import components/about_timeline
+@import pages/research
+@import pages/courses
+@import pages/admission
+@import pages/acad-serv
+@import pages/staff
+@import pages/life
+
+html, body
+	height: 100%
+	margin: 0
+
+hr
+	&.more-space
+		margin: 3em 0
+
+img.divider-short
+	display: block
+	margin: 1em auto 3em
+	width: 130px
+
+.button, button
+	font-family: $font-main
+
+// Overwrite Fluidable rules
+.container
+	max-width: 1000px
+	margin-left: auto
+	margin-right: auto
+.col-group
+	padding: 0 !important
+
+// Section
+section
+	padding: 3em
+
+	h1.title
+		font-size: 1.8em
+		text-align: center
+
+	&.page
+		h1.page-title
+			text-align: center
+			margin-top: 1em
+		img.featured-image
+			display: block
+			width: auto
+			max-width: 100%
+			margin: 0 auto 2em
+
+	&.archive
+		article
+			border: 1px solid #e6e6e6
+			padding: 1em
+			margin-bottom: 1em
+			h2.post-title
+				font-size: 1.5em
+				line-height: 1.3em
+				a
+					text-decoration: none
+			span.post-meta
+				font-family: $font-main
+				display: block
+
+	&.single
+		h1.post-title
+			margin-top: 1em
+		span.post-meta
+			font-family: $font-main
+			display: block
+			margin-bottom: 2em
+		img.featured-image
+			display: block
+			margin: 0 auto 1.8em
+			width: 100%
+			box-shadow: 0 0.5em 14px rgba(0,0,0,0.2)
+
+// Area for content to not be overlaid by navbar
+.page-content
+	position: relative
+	padding-top: 3.4em
+	padding-bottom: 2em
+
+// Paper
+.paper
+	box-sizing: border-box
+	max-width: 1100px
+	margin: 3em auto 0
+	padding: 3em 1em 2em
+	border-radius: 2.5em 2.5em 1em 1em
+	background-color: #fff
+	box-shadow: 0 0.7em 3em rgba(0,0,0,0.12)
+	h1.page-title
+		margin-top: 0 !important
+
+// Owl Carousel transition
+section#home-news-section
+	.owl-carousel .owl-item
+		transition: all .2s
+	.owl-item:not(.center)
+		opacity: 0.5
+		transform: scale(0.9)
+
+// Responsiveness rules
+@media screen and (max-width: 1023px)
+	.top-nav-secondary, .content-nav
+		ul
+			li:first-child
+				margin-left: 1em
+			li:last-child
+				margin-right: 1em
+@media screen and (max-width: 991px)
+	.card
+		margin-bottom: 1em
+	hr
+		&.more-space
+			margin: 1.8em 0
+	img.divider-short
+		margin: 1em auto 2em
+
+@media screen and (max-width: 768px)
+	nav.top-nav
+		padding-left: 1em
+		padding-right: 1em
+		.nav-links
+			display: none
+		.logo
+			flex: 1
+		a
+			float: none
+		img.nav-chevron
+			display: inline-block
+			height: 28px
+			margin-top: 8px
+	.card
+		height: auto
+	.paper
+		margin: 0
+		padding: 2.5em 0 0
+		box-shadow: none
+	section.page
+		background-color: #fff !important
+
+@media screen and (max-width: 414px)
+	.page-content
+		padding-top: 2em
+	nav.top-nav
+		box-shadow: 0 8px 12px rgba(0,0,0,0.05)
+	.top-nav-secondary
+		top: initial
+		bottom: 0
+	footer
+		padding-bottom: 5em
+	section
+		padding: 1em
+		&.page
+			h1
+				&.page-title
+					font-size: 1.8em
+					margin-top: 1.5em
+					line-height: 1.2em
+		&.archive
+			article
+				border: none
+				padding: 0
+				margin-bottom: 2em
+		&.single
+			h1
+				font-size: 2em
+				line-height: 1.2em
+				&.post-title
+					font-size: 1.8em
+					margin-top: 1.5em
+					text-shadow: none
+			h2
+				font-size: 1.8em
+	.card
+		&.news-card
+			max-width: 100%
