@@ -1,0 +1,58 @@
+/* Life at IT page */
+
+section.page--life
+	padding-left: 0
+	padding-right: 0
+	background: fixed top/cover url('../img/hero-blurred.jpg')
+	h1.title
+		margin-top: 1em
+		margin-bottom: 0.7em
+		color: #fff
+		font-size: 8em
+		line-height: 1em
+	.paper
+		margin-top: 0
+		padding: 2em
+		border-radius: 8px
+		background-color: rgba(255,255,255,0.85)
+		backdrop-filter: blur(10px)
+		-webkit-backdrop-filter: blur(10px)
+		.life-gallery img
+			margin-bottom: 1.8em
+		.life-gallery div:last-child img
+			margin-bottom: 0
+
+@media screen and (max-width: 1024px)
+	section.page--life
+		padding-bottom: 0
+		.page-content
+			padding-bottom: 0
+		h1.title
+			margin-top: 0.7em
+			margin-bottom: 0.4em
+			font-size: 6em
+
+@media screen and (max-width: 700px)
+	section.page--life
+		background: #fff
+		h1.title
+			margin-bottom: 0
+			font-size: 4em
+			color: #000
+		.paper
+			padding: 0
+			background-color: #fff
+			backdrop-filter: none
+			-webkit-backdrop-filter: none
+			.life-gallery img
+				box-shadow: 0 0.3em 0.7em rgba(0,0,0,0.25)
+
+@media screen and (max-width: 414px)
+	section.page--life
+		h1.title
+			margin-top: 0.8em
+			margin-bottom: 0.35em
+			font-size: 3em
+		.paper
+			.life-gallery img
+				margin-bottom: 1em

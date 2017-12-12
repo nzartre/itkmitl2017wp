@@ -1,0 +1,41 @@
+.box-w-image
+	display: flex
+	background-color: #3c3c3c
+	margin-bottom: 1em
+	&:last-child
+		margin-bottom: 0
+	.the-img
+		width: 40%
+		background-position: center
+		background-size: cover
+		min-height: 250px
+	.the-text
+		width: 60%
+		padding: 2em
+		color: #fff
+		div.btn-wrap
+			margin-bottom: 0.5em
+		*:last-child
+			margin-bottom: 0.2em
+		h3
+			color: #fff
+		hr
+			border-color: #fff
+		a
+			color: #fff
+			text-decoration: none
+			&:hover
+				opacity: 0.6
+
+@media screen and (max-width: 767px)
+	.box-w-image
+		flex-direction: column
+		.the-img, .the-text
+			width: 100%
+
+@media screen and (max-width: 414px)
+	.box-w-image
+		.the-img
+			min-height: 200px
+		.the-text
+			padding: 1em
