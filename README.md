@@ -24,4 +24,4 @@ A 2017 WordPress theme for Faculty of Information Technology, King Mongkut's Ins
 * WordPress installed on local server
 
 ## Style-related Development
-For stylesheet-related development, run `gulp` to enable live compilation of Sass.
+For stylesheet-related development, edit the files in `src-sass` folder and run `gulp` to enable live compilation of Sass.

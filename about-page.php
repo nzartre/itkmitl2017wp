@@ -24,7 +24,7 @@ if (have_posts()) :
 							<h3>สถานที่ตั้ง</h3>
 							<p>ลาดกระบัง กรุงเทพฯ</p>
 						</a>
-						<a href="personnel" class="stat-box">
+						<a href="<?php echo home_url() . '/staff'; ?>" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-personnel.png'); ?>" alt="about-personnel">
 							<h3>บุคลากร</h3>
 							<p>คณาจารย์ในคณะ</p>

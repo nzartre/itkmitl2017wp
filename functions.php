@@ -9,7 +9,7 @@ function home_inc() {
     wp_enqueue_style( 'style', get_stylesheet_uri());
 
     wp_enqueue_script( 'main-js', get_template_directory_uri().'/scripts/main.js', array('jquery'), null, true );
-     wp_enqueue_script( 'kube-js', get_template_directory_uri().'/vendor/kube.min.js', array('jquery'), null, true );
+    wp_enqueue_script( 'kube-js', get_template_directory_uri().'/vendor/kube.min.js', array('jquery'), null, true );
 }
 
 add_action( 'wp_enqueue_scripts', 'home_inc' );
@@ -42,4 +42,9 @@ pll_register_string( 'Search not found', 'ไม่พบผลลัพธ์',
 pll_register_string( 'Type and hit enter', 'พิมพ์และกด Enter', 'WordPress', false );
 pll_register_string( 'Search', 'ค้นหา', 'nav', false );
 pll_register_string( 'Hub', 'บริการบุคลากร', 'page', false );
+pll_register_string( 'Staff page title', 'บุคลากร', 'page', false );
+
+include_once('modules/staff-post-type.php');
+include_once('modules/staff-meta-box.php');
+include_once('modules/staff-taxonomy.php');
 ?>
