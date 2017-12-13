@@ -11,7 +11,7 @@ get_header(); ?>
                 <img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider"
                      class="divider-short">
                 <div class="staff-wrap">
-                    <?php $my_query = new WP_Query('post_type=staff&nopaging=1');
+                    <?php $my_query = new WP_Query('post_type=staff&nopaging=1&order=ASC');
                     if ($my_query->have_posts()) :
                         while ($my_query->have_posts()) : $my_query->the_post(); ?>
                             <div class="card person-card" id="<?php echo 'staff-' . get_the_id(); ?>">
