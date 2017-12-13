@@ -47,4 +47,8 @@ pll_register_string( 'Staff page title', 'บุคลากร', 'page', false 
 include_once('modules/staff-post-type.php');
 include_once('modules/staff-meta-box.php');
 include_once('modules/staff-taxonomy.php');
+
+//Customization
+include('customizer.php');
+
 ?>

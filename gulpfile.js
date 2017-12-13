@@ -17,9 +17,18 @@ gulp.task('sass', function() {
 		.pipe(gulp.dest('./'));
 })
 
+gulp.task('js', function(){
+	return gulp.src('scripts/main.src.js')
+	.pipe(srcmaps.init())
+	.pipe(rename('main.js'))
+	.pipe(srcmaps.write('./'))
+	.pipe(gulp.dest('./scripts'));
+ });
+
 gulp.task('watch', function() {
 	gulp.watch('src-sass/**/*.sass', ['sass']);
+	gulp.watch('scripts/*.src.js', ['js']);
 	console.log('Watching for changes...');
 })
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['js', 'watch']);

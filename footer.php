@@ -34,6 +34,15 @@
         </div>
     </div>
 </div>
+<div id="splash-modal" class="modal-box hide">
+    <div class="modal">
+        <span class="close"></span>
+        <div class="inner">
+            <img src="<?php echo esc_url( get_theme_mod( 'splash_setting' ) ); ?>" alt="">
+        </div>
+    </div>
+</div>
+<button data-component="modal" data-target="#splash-modal" style="display:none"></button>
 </body>
 
 </html>

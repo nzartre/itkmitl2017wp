@@ -7,7 +7,15 @@ jQuery(document).ready(function( $ ) {
     $('.nav-chevron').click(function(){
         $('.mobile-nav').toggle();
     });
-    
+
+    window.onload = function () {
+        jQuery('button[data-target=#splash-modal]').trigger('click');
+    }
+
+    $('#splash-modal').on('open.modal', function() {
+        width: '80vw'
+    });
+
 });
 
 console.log("%cOoooooooh!", "color: blue; font-size: xx-large; font-weight: bold");
