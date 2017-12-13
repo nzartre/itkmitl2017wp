@@ -6,6 +6,7 @@ function create_post_type() {
             'labels' => array(
                 'name' => __('Staff'),
                 'singular_name' => __('Staff'),
+                'add_new_item' => __('Add Staff'),
                 'edit_item' => __('Edit Staff'),
                 'featured_image' => __('Staff Photo'),
                 'set_featured_image' => __('Set staff photo'),

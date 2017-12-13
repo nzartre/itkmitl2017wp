@@ -16,7 +16,6 @@
                                 <p><?php the_content(''); ?></p>
                                 <span class="post-meta"><?php the_time('j F Y'); ?></span>
                             </article>
-
                         <?php endwhile;
                     else :
                         echo '<p> no post to show</p>';
@@ -28,14 +27,9 @@
                             <li class="next"><?php next_posts_link('Next', ''); ?></li>
                         </ul>
                     </nav>
-                </div>
-                <!-- content area -->
-            </div>
-            <!-- .col-group -->
-        </div>
-        <!-- .container -->
-    </div>
-    <!-- .page-content -->
+                </div><!-- content area -->
+            </div><!-- .col-group -->
+        </div><!-- .container -->
+    </div><!-- .page-content -->
 </section>
 <?php get_footer(); ?>
-

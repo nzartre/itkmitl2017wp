@@ -2,84 +2,30 @@
 Template Name: Staff TH
 Template Post Type: page
 */
-
-get_header();
-
-if (have_posts()) :
-	while (have_posts()) : the_post(); ?>
-		<section class="page page--staff">
-			<div class="page-content">
-				<div class="paper">
-					<div class="container">
-						<h1 class="page-title"><?php the_title(); ?></h1>
-						<img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider" class="divider-short">
-						<div class="staff-wrap">
-							<div class="card person-card">
-								<img src="<?php echo get_theme_file_uri('img/person.jpg'); ?>" alt="">
-								<div class="padded">
-									<h3>รศ.ดร. นพพร โชติกกำธร</h3>
-									<p class="role">คณบดี</p>
-									<p class="email">nopporn@it.kmitl.ac.th</p>
-								</div>
-							</div>
-							<div class="card person-card">
-								<img src="<?php echo get_theme_file_uri('img/person.jpg'); ?>" alt="">
-								<div class="padded">
-									<h3>รศ.ดร. จันทร์บูรณ์ สถิตวิริยวงศ์</h3>
-									<p class="role">คณบดี</p>
-									<p class="email">chanboon@it.kmitl.ac.th</p>
-								</div>
-							</div>
-							<div class="card person-card">
-								<img src="<?php echo get_theme_file_uri('img/person.jpg'); ?>" alt="">
-								<div class="padded">
-									<h3>รศ.ดร. วรพจน์ กรีสุระเดช</h3>
-									<p class="role">คณบดี</p>
-									<p class="email">worapoj@it.kmitl.ac.th</p>
-								</div>
-							</div>
-							<div class="card person-card">
-								<img src="<?php echo get_theme_file_uri('img/person.jpg'); ?>" alt="">
-								<div class="padded">
-									<h3>รศ.ดร. อาริต ธรรมโน</h3>
-									<p class="role">คณบดี</p>
-									<p class="email">arit@it.kmitl.ac.th</p>
-								</div>
-							</div>
-							<div class="card person-card">
-								<img src="<?php echo get_theme_file_uri('img/person.jpg'); ?>" alt="">
-								<div class="padded">
-									<h3>รศ.ดร. โชติพัชร์ ภรณวลัย</h3>
-									<p class="role">คณบดี</p>
-									<p class="email">chotipat@it.kmitl.ac.th</p>
-								</div>
-							</div>
-							<div class="card person-card">
-								<img src="<?php echo get_theme_file_uri('img/person.jpg'); ?>" alt="">
-								<div class="padded">
-									<h3>รศ.ดร. พรฤดี เนติโสภากุล</h3>
-									<p class="role">คณบดี</p>
-									<p class="email">pornrudee@it.kmitl.ac.th</p>
-								</div>
-							</div>
-							<div class="card person-card">
-								<img src="<?php echo get_theme_file_uri('img/person.jpg'); ?>" alt="">
-								<div class="padded">
-									<h3>รศ.ดร. สุขสันต์ พาณิชพาพิบูล</h3>
-									<p class="role">คณบดี</p>
-									<p class="email">sooksan@it.kmitl.ac.th</p>
-								</div>
-							</div>
-						</div><!-- .staff-wrap -->
-					</div><!-- .container -->
-				</div><!-- .paper -->
-			</div><!-- .page-content -->
-		</section>
-<?php
-
-endwhile;
-endif;
-
-get_footer();
-
-?>
+get_header(); ?>
+<section class="page page--staff">
+    <div class="page-content">
+        <div class="paper">
+            <div class="container">
+                <h1 class="page-title"><?php pll_e('บุคลากร'); ?></h1>
+                <img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider"
+                     class="divider-short">
+                <div class="staff-wrap">
+                    <?php $my_query = new WP_Query('post_type=staff&nopaging=1&order=ASC');
+                    if ($my_query->have_posts()) :
+                        while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                            <div class="card person-card" id="<?php echo 'staff-' . get_the_id(); ?>">
+                                <?php the_post_thumbnail( 'full', array('class' => 'e')); ?>
+                                <div class="padded">
+                                    <h3><?php the_title(); ?></h3>
+                                    <!--p class="role">คณบดี</p-->
+                                    <p class="email"><?php echo get_post_meta(get_the_id(), 'email', true) ?></p>
+                                </div>
+                            </div>
+                        <?php endwhile; endif; ?>
+                </div><!-- .staff-wrap -->
+            </div><!-- .container -->
+        </div><!-- .paper -->
+    </div><!-- .page-content -->
+</section>
+<?php get_footer(); ?>
