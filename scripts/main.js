@@ -12,10 +12,6 @@ jQuery(document).ready(function( $ ) {
         jQuery('button[data-target=#splash-modal]').trigger('click');
     }
 
-    $('#splash-modal').on('open.modal', function() {
-        width: '80vw'
-    });
-
 });
 
 console.log("%cOoooooooh!", "color: blue; font-size: xx-large; font-weight: bold");
