@@ -8,6 +8,7 @@
         padding: 1.2em 2em 0.9em
         color: #fff
         img#thumbnail
+          display: block
           width: 100%
           border-radius: 50%
         span#prefix
@@ -21,7 +22,8 @@
           font-family: $font-main
           font-size: 1.7em
           font-weight: bold
-          margin-bottom: 1rem
+          line-height: 1.3em
+          margin-bottom: 0.7rem
         .contact-wrap
           margin-bottom: 0.5em
           font-family: "Roboto Mono", Consolas, Monaco, monospace
@@ -41,3 +43,23 @@
             font-size: 1.2em
           p+h1, p+h2, p+h3, p+h4, p+h5, p+h6
             margin-top: 0
+
+@media screen and (max-width: 699px)
+  .modal-box
+    &.staff-modal
+      .modal
+        .modal-body
+          img#thumbnail
+            max-width: 150px
+            margin-bottom: 1em
+
+@media screen and (max-width: 414px)
+  .modal-box
+    &.staff-modal
+      .modal
+        .modal-body
+          img#thumbnail
+            margin-left: auto
+            margin-right: auto
+          span#name, span#prefix
+            font-size: 1.2em
