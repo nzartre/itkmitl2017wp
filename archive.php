@@ -11,7 +11,8 @@ if (is_post_type_archive('staff')): ?>
                         <?php $my_query = new WP_Query('post_type=staff&nopaging=1&order=ASC');
                         if ($my_query->have_posts()) :
                             while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                                <div class="card person-card" id="<?php echo 'staff-' . get_the_id(); ?>" data-staff-id="<?php echo get_the_id(); ?>">
+                                <div class="card person-card" id="<?php echo 'staff-' . get_the_id(); ?>"
+                                     onclick="staffID = <?php echo get_the_id(); ?>;showStaffModal();">
                                     <?php the_post_thumbnail('full', array('class' => 'e')); ?>
                                     <div class="padded">
                                         <h3><?php the_title(); ?></h3>
@@ -25,7 +26,7 @@ if (is_post_type_archive('staff')): ?>
             </div><!-- .paper -->
         </div><!-- .page-content -->
     </section>
-<?php else: ?>
+    <?php include_once('modules/staff-modal.php'); else: ?>
     <section class="page archive">
         <div class="page-content">
             <div class="container">

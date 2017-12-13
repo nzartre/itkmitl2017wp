@@ -33,6 +33,7 @@ function filter_staff_json( $data, $post, $context ) {
     return [
         'id'		=> $data->data['id'],
         'thumbnail' => $featured_image_url[0],
+        'content'   => $data->data['content']['rendered'],
         'title'    	=> $data->data['title']['rendered'],
         'prefix'   	=> $custom_meta['prefix'][0],
         'first_name' => $custom_meta['first_name'][0],

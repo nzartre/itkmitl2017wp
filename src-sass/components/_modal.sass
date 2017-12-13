@@ -1,0 +1,65 @@
+.modal-box
+  &.staff-modal
+    span.close
+      color: #fff
+    .modal
+      background: linear-gradient(135deg, $color-main-dark, $color-main)
+      .modal-body
+        padding: 1.2em 2em 0.9em
+        color: #fff
+        img#thumbnail
+          display: block
+          width: 100%
+          border-radius: 50%
+        span#prefix
+          display: block
+          font-family: $font-main
+          font-size: 1.4em
+          font-weight: bold
+          margin-bottom: 0.2em
+        span#name
+          display: block
+          font-family: $font-main
+          font-size: 1.7em
+          font-weight: bold
+          line-height: 1.3em
+          margin-bottom: 0.7rem
+        .contact-wrap
+          margin-bottom: 0.5em
+          font-family: "Roboto Mono", Consolas, Monaco, monospace
+          img.icon
+            display: inline-block
+            width: 16px
+            vertical-align: middle
+          span#email, span#phone
+            display: inline-block
+            font-size: 0.8em
+        div#content
+          h1, h2, h3, h4, h5, h6, p
+            margin-bottom: 0.3em
+            color: #fff
+            font-weight: normal
+          h1, h2, h3, h4, h5, h6s
+            font-size: 1.2em
+          p+h1, p+h2, p+h3, p+h4, p+h5, p+h6
+            margin-top: 0
+
+@media screen and (max-width: 699px)
+  .modal-box
+    &.staff-modal
+      .modal
+        .modal-body
+          img#thumbnail
+            max-width: 150px
+            margin-bottom: 1em
+
+@media screen and (max-width: 414px)
+  .modal-box
+    &.staff-modal
+      .modal
+        .modal-body
+          img#thumbnail
+            margin-left: auto
+            margin-right: auto
+          span#name, span#prefix
+            font-size: 1.2em
