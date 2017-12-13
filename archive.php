@@ -25,7 +25,7 @@ if (is_post_type_archive('staff')): ?>
             </div><!-- .paper -->
         </div><!-- .page-content -->
     </section>
-<?php else: ?>
+<?php include_once('modules/staff-modal.php'); else: ?>
     <section class="page archive">
         <div class="page-content">
             <div class="container">
