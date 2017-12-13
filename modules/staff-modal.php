@@ -37,10 +37,16 @@
             document.getElementById('thumbnail').setAttribute('src', staff.thumbnail);
             document.getElementById('prefix').innerText = staff.prefix;
             document.getElementById('name').innerText = staff.first_name + " " + staff.last_name;
-            if (staff.email) document.getElementById('email').innerText = staff.email;
-            else document.getElementById('email-wrap').remove();
-            if (staff.phone) document.getElementById('phone').innerText = staff.phone;
-            else document.getElementById('phone-wrap').remove();
+            if (staff.email) {
+                document.getElementById('email').innerText = staff.email;
+                document.getElementById('email-wrap').style.display = 'block';
+            }
+            else document.getElementById('email-wrap').style.display = 'none';
+            if (staff.phone) {
+                document.getElementById('phone').innerText = staff.phone;
+                document.getElementById('phone-wrap').style.display = 'block';
+            }
+            else document.getElementById('phone-wrap').style.display = 'none';
             document.getElementById('content').innerHTML = staff.content;
             jQuery.modalwindow({ target: '#staff-modal', width: '720px' });
         });
