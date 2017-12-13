@@ -1,4 +1,3 @@
-<button data-component="modal" data-target="#staff-modal" data-width="720px">Open</button>
 <div id="staff-modal" class="modal-box staff-modal hide">
     <div class="modal">
         <span class="close"></span>
@@ -28,20 +27,22 @@
 </div>
 
 <script>
-    var staff;
-    var staffID = 965;
-    var staffPromise = new Promise(function (resolve, reject) {
-        resolve(staff = jQuery.getJSON('/wp-json/wp/v2/staff/' + staffID));
-    });
-    staffPromise.then(function () {
-        staff = staff.responseJSON;
-        document.getElementById('thumbnail').setAttribute('src', staff.thumbnail);
-        document.getElementById('prefix').innerText = staff.prefix;
-        document.getElementById('name').innerText = staff.first_name + " " + staff.last_name;
-        if (staff.email) document.getElementById('email').innerText = staff.email;
-        else document.getElementById('email-wrap').remove();
-        if (staff.phone) document.getElementById('phone').innerText = staff.phone;
-        else document.getElementById('phone-wrap').remove();
-        document.getElementById('content').innerHTML = staff.content;
-    });
+    var staff, staffID;
+    function showStaffModal() {
+        var staffPromise = new Promise(function (resolve, reject) {
+            resolve(staff = jQuery.getJSON('/wp-json/wp/v2/staff/' + staffID));
+        });
+        staffPromise.then(function () {
+            staff = staff.responseJSON;
+            document.getElementById('thumbnail').setAttribute('src', staff.thumbnail);
+            document.getElementById('prefix').innerText = staff.prefix;
+            document.getElementById('name').innerText = staff.first_name + " " + staff.last_name;
+            if (staff.email) document.getElementById('email').innerText = staff.email;
+            else document.getElementById('email-wrap').remove();
+            if (staff.phone) document.getElementById('phone').innerText = staff.phone;
+            else document.getElementById('phone-wrap').remove();
+            document.getElementById('content').innerHTML = staff.content;
+            jQuery.modalwindow({ target: '#staff-modal', width: '720px' });
+        });
+    }
 </script>
