@@ -25,4 +25,23 @@ function create_post_type() {
     );
 }
 add_action( 'init', 'create_post_type' );
+
+/* Add meta to REST API */
+function filter_staff_json( $data, $post, $context ) {
+    $custom_meta = get_post_meta($post->ID);
+    $featured_image_url = wp_get_attachment_image_src( $data->data['featured_media'], 'original' );
+    return [
+        'id'		=> $data->data['id'],
+        'thumbnail' => $featured_image_url[0],
+        'title'    	=> $data->data['title']['rendered'],
+        'prefix'   	=> $custom_meta['prefix'][0],
+        'first_name' => $custom_meta['first_name'][0],
+        'last_name'  => $custom_meta['last_name'][0],
+        'phone'     => $custom_meta['phone'][0],
+        'email'     => $custom_meta['email'][0],
+        'website'   => $custom_meta['website'][0],
+        'linkedin'  => $custom_meta['linkedin'][0]
+    ];
+}
+add_filter( 'rest_prepare_staff', 'filter_staff_json', 10, 3 );
 ?>
