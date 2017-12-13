@@ -27,8 +27,8 @@
 </div>
 
 <script>
-    var staff, staffID;
-    function showStaffModal() {
+    var staff;
+    function showStaffModal(staffID) {
         var staffPromise = new Promise(function (resolve, reject) {
             resolve(staff = jQuery.getJSON('/wp-json/wp/v2/staff/' + staffID));
         });

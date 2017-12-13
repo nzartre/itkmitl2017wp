@@ -12,7 +12,7 @@ if (is_post_type_archive('staff')): ?>
                         if ($my_query->have_posts()) :
                             while ($my_query->have_posts()) : $my_query->the_post(); ?>
                                 <div class="card person-card" id="<?php echo 'staff-' . get_the_id(); ?>"
-                                     onclick="staffID = <?php echo get_the_id(); ?>;showStaffModal();">
+                                     onclick="showStaffModal(<?php echo get_the_id(); ?>);">
                                     <?php the_post_thumbnail('full', array('class' => 'e')); ?>
                                     <div class="padded">
                                         <h3><?php the_title(); ?></h3>
