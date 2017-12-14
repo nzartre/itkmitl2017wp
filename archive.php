@@ -31,7 +31,7 @@ if (is_post_type_archive('staff')): ?>
                                      onclick="showStaffModal(<?php echo get_the_id(); ?>);">
                                     <?php the_post_thumbnail('full', array('id' => 'staff-' . get_the_id() . '-img')); ?>
                                     <div class="padded">
-                                        <h3><?php the_title(); ?></h3>
+                                        <h3><?php echo get_post_meta(get_the_id(), 'prefix', true) . get_post_meta(get_the_id(), 'first_name', true); ?></h3>
                                         <p class="email"><?php echo get_post_meta(get_the_id(), 'email', true) ?></p>
                                     </div>
                                 </div>
