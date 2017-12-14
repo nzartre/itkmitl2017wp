@@ -9,7 +9,9 @@ jQuery(document).ready(function( $ ) {
     });
 
     window.onload = function () {
-        jQuery('button[data-target=#splash-modal]').trigger('click');
+        if ($("#splash-modal").attr('show') == "1") {
+            jQuery('button[data-target=#splash-modal]').trigger('click');        
+        }
     }
 
 });
