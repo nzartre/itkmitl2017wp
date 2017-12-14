@@ -24,11 +24,13 @@
 		background: linear-gradient(to right, #f5f5f5, #fff)
 		text-align: left
 		margin-bottom: 2em
-		transition: background 0.2s
+		transition: background 0.2s, filter 0.2s
 		&:hover
 			background: #3c3c3c
 			h3, p
 				color: #fff
+		&.loading
+			filter: blur(7px)
 		.padded
 			border-left: 3px solid $color-main
 		img

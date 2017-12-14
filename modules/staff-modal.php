@@ -29,6 +29,7 @@
 <script>
     var staff;
     function showStaffModal(staffID) {
+        jQuery('#staff-' + staffID).addClass('loading');
         var staffPromise = new Promise(function (resolve, reject) {
             resolve(staff = jQuery.getJSON('/wp-json/wp/v2/staff/' + staffID));
         });
@@ -49,6 +50,9 @@
             else document.getElementById('phone-wrap').style.display = 'none';
             document.getElementById('content').innerHTML = staff.content;
             jQuery.modalwindow({ target: '#staff-modal', width: '720px' });
+        });
+        jQuery('#staff-modal').on('close.modal', function() {
+            jQuery('#staff-' + staffID).removeClass('loading');
         });
     }
 </script>
