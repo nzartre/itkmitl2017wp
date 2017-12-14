@@ -1,7 +1,7 @@
 <?php
 function itkmitl_create_staff_category() {
     register_taxonomy(
-        'staff-position',
+        'staff_position',
         'staff',
         array(
             'labels' => array(
