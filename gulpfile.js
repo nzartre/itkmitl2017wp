@@ -3,6 +3,7 @@ const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const srcmaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
+const minifyjs = require('gulp-js-minify');
 
 gulp.task('sass', function() {
 	return gulp.src('src-sass/main.sass')
@@ -20,6 +21,7 @@ gulp.task('sass', function() {
 gulp.task('js', function(){
 	return gulp.src('scripts/main.src.js')
 	.pipe(srcmaps.init())
+	.pipe(minifyjs())
 	.pipe(rename('main.js'))
 	.pipe(srcmaps.write('./'))
 	.pipe(gulp.dest('./scripts'));
@@ -31,4 +33,4 @@ gulp.task('watch', function() {
 	console.log('Watching for changes...');
 })
 
-gulp.task('default', ['js', 'watch']);
+gulp.task('default', ['watch']);
