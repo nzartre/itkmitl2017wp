@@ -35,14 +35,19 @@
             display: inline-block
             font-size: 0.8em
         div#content
-          h1, h2, h3, h4, h5, h6, p, ul
+          p, ul
             margin-bottom: 0.3em
             color: #fff
             font-weight: normal
-          h1, h2, h3, h4, h5, h6
-            font-size: 1.2em
-          p+h1, p+h2, p+h3, p+h4, p+h5, p+h6
-            margin-top: 0
+          @for $i from 1 through 6
+            h#{$i}
+              font-size: 1.2em
+              margin-bottom: 0.3em
+              color: #fff
+              font-weight: normal
+          @for $i from 1 through 6
+            p + h#{$i}
+              margin-top: 0
 
 @media screen and (max-width: 699px)
   .modal-box

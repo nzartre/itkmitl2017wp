@@ -8,23 +8,23 @@ if (is_post_type_archive('staff')): ?>
                     <img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider"
                          class="divider-short">
                     <div class="staff-wrap">
-                        <?php $my_query = new WP_Query('post_type=staff&staff-position=lecturer&nopaging=1&order=ASC');
+                        <?php $my_query = new WP_Query('post_type=staff&staff_position=lecturer&nopaging=1&order=ASC');
                         if ($my_query->have_posts()) :
                             while ($my_query->have_posts()) : $my_query->the_post(); ?>
                                 <div class="card person-card" id="<?php echo 'staff-' . get_the_id(); ?>"
                                      onclick="showStaffModal(<?php echo get_the_id(); ?>);">
                                     <?php the_post_thumbnail('full', array('id' => 'staff-' . get_the_id() . '-img')); ?>
                                     <div class="padded">
-                                        <h3><?php the_title(); ?></h3>
+                                        <h3><?php echo get_post_meta(get_the_id(), 'prefix', true) . ' ' . get_post_meta(get_the_id(), 'first_name', true); ?></h3>
                                         <!--p class="role">คณบดี</p-->
-                                        <p class="email"><?php echo get_post_meta(get_the_id(), 'email', true) ?></p>
+                                        <p class="email"><?php echo get_post_meta(get_the_id(), 'email', true); ?></p>
                                     </div>
                                 </div>
                             <?php endwhile; endif; ?>
                     </div><!-- .staff-wrap -->
                     <hr class="more-space">
                     <div class="staff-wrap">
-                        <?php $my_query = new WP_Query('post_type=staff&staff-position=support&nopaging=1&order=ASC');
+                        <?php $my_query = new WP_Query('post_type=staff&staff_position=support&nopaging=1&order=ASC');
                         if ($my_query->have_posts()) :
                             while ($my_query->have_posts()) : $my_query->the_post(); ?>
                                 <div class="card person-card" id="<?php echo 'staff-' . get_the_id(); ?>"
