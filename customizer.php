@@ -20,7 +20,9 @@ function themeName_customize_register( $wp_customize ) {
         'settings' => 'splash_setting',
     )));
 
-    $wp_customize->add_setting('splash_display_setting', 'splash_display');
+    $wp_customize->add_setting('splash_display_setting', array(
+        'transport' => 'refresh',
+    ));
 
     $wp_customize->add_control(
         'splash_display_setting',
