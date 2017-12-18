@@ -44,11 +44,16 @@ if (function_exists('pll_register_string')) {
     pll_register_string('Search', 'Search', 'nav', false);
     pll_register_string('Hub', 'Service Hub', 'page', false);
     pll_register_string('Staff page title', 'Staff', 'page', false);
+    pll_register_string('Publication page title', 'Publications', 'page', false);
 }
 
 include_once('modules/staff-post-type.php');
 include_once('modules/staff-meta-box.php');
 include_once('modules/staff-taxonomy.php');
+
+include_once('modules/publications-post-type.php');
+include_once('modules/publications-meta-box.php');
+include_once('modules/publications-taxonomy.php');
 
 // Customization
 include('customizer.php');
