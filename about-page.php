@@ -22,7 +22,7 @@ if (have_posts()) :
 						<a href="travel" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-location.png'); ?>" alt="about-location">
 							<h3>สถานที่ตั้ง</h3>
-							<p>ลาดกระบัง กรุงเทพฯ</p>
+							<p>ลาดกระบัง กทม. <span id="weather"></span></p>
 						</a>
 						<a href="<?php echo home_url() . '/staff'; ?>" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-personnel.png'); ?>" alt="about-personnel">
@@ -132,6 +132,13 @@ if (have_posts()) :
 				</section><!-- section.identity -->
 			</div><!-- .page-content -->
 		</section>
+        <script>
+            var setWeather = function(data) {
+                var bkkTemp = data.query.results.channel.item.condition.temp;
+                document.getElementById('weather').innerText = '(' + bkkTemp + '°C)';
+            };
+        </script>
+        <script defer src="https://query.yahooapis.com/v1/public/yql?q=select item.condition.temp from weather.forecast where woeid = 1225448 and u='c'&format=json&callback=setWeather"></script>
 <?php
 
 endwhile;

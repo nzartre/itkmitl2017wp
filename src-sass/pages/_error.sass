@@ -1,0 +1,34 @@
+/* Error page */
+
+section.page--err-404
+  .page-content
+    padding-top: 8em
+    h1.h-404
+      font-size: 20em
+      line-height: 1em
+      color: #000
+      background: -webkit-linear-gradient(135deg,$color-main + 10 0,$color-main-dark - 25 100%)
+      background-clip: border-box
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+    h2.h-no-result
+      font-size: 3em
+      line-height: 1em
+    p.p-search
+      margin-top: 1em
+
+@media screen and (max-width: 768px)
+  section.page--err-404
+    .page-content
+      h1.h-404
+        font-size: 12em
+
+@media screen and (max-width: 414px)
+  section.page--err-404
+    .page-content
+      padding-top: 5em
+      padding-bottom: 1em
+      h1.h-404
+        font-size: 6em
+      h2.h-no-result
+        font-size: 1.5em

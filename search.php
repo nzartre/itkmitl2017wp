@@ -25,7 +25,7 @@
 
                         <?php endwhile;
                     else :
-                        echo '<p class="text-center">' . pll__("ไม่พบผลลัพธ์") . '</p>';
+                        echo '<p class="text-center">' . pll__("No result found") . '</p>';
                     endif;
                     ?>
                     <nav class="pagination pager">
