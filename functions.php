@@ -1,5 +1,5 @@
 <?php
-//Theme Support
+// Theme Support
 add_theme_support( 'post-thumbnails' ); 
 
 // Registration Section
@@ -25,7 +25,7 @@ function nav_loader() {
 }
 add_action( 'init', 'nav_loader' );
 
-//Post Helper function
+// Post Helper function
 function this_excerpt($limit) {
     return wp_trim_words(get_the_content(), $limit);
 }
@@ -35,20 +35,25 @@ function wpdocs_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
-//Translation Section
-pll_register_string( 'Hero Text 1', 'คณะไอที', 'hero', false );
-pll_register_string( 'Hero Text 2', 'พระจอมเกล้าฯ ลาดกระบัง', 'hero', false );
-pll_register_string( 'Not found', 'No result found', 'WordPress', false );
-pll_register_string( 'Type and hit enter', 'Type and hit enter', 'WordPress', false );
-pll_register_string( 'Search', 'Search', 'nav', false );
-pll_register_string( 'Hub', 'Service Hub', 'page', false );
-pll_register_string( 'Staff page title', 'Staff', 'page', false );
+// Translation Section
+if (function_exists('pll_register_string')) {
+    pll_register_string('Hero Text 1', 'คณะไอที', 'hero', false);
+    pll_register_string('Hero Text 2', 'พระจอมเกล้าฯ ลาดกระบัง', 'hero', false);
+    pll_register_string('Not found', 'No result found', 'WordPress', false);
+    pll_register_string('Type and hit enter', 'Type and hit enter', 'WordPress', false);
+    pll_register_string('Search', 'Search', 'nav', false);
+    pll_register_string('Hub', 'Service Hub', 'page', false);
+    pll_register_string('Staff page title', 'Staff', 'page', false);
+}
 
 include_once('modules/staff-post-type.php');
 include_once('modules/staff-meta-box.php');
 include_once('modules/staff-taxonomy.php');
 
-//Customization
+// Customization
 include('customizer.php');
+
+// TGM Plugin Activation
+require_once('tgmpa/itkmitl-plugins.php');
 
 ?>
