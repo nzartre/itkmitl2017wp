@@ -138,7 +138,7 @@ if (have_posts()) :
                 document.getElementById('weather').innerText = '(' + bkkTemp + '°C)';
             };
         </script>
-        <script async src="https://query.yahooapis.com/v1/public/yql?q=select item.condition.temp from weather.forecast where woeid = 1225448 and u='c'&format=json&callback=setWeather"></script>
+        <script defer src="https://query.yahooapis.com/v1/public/yql?q=select item.condition.temp from weather.forecast where woeid = 1225448 and u='c'&format=json&callback=setWeather"></script>
 <?php
 
 endwhile;
