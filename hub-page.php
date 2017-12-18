@@ -10,7 +10,7 @@ if (have_posts()) :
         <section class="page">
             <div class="page-content">
                 <div class="container">
-                    <h1 class="page-title"><?php pll_e("บริการบุคลากร"); ?></h1>
+                    <h1 class="page-title"><?php pll_e("Service Hub"); ?></h1>
                     <img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider"
                          class="divider-short">
                     <div class="col-group">
