@@ -11,7 +11,7 @@ function itkmitl_create_publications_category() {
                 'not_found' => __('No category found'),
                 'parent_item' => __('Parent category')
             ),
-            'rewrite' => array('slug' => 'category'),
+            'rewrite' => array('slug' => 'pub-category'),
             'hierarchical' => true,
         )
     );
