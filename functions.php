@@ -38,11 +38,11 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 //Translation Section
 pll_register_string( 'Hero Text 1', 'คณะไอที', 'hero', false );
 pll_register_string( 'Hero Text 2', 'พระจอมเกล้าฯ ลาดกระบัง', 'hero', false );
-pll_register_string( 'Search not found', 'ไม่พบผลลัพธ์', 'WordPress', false );
-pll_register_string( 'Type and hit enter', 'พิมพ์และกด Enter', 'WordPress', false );
-pll_register_string( 'Search', 'ค้นหา', 'nav', false );
-pll_register_string( 'Hub', 'บริการบุคลากร', 'page', false );
-pll_register_string( 'Staff page title', 'บุคลากร', 'page', false );
+pll_register_string( 'Not found', 'No result found', 'WordPress', false );
+pll_register_string( 'Type and hit enter', 'Type and hit enter', 'WordPress', false );
+pll_register_string( 'Search', 'Search', 'nav', false );
+pll_register_string( 'Hub', 'Service Hub', 'page', false );
+pll_register_string( 'Staff page title', 'Staff', 'page', false );
 
 include_once('modules/staff-post-type.php');
 include_once('modules/staff-meta-box.php');

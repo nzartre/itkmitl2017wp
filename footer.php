@@ -26,10 +26,10 @@
     <div class="modal">
         <span class="close"></span>
         <div class="modal-header text-center">
-            <?php pll_e("ค้นหา"); ?>
+            <?php pll_e("Search"); ?>
         </div>
         <div class="modal-body">
-            <p class="text-center"><?php pll_e("พิมพ์และกด Enter"); ?></p>
+            <p class="text-center"><?php pll_e("Type and hit enter"); ?></p>
             <?php get_search_form(); ?>
         </div>
     </div>
