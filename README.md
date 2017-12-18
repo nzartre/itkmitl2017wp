@@ -2,9 +2,10 @@
 A 2017 WordPress theme for Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang.
 
 ## Theme Features
-* Fast
+* Small codebase
 * Responsive
-* Kube CSS as a framework
+* Kube CSS as the main framework
+* Fluidable as the grid framework
 * Homepage slider powered by Owl Carousel
 * 1 main menu with unlimited in-page menus
 * Eng-Thai support via Polylang
@@ -12,6 +13,7 @@ A 2017 WordPress theme for Faculty of Information Technology, King Mongkut's Ins
 * Search
 * Featured images in Single and Homepage
 * Tons of custom pages
+* Customizable splash: an image and a link
 
 ## WP Plugin Requirements
 * [Polylang](https://wordpress.org/plugins/polylang/) - for translation
