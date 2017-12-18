@@ -1,8 +1,8 @@
 <?php get_header();
 if (is_post_type_archive('staff')):
     include_once('modules/staff-archive.php');
-elseif (is_post_type_archive('publication')):
-    // include_once('modules/publication-archive.php');
+elseif (is_post_type_archive('publications')):
+     include_once('modules/publications-archive.php');
 else:
     ?>
     <section class="page archive">
