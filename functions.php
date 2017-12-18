@@ -54,7 +54,6 @@ include_once('modules/staff-taxonomy.php');
 include_once('modules/publications-post-type.php');
 include_once('modules/publications-meta-box.php');
 include_once('modules/publications-taxonomy.php');
-
 // Customization
 include('customizer.php');
 
