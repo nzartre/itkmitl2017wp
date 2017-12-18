@@ -34,11 +34,18 @@
         </div>
     </div>
 </div>
-<div id="splash-modal" class="modal-box hide" show="<?php echo get_theme_mod( 'splash_display_setting' ); ?>">
+<div id="splash-modal" class="modal-box hide"
+    splash="<?php echo (!is_null(get_theme_mod( 'splash_display_setting' )) && is_front_page()) ? "on": "off"; ?>">
     <div class="modal">
         <span class="close"></span>
         <div class="inner">
-            <img src="<?php echo esc_url( get_theme_mod( 'splash_setting' ) ); ?>" alt="">
+            <?php if (strlen(get_theme_mod( 'splash_link_setting' ))) {
+                echo "<a href='".get_theme_mod( 'splash_link_setting' )."'>";
+            } ?>
+                <img src="<?php echo esc_url( get_theme_mod( 'splash_setting' ) ); ?>">
+            <?php if (strlen(get_theme_mod( 'splash_link_setting' ))) {
+                echo "</a>";
+            } ?>
         </div>
     </div>
 </div>

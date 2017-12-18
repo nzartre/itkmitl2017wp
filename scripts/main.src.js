@@ -9,14 +9,13 @@ jQuery(document).ready(function( $ ) {
     });
 
     window.onload = function () {
-        if ($("#splash-modal").attr('show') == "1") {
+        if ($("#splash-modal").attr('splash') == "on") {
             jQuery('button[data-target=#splash-modal]').trigger('click');        
         }
     }
 
 });
-
 console.log("%cOoooooooh!", "color: blue; font-size: xx-large; font-weight: bold");
-console.log("%cWanna sneak into our code? Feel free!", "color: blue; font-size: x-large;")
+console.log("%cWanna sneak into our code? Feel free!", "color: blue; font-size: x-large;");
 console.log("%cIT KMITL web developer", "color: orange; font-size: large");
 console.log("lelelelelelelelelelelelelelelel");

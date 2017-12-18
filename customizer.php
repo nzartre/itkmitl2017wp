@@ -1,6 +1,7 @@
 <?php
 
 function themeName_customize_register( $wp_customize ) {
+
     $wp_customize->add_setting('splash_setting', array(
         'transport'     => 'refresh',
         'height'        => 800,
@@ -32,6 +33,19 @@ function themeName_customize_register( $wp_customize ) {
             'section' => 'splash_section',
         )
     );
+
+    // ImageLink on-click
+    $wp_customize->add_setting('splash_link_setting', array(
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+      
+    $wp_customize->add_control('splash_link_setting', array(
+        'type' => 'text',
+        'section' => 'splash_section',
+        'label' => __( 'URL Link' ),
+        'description' => __( 'URL ที่จะไปเมื่อรูปภาพบน Splash ถูกคลิ๊ก ถ้าเว้นว่าง รูปภาพบน Splash จะไม่สามารถถูกคลิ๊กได้' ),
+    ));
 
 }
 add_action('customize_register', 'themeName_customize_register');
