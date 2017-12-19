@@ -19,13 +19,13 @@
                 if ($publications_query->have_posts()) :
                     while ($publications_query->have_posts()) : $publications_query->the_post();
 
-                        $current_year = get_post_meta(get_the_id(), 'year', true);
+                        $current_year = get_post_meta($post->ID, 'year', true);
                         if ($current_year != $prev_year) {
                             if (!$is_first_year) echo '</tbody></table></div>';
                             echo "
-                                    <h1 class=\"label big strong\">$current_year</h1>
-                                    <div style=\"overflow-x: auto;\">
-                                    <table style=\"min-width: 530px;\">
+                                    <h1 class=\"label year-label big strong\">$current_year</h1>
+                                    <div style=\"overflow-x: auto;margin-bottom: 1em;\">
+                                    <table class=\"striped\" style=\"min-width: 530px;\">
                                     <thead>
                                     <tr>
                                     <th class=\"w50\">หัวข้อ</th>
@@ -57,3 +57,11 @@
         </div>
     </div>
 </section>
+<style>
+    @media screen and (max-width: 414px) {
+        h1.year-label {
+            display: block;
+            text-align: center;
+        }
+    }
+</style>
