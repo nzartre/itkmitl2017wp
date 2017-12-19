@@ -35,6 +35,14 @@ function wpdocs_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
+function itkmitl_redirect_post() {
+    if ( is_single() && 'staff' ==  get_query_var('post_type') ) {
+        wp_redirect( get_post_type_archive_link('staff'), 301 );
+        exit;
+    }
+}
+add_action( 'template_redirect', 'itkmitl_redirect_post' );
+
 // Translation Section
 if (function_exists('pll_register_string')) {
     pll_register_string('Hero Text 1', 'คณะไอที', 'hero', false);
