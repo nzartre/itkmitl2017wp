@@ -41,7 +41,7 @@ if (have_posts()) :
 							<div class="col-6">
 								<h3 class="title">ผลงานวิจัย</h3>
 								<p>ผลงานบทความวิจัยของบุคลากรคณะ ทั้งประเภทการประชุมทางวิชาการ และประเภทวารสาร</p>
-								<a href="#" class="button outline inverted">ผลงานวิจัยของบุคลากร</a>
+								<a href="/publications" class="button outline inverted">ผลงานวิจัยของบุคลากร</a>
 							</div>
 						</div>
 					</div>
