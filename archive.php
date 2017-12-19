@@ -2,7 +2,7 @@
 if (is_post_type_archive('staff')):
     include_once('modules/staff-archive.php');
 elseif (is_post_type_archive('publications')):
-     include_once('modules/publications-archive.php');
+    include_once('modules/publications-archive.php');
 else:
     ?>
     <section class="page archive">
@@ -20,12 +20,12 @@ else:
                                     <h2 class="post-title">
                                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h2>
-                                    <p><?php the_content(''); ?></p>
+                                    <?php the_content(''); ?>
                                     <span class="post-meta"><?php the_time('j F Y'); ?></span>
                                 </article>
                             <?php endwhile;
                         else :
-                            echo '<p> no post to show</p>';
+                            pll_e('No result found');
                         endif;
                         ?>
                         <nav class="pagination pager">

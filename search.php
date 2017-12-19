@@ -6,23 +6,23 @@
             <img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider" class="divider-short">
             <div class="col-group">
                 <div class="col-12 col-dt-8 col-dt-offset-2">
-                    <!-- Search -->
-                    <?php get_search_form(); ?>
-                    <!-- End -->
                     <?php
+                    get_search_form();
                     if (have_posts()) :
-
                         while (have_posts()) : the_post();
                             ?>
-
                             <article>
                                 <h2 class="post-title">
                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </h2>
-                                <p><?php the_content(''); ?></p>
-                                <span class="post-meta"><?php the_time('j F Y'); ?></span>
+                                <?php
+                                $hide_content = ['page', 'staff'];
+                                if (!in_array(get_post_type(get_the_id()), $hide_content)) :
+                                    the_content();
+                                    ?>
+                                    <span class="post-meta"><?php the_time('j F Y'); ?></span>
+                                <?php endif; ?>
                             </article>
-
                         <?php endwhile;
                     else :
                         echo '<p class="text-center">' . pll__("No result found") . '</p>';
