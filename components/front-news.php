@@ -18,7 +18,7 @@
             <div class="padded">
                 <h3><?php the_title(); ?></h3>
                 <p><?php echo this_excerpt(200); ?></p>
-                <a href="<?php echo get_the_permalink() ?>" class="button round">ดูเพิ่มเติม</a>                
+                <a href="<?php echo get_the_permalink() ?>" class="button round">ดูเพิ่มเติม</a>
             </div>
         </div>
 
@@ -29,6 +29,6 @@
 
     </div>
     <div style="text-align: center; margin: 2em 1em 1em">
-        <a href="#" class="button outline">ข่าวสารและกิจกรรมทั้งหมด</a>
+        <a href="/category/news" class="button outline">ข่าวสารและกิจกรรมทั้งหมด</a>
     </div>
 </section>
