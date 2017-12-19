@@ -3,8 +3,14 @@ footer
 	color: #fff
 	font-family: $font-main
 	padding: 3em
-	h5
+	h5, a
 		color: #fff
+	a.text-link
+		text-decoration: none
+		&:before
+			content: '> '
+		&:not(:first-child)
+			margin-left: 0.4em
 	p
 		font-size: 0.8em
 		line-height: 1.2em

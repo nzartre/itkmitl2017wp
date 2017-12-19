@@ -5,18 +5,19 @@
                 <h5>Social media</h5>
                 <div class="social-wrap">
                     <a href="#">
-                                <img src="<?php echo get_theme_file_uri('img/social/facebook.png'); ?>" alt="Facebook">
-                            </a>
+                        <img src="<?php echo get_theme_file_uri('img/social/facebook.png'); ?>" alt="Facebook">
+                    </a>
                     <a href="#">
-                                <img src="<?php echo get_theme_file_uri('img/social/twitter.png'); ?>" alt="Twitter">
-                            </a>
+                        <img src="<?php echo get_theme_file_uri('img/social/twitter.png'); ?>" alt="Twitter">
+                    </a>
                     <a href="#">
-                                <img src="<?php echo get_theme_file_uri('img/social/youtube.png'); ?>" alt="YouTube">
-                            </a>
+                        <img src="<?php echo get_theme_file_uri('img/social/youtube.png'); ?>" alt="YouTube">
+                    </a>
                 </div>
                 <p>คณะเทคโนโลยีสารสนเทศ<br>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
                 <p>เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพฯ 10520</p>
                 <p>โทรศัพท์​+66 (0) 2723 4900<br>โทรสาร +66 (0) 2723 4910</p>
+                <p><a href="/sitemap" class="text-link">Sitemap</a></p>
             </div>
         </div>
     </div>
@@ -35,15 +36,15 @@
     </div>
 </div>
 <div id="splash-modal" class="modal-box hide"
-    splash="<?php echo (!is_null(get_theme_mod( 'splash_display_setting' )) && is_front_page()) ? "on": "off"; ?>">
+     splash="<?php echo (!is_null(get_theme_mod('splash_display_setting')) && is_front_page()) ? "on" : "off"; ?>">
     <div class="modal">
         <span class="close"></span>
         <div class="inner">
-            <?php if (strlen(get_theme_mod( 'splash_link_setting' ))) {
-                echo "<a href='".get_theme_mod( 'splash_link_setting' )."'>";
+            <?php if (strlen(get_theme_mod('splash_link_setting'))) {
+                echo "<a href='" . get_theme_mod('splash_link_setting') . "'>";
             } ?>
-                <img src="<?php echo esc_url( get_theme_mod( 'splash_setting' ) ); ?>">
-            <?php if (strlen(get_theme_mod( 'splash_link_setting' ))) {
+            <img src="<?php echo esc_url(get_theme_mod('splash_setting')); ?>">
+            <?php if (strlen(get_theme_mod('splash_link_setting'))) {
                 echo "</a>";
             } ?>
         </div>
