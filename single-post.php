@@ -26,7 +26,6 @@ if (have_posts()) :
                         | โดย <?php the_author(); ?></span>
                     <div class="col-group">
                         <div class="col-12 col-dt-9">
-
                             <?php if (has_post_thumbnail()):
                                 the_post_thumbnail('full', array('class' => 'featured-image', 'id' => 'main-feat-image'));
                             endif;

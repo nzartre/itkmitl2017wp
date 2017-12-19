@@ -4,13 +4,13 @@
             <div class="col-4 col-mb-offset-0 col-dt-offset-8">
                 <h5>Social media</h5>
                 <div class="social-wrap">
-                    <a href="#">
+                    <a href="https://www.facebook.com/ITLadkrabang">
                         <img src="<?php echo get_theme_file_uri('img/social/facebook.png'); ?>" alt="Facebook">
                     </a>
-                    <a href="#">
+                    <a href="https://twitter.com/itkmitl">
                         <img src="<?php echo get_theme_file_uri('img/social/twitter.png'); ?>" alt="Twitter">
                     </a>
-                    <a href="#">
+                    <a href="https://www.youtube.com/user/itkmitl1">
                         <img src="<?php echo get_theme_file_uri('img/social/youtube.png'); ?>" alt="YouTube">
                     </a>
                 </div>
