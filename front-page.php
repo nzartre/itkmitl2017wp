@@ -24,13 +24,13 @@ get_footer();
     jQuery(document).ready(function( $ ) {
         $('#home-news').owlCarousel({
             center: true,
-            items: 1,
             margin: 10,
             loop: 1,
             lazyLoad: 1,
-            dots: 1,
+            dots: 0,
             responsive: {
-                720: {items: 3,nav: 0},
+                0: {items: 1, nav: 0},
+                720: {items: 3, nav: 1},
                 1280: {items: 4}
             }
         });

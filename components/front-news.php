@@ -1,6 +1,6 @@
 <section style="background-color: #d7d7d7" id="home-news-section">
     <h1 class="title">ข่าวสารและกิจกรรม</h1>
-    <div class="owl-carousel" id="home-news">
+    <div class="owl-carousel owl-theme" id="home-news">
 
     <?php
     $the_query = new WP_Query(array(

@@ -17,8 +17,8 @@
     <meta property="article:author" content="111528678864534">
     <?php wp_head(); ?>
     <?php if (is_front_page()) {
-        $owl_carousel = get_theme_file_uri('vendor/owl/assets/owl-theme.min.css');
-        $owl_theme = get_theme_file_uri('vendor/owl/assets/owl.carousel.min.css');
+        $owl_carousel = get_theme_file_uri('vendor/owl/assets/owl.carousel.min.css');
+        $owl_theme = get_theme_file_uri('vendor/owl/assets/owl.theme.default.min.css');
         $owl_js = get_theme_file_uri('vendor/owl/owl.carousel.min.js');
         echo '<link rel="stylesheet" href="' . $owl_carousel . '">
         <link rel="stylesheet" href="' . $owl_theme . '"><script src="' . $owl_js . '"></script>';
