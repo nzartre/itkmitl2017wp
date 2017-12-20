@@ -79,7 +79,8 @@
         staffPromise.then(function () {
             staff = staff.responseJSON;
             document.getElementById('thumbnail').setAttribute('src', staff.thumbnail);
-            document.getElementById('prefix').innerText = staff.prefix;
+            if (staff.prefix == 'อ.') document.getElementById('prefix').innerText = 'อาจารย์';
+            else document.getElementById('prefix').innerText = staff.prefix;
             document.getElementById('name').innerText = staff.first_name + " " + staff.last_name;
             if (staff.email) {
                 document.getElementById('email').innerText = staff.email;
