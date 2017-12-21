@@ -28,10 +28,11 @@ get_footer();
             loop: 1,
             lazyLoad: 1,
             dots: 0,
+            navText: ['&larr;', '&rarr;'],
             responsive: {
                 0: {items: 1, nav: 0},
                 720: {items: 3, nav: 1},
-                1280: {items: 4}
+                1280: {items: 4, nav: 1}
             }
         });
     });
