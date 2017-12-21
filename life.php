@@ -9,7 +9,7 @@ if (have_posts()) :
 	while (have_posts()) : the_post(); ?>
 		<section class="page page--life">
 			<div class="page-content">
-				<h1 class="title text-center">Life @ IT</h1>
+				<h1 class="title text-center"><?php the_title(); ?></h1>
 				<section class="life--content">
 					<div class="paper">
 						<div class="col-group life-gallery">

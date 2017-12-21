@@ -5,7 +5,7 @@
                 <div class="card">
                     <div class="padded">
                         <img src="<?php echo get_theme_file_uri('img/card-icon-1.png'); ?>" class="icon" alt="">
-                        <h3>หลักสูตรทั้งหมด</h3>
+                        <h3>หลักสูตร</h3>
                         <p>รายละเอียดหลักสูตรของคณะเทคโนโลยีสารสนเทศทั้งปริญญาตรี, ปริญญาโท และ ปริญญาเอก</p>
                         <a href="program" class="button round">ดูเพิ่มเติม</a>
                     </div>
@@ -15,7 +15,7 @@
                 <div class="card">
                     <div class="padded">
                         <img src="<?php echo get_theme_file_uri('img/card-icon-2.png'); ?>" class="icon" alt="">
-                        <h3>หลักสูตรอบรม</h3>
+                        <h3>การอบรม</h3>
                         <p>โครงการอบรมความรู้ทางเทคโนโลยีสารสนเทศให้แก่สังคมเพื่อความพัฒนาคุณภาพสังคมอย่างยั่งยืน</p>
                         <a href="acad-services" class="button round">ดูเพิ่มเติม</a>
                     </div>

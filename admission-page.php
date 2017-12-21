@@ -23,7 +23,7 @@ if (have_posts()) :
 								<ul class="unstyled">
 									<li>
 										<a href="#">
-											<span class="caret right"></span> คัดเลือกโดยพิจารณาจาก Portfolio
+											<span class="caret right"></span> คัดเลือกโดยพิจารณาจากแฟ้มสะสมผลงาน
 										</a>
 									</li>
 									<li>
@@ -38,7 +38,7 @@ if (have_posts()) :
 									</li>
 									<li>
 										<a href="#">
-											<span class="caret right"></span> Admission
+											<span class="caret right"></span> แอดมิชชัน
 										</a>
 									</li>
 									<li>

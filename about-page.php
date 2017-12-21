@@ -34,7 +34,7 @@ if (have_posts()) :
 							<h3>Life@IT</h3>
 							<p>บรรยากาศในคณะ</p>
 						</a>
-						<a href="phone" class="stat-box">
+						<a href="contact" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-contact.png'); ?>" alt="about-contact">
 							<h3>ติดต่อ</h3>
 							<p>การติดต่อคณะ</p>
