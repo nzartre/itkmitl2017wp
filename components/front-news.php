@@ -29,6 +29,6 @@
 
     </div>
     <div style="text-align: center; margin: 2em 1em 1em">
-        <a href="/category/news" class="button outline">ข่าวสารและกิจกรรมทั้งหมด</a>
+        <a href="/category/news" class="button outline">ข่าวและกิจกรรมทั้งหมด</a>
     </div>
 </section>
