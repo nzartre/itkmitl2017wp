@@ -39,9 +39,9 @@ if (have_posts()) :
 								<a href="http://www.it.kmitl.ac.th/~journal/" class="button outline inverted">วารสารเทคโนโลยีสารสนเทศลาดกระบัง</a>
 							</div>
 							<div class="col-6">
-								<h3 class="title">ผลงานวิจัย</h3>
+								<h3 class="title">บทความวิจัย</h3>
 								<p>ผลงานบทความวิจัยของบุคลากรคณะ ทั้งประเภทการประชุมทางวิชาการ และประเภทวารสาร</p>
-								<a href="/publications" class="button outline inverted">ผลงานวิจัยของบุคลากร</a>
+								<a href="/publications" class="button outline inverted">ดูบทความวิจัย</a>
 							</div>
 						</div>
 					</div>

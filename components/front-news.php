@@ -1,5 +1,5 @@
 <section style="background-color: #d7d7d7" id="home-news-section">
-    <h1 class="title">ข่าวสารและกิจกรรม</h1>
+    <h1 class="title">ข่าวและกิจกรรม</h1>
     <div class="owl-carousel owl-theme" id="home-news">
 
     <?php

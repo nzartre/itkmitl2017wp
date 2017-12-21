@@ -63,6 +63,8 @@ if (function_exists('pll_register_string')) {
     pll_register_string('Hub', 'Service Hub', 'page', false);
     pll_register_string('Staff page title', 'Staff', 'page', false);
     pll_register_string('Publication page title', 'Publications', 'page', false);
+    pll_register_string('Sitemap title', 'Sitemap', 'page', false);
+    pll_register_string('Social Media title', 'Social Media', 'misc', false);
 }
 
 include_once('modules/staff-post-type.php');

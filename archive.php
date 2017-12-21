@@ -8,7 +8,7 @@ else:
     <section class="page archive">
         <div class="page-content">
             <div class="container">
-                <h1 class="page-title">หมวดหมู่: <?php single_cat_title(); ?></h1>
+                <h1 class="page-title"><?php single_cat_title(); ?></h1>
                 <img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider"
                      class="divider-short">
                 <div class="col-group">

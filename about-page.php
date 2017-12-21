@@ -29,16 +29,16 @@ if (have_posts()) :
 							<h3>บุคลากร</h3>
 							<p>คณาจารย์ในคณะ</p>
 						</a>
-						<a href="life" class="stat-box">
-							<img src="<?php echo get_theme_file_uri('img/about-life.png'); ?>" alt="about-life">
-							<h3>Life@IT</h3>
-							<p>บรรยากาศในคณะ</p>
-						</a>
-						<a href="phone" class="stat-box">
+						<a href="contact" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-contact.png'); ?>" alt="about-contact">
 							<h3>ติดต่อ</h3>
 							<p>การติดต่อคณะ</p>
 						</a>
+                        <a href="life" class="stat-box">
+                            <img src="<?php echo get_theme_file_uri('img/about-life.png'); ?>" alt="about-life">
+                            <h3>Life@IT</h3>
+                            <p>บรรยากาศในคณะ</p>
+                        </a>
 					</div><!-- .container -->
 				</section><!-- section.about——stats -->
 				<div class="about--dean">

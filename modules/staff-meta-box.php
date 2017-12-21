@@ -26,8 +26,11 @@ function itkmitl_staff_meta_cb( $post ) {
     echo '<label for="last_name">นามสกุล</label>';
     echo '<input type="text" class="widefat" name="last_name" value="' . esc_textarea($stored_staff_meta['last_name'][0]) . '">';
 
-    echo '<label for="email">เบอร์ติดต่อ</label>';
+    echo '<label for="phone">เบอร์ติดต่อ</label>';
     echo '<input type="text" class="widefat" name="phone" value="' . esc_textarea($stored_staff_meta['phone'][0]) . '">';
+
+    echo '<label for="lab">ห้อง</label>';
+    echo '<input type="text" class="widefat" name="lab" value="' . esc_textarea($stored_staff_meta['lab'][0]) . '">';
 
     echo '<label for="email">อีเมล</label>';
     echo '<input type="text" class="widefat" name="email" value="' . esc_textarea($stored_staff_meta['email'][0]) . '">';
@@ -60,6 +63,9 @@ function itkmitl_save_staff_meta( $post_id ) {
     }
     if( isset( $_POST['phone'] ) ) {
         update_post_meta( $post_id, 'phone', sanitize_text_field( $_POST['phone'] ) );
+    }
+    if( isset( $_POST['lab'] ) ) {
+        update_post_meta( $post_id, 'lab', sanitize_text_field( $_POST['lab'] ) );
     }
     if( isset( $_POST['email'] ) ) {
         update_post_meta( $post_id, 'email', sanitize_text_field( $_POST['email'] ) );

@@ -1,8 +1,13 @@
 <footer>
     <div class="container">
         <div class="col-group">
-            <div class="col-4 col-mb-offset-0 col-dt-offset-8">
-                <h5>Social media</h5>
+            <div class="col-4">
+                <p>คณะเทคโนโลยีสารสนเทศ<br>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                <p>เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพฯ 10520</p>
+                <p>โทรศัพท์​ +66 (0) 2723 4900<br>โทรสาร +66 (0) 2723 4910</p>
+            </div>
+            <div class="col-3 col-mb-offset-0 col-dt-offset-5">
+                <h5><?php pll_e('Social Media'); ?></h5>
                 <div class="social-wrap">
                     <a href="https://www.facebook.com/ITLadkrabang">
                         <img src="<?php echo get_theme_file_uri('img/social/facebook.png'); ?>" alt="Facebook">
@@ -14,10 +19,8 @@
                         <img src="<?php echo get_theme_file_uri('img/social/youtube.png'); ?>" alt="YouTube">
                     </a>
                 </div>
-                <p>คณะเทคโนโลยีสารสนเทศ<br>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
-                <p>เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพฯ 10520</p>
-                <p>โทรศัพท์​+66 (0) 2723 4900<br>โทรสาร +66 (0) 2723 4910</p>
-                <p><a href="/sitemap" class="text-link">Sitemap</a></p>
+                <p><a href="/sitemap" class="text-link"><?php pll_e('Sitemap'); ?></a></p>
+
             </div>
         </div>
     </div>
