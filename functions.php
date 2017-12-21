@@ -55,18 +55,7 @@ add_filter('pre_get_posts', 'itkmitl_cpt_search');
 
 // Translation Section
 if (function_exists('pll_register_string')) {
-    pll_register_string('Hero Text 1', 'คณะไอที', 'hero', false);
-    pll_register_string('Hero Text 2', 'พระจอมเกล้าฯ ลาดกระบัง', 'hero', false);
-    pll_register_string('Not found', 'No result found', 'WordPress', false);
-    pll_register_string('Type and hit enter', 'Type and hit enter', 'WordPress', false);
-    pll_register_string('Search', 'Search', 'nav', false);
-    pll_register_string('Hub', 'Service Hub', 'page', false);
-    pll_register_string('Staff page title', 'Staff', 'page', false);
-    pll_register_string('Publication page title', 'Publications', 'page', false);
-    pll_register_string('Sitemap title', 'Sitemap', 'page', false);
-    pll_register_string('Social Media title', 'Social Media', 'misc', false);
-    pll_register_string('Read more', 'Read more', 'misc', false);
-    pll_register_string('View all news', 'View all news', 'misc', false);
+    include_once('pll_translations.php');
 }
 
 include_once('modules/staff-post-type.php');

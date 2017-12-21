@@ -82,7 +82,7 @@
             </div>
             <div class="nav-links">
                 <span class="normal-links">
-                    <a href="#" data-component="modal" data-target="#search-modal">🔍 <?php pll_e("Search"); ?></a>
+                    <a href="#" data-component="modal" data-target="#search-modal">🔍 <?php pll_e('func_search'); ?></a>
                 <?php
                     $menuParameters = array(
                         'container'       => false,
@@ -121,7 +121,7 @@
         </div>
     </nav>
     <div class="mobile-nav">
-        <a href="#" data-component="modal" data-target="#search-modal">🔍 <?php pll_e("ค้นหา"); ?></a>
+        <a href="#" data-component="modal" data-target="#search-modal">🔍 <?php pll_e('func_search'); ?></a>
         <?php
             $menuParameters = array(
                 'container'       => false,

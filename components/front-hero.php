@@ -1,8 +1,8 @@
 <div class="hero">
     <div class="site-name text-center">
-        <h1><?php pll_e('คณะไอที'); ?></h1>
+        <h1><?php pll_e('hero_faculty-IT'); ?></h1>
         <h2>
-            <?php pll_e('พระจอมเกล้าฯ ลาดกระบัง'); ?>
+            <?php pll_e('hero_KMITL'); ?>
         </h2>
     </div>
     <div class="overlay"></div>

@@ -2,7 +2,7 @@
     <div class="page-content">
         <div class="paper">
             <div class="container">
-                <h1 class="page-title"><?php pll_e('Staff'); ?></h1>
+                <h1 class="page-title"><?php pll_e('page_staff'); ?></h1>
                 <img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider"
                      class="divider-short">
                 <div class="staff-wrap">
