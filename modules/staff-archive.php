@@ -53,12 +53,16 @@
                     <span id="name"></span>
                     <div class="contact-wrap">
                         <div id="email-wrap">
-                            <img src="<?php echo get_theme_file_uri('img/icon-mail.png') ?>" alt="mail" class="icon">
-                            <span id="email"></span>
+                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-mail.png') ?>" alt="mail" class="icon">
+                            <span class="meta-detail" id="email"></span>
                         </div>
                         <div id="phone-wrap">
-                            <img src="<?php echo get_theme_file_uri('img/icon-phone.png') ?>" alt="phone" class="icon">
-                            <span id="phone"></span>
+                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-phone.png') ?>" alt="phone" class="icon">
+                            <span class="meta-detail" id="phone"></span>
+                        </div>
+                        <div id="lab-wrap">
+                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-lab.png') ?>" alt="lab" class="icon">
+                            <span class="meta-detail" id="lab"></span>
                         </div>
                     </div>
                     <div id="content"></div>
@@ -92,6 +96,11 @@
                 document.getElementById('phone-wrap').style.display = 'block';
             }
             else document.getElementById('phone-wrap').style.display = 'none';
+            if (staff.lab) {
+                document.getElementById('lab').innerText = staff.lab;
+                document.getElementById('lab-wrap').style.display = 'block';
+            }
+            else document.getElementById('lab-wrap').style.display = 'none';
             document.getElementById('content').innerHTML = staff.content;
             jQuery.modalwindow({target: '#staff-modal', width: '720px'});
         });
