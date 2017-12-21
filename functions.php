@@ -65,6 +65,8 @@ if (function_exists('pll_register_string')) {
     pll_register_string('Publication page title', 'Publications', 'page', false);
     pll_register_string('Sitemap title', 'Sitemap', 'page', false);
     pll_register_string('Social Media title', 'Social Media', 'misc', false);
+    pll_register_string('Read more', 'Read more', 'misc', false);
+    pll_register_string('View all news', 'View all news', 'misc', false);
 }
 
 include_once('modules/staff-post-type.php');
