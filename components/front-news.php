@@ -1,5 +1,5 @@
 <section style="background-color: #d7d7d7" id="home-news-section">
-    <h1 class="title">ข่าวและกิจกรรม</h1>
+    <h1 class="title"><?php pll_e('home_news-updates'); ?></h1>
     <div class="owl-carousel owl-theme" id="home-news">
 
     <?php
@@ -18,7 +18,7 @@
             <div class="padded">
                 <h3><?php the_title(); ?></h3>
                 <p><?php echo this_excerpt(200); ?></p>
-                <a href="<?php echo get_the_permalink() ?>" class="button round"><?php pll_e('Read more'); ?></a>
+                <a href="<?php echo get_the_permalink() ?>" class="button round"><?php pll_e('misc_read-more'); ?></a>
             </div>
         </div>
 
@@ -29,6 +29,6 @@
 
     </div>
     <div style="text-align: center; margin: 2em 1em 1em">
-        <a href="/category/news" class="button outline"><?php pll_e('View all news'); ?></a>
+        <a href="/category/news" class="button outline"><?php pll_e('misc_view-all-news'); ?></a>
     </div>
 </section>

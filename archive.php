@@ -25,7 +25,7 @@ else:
                                 </article>
                             <?php endwhile;
                         else :
-                            pll_e('No result found');
+                            pll_e('wp_no-result-found');
                         endif;
                         ?>
                         <nav class="pagination pager">

@@ -5,9 +5,9 @@
         </div>
         <div class="col-12 col-dt-4 banner-text">
             <div class="banner-content" style="margin:auto;">
-                <h2>หลักสูตรทั้งหมด</h2>
-                <p>ผลิตบัณฑิตที่พร้อมด้วยคุณสมบัติอันพึงประสงค์ ในสาขาวิชาที่สอดคล้องกับความต้องการของสังคม ทั้งปริญญาตรี ปริญญาโท และปริญญาเอก</p>
-                <a href="program" class="button round inverted outline"><?php pll_e('Read more'); ?></a>
+                <h2><?php pll_e('home_banner1'); ?></h2>
+                <p><?php pll_e('home_banner1_details'); ?></p>
+                <a href="program" class="button round inverted outline"><?php pll_e('misc_read-more'); ?></a>
             </div>
         </div>
     </div><!-- .col-group .banner-row -->
@@ -17,9 +17,9 @@
         </div>
         <div class="col-12 col-dt-4 banner-text push-first">
             <div class="banner-content left" style="margin:auto;">
-                <h2>การวิจัย</h2>
-                <p>คณะสนับสนุนการวิจัยด้วยห้องปฏิบัติการ 3 กลุ่ม ทั้งกลุ่มวิทยาการสารสนเทศ กลุ่มระบบเครือข่าย และกลุ่มสื่อประสม</p>
-                <a href="research" class="button round inverted outline"><?php pll_e('Read more'); ?></a>
+                <h2><?php pll_e('home_banner2'); ?></h2>
+                <p><?php pll_e('home_banner2_details'); ?></p>
+                <a href="research" class="button round inverted outline"><?php pll_e('misc_read-more'); ?></a>
             </div>
         </div>
     </div><!-- .col-group .banner-row -->
@@ -30,8 +30,8 @@
         <div class="col-12 col-dt-4 banner-text">
             <div class="banner-content" style="margin:auto;">
                 <h2>Life@IT</h2>
-                <p>บรรยากาศสถานที่ การเรียน และชีวิตประจำวันในคณะ</p>
-                <a href="about/life" class="button round inverted outline"><?php pll_e('Read more'); ?></a>
+                <p><?php pll_e('home_banner3_details'); ?></p>
+                <a href="about/life" class="button round inverted outline"><?php pll_e('misc_read-more'); ?></a>
             </div>
         </div>
     </div><!-- .col-group .banner-row -->
