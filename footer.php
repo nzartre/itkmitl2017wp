@@ -36,7 +36,7 @@
     </div>
 </div>
 <div id="splash-modal" class="modal-box hide"
-     splash="<?php echo (!is_null(get_theme_mod('splash_display_setting')) && is_front_page()) ? "on" : "off"; ?>">
+     splash="<?php echo (get_theme_mod('splash_display_setting') == 1 && is_front_page()) ? "on" : "off"; ?>">
     <div class="modal">
         <span class="close"></span>
         <div class="inner">
