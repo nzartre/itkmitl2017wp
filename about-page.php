@@ -27,7 +27,7 @@ if (have_posts()) :
 						<a href="<?php echo home_url() . '/staff'; ?>" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-personnel.png'); ?>" alt="about-personnel">
 							<h3>บุคลากร</h3>
-							<p>คณาจารย์ในคณะ</p>
+							<p>คณาจารย์และเจ้าหน้าที่</p>
 						</a>
 						<a href="contact" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-contact.png'); ?>" alt="about-contact">

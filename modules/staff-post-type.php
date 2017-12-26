@@ -38,8 +38,9 @@ function filter_staff_json( $data, $post, $context ) {
         'prefix'   	=> $custom_meta['prefix'][0],
         'first_name' => $custom_meta['first_name'][0],
         'last_name'  => $custom_meta['last_name'][0],
+        'role'      => $custom_meta['role'][0],
         'phone'     => $custom_meta['phone'][0],
-        'lab'     => $custom_meta['lab'][0],
+        'lab'       => $custom_meta['lab'][0],
         'email'     => $custom_meta['email'][0],
         'website'   => $custom_meta['website'][0],
         'linkedin'  => $custom_meta['linkedin'][0]
