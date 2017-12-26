@@ -17,6 +17,8 @@ pll_register_string('Hub page title', 'page_service-hub', 'page_title', false); 
 pll_register_string('Staff page title', 'page_staff', 'page_title', false);
 pll_register_string('Publication page title', 'page_publications', 'page_title', false); /* publications-archive */
 pll_register_string('Sitemap page title', 'page_sitemap', 'page_title', false);
+pll_register_string('All Events page title', 'page_events_all-events', 'page_title', false);
+pll_register_string('Calendar page title', 'page_events-calendar', 'page_title', false);
 
 // Miscellaneous
 pll_register_string('Social Media title', 'misc_social-media', 'misc', false); /* footer */
