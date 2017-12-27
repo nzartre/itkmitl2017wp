@@ -11,6 +11,7 @@ pll_register_string('Type and hit enter', 'wp_type-and-hit-enter', 'WordPress', 
 
 // Functionality
 pll_register_string('Search', 'func_search', 'functionality', false); /* header (nav) */
+pll_register_string('Language', 'func_language', 'functionality', false); /* header (mobile-nav) */
 
 // Page Titles
 pll_register_string('Hub page title', 'page_service-hub', 'page_title', false); /* hub-page */

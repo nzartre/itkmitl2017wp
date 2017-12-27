@@ -112,7 +112,8 @@
                 </span>
             <span class="bold-links">
                 <?php if (function_exists('pll_current_language')): ?>
-                    <?php $globe = ''; if (pll_current_language() == 'th') $globe = '🌏'; else $globe = '🌎'; ?>
+                    <?php $globe = '';
+                    if (pll_current_language() == 'th') $globe = '🌏'; else $globe = '🌎'; ?>
                     <a href="#" id="lang-switch"><?php echo $globe; ?> <span class="caret down"></span></a>
                 <?php endif; ?>
                 </span>
@@ -127,19 +128,20 @@
     </div>
 </nav>
 <div class="mobile-nav">
-    <a href="#" data-component="modal" data-target="#search-modal"><?php pll_e('func_search'); ?></a>
-    <?php
-    $menuParameters = array(
-        'container' => false,
-        'echo' => false,
-        'items_wrap' => '%3$s',
-        'depth' => 0,
-        'theme_location' => 'primary',
-    );
-
-    echo strip_tags(wp_nav_menu($menuParameters), '<a>');
-    ?>
-    <a href="<?php echo $langSwitch ?>">ไทย/EN</a>
+    <ul class="unstyled">
+        <li data-component="modal" data-target="#search-modal"><?php pll_e('func_search'); ?></li>
+        <?php
+        $top_menu = array(
+            'menu_class' => 'unstyled',
+            'theme_location' => 'primary',
+        );
+        wp_nav_menu($top_menu);
+        ?>
+        <li><?php pll_e('func_language'); ?></li>
+        <ul>
+            <?php pll_the_languages(); ?>
+        </ul>
+    </ul>
 </div>
 <div class="top-nav-secondary">
     <div class="links-wrap">
