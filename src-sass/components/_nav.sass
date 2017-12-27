@@ -1,6 +1,6 @@
 nav.top-nav
 	position: fixed
-	z-index: 120
+	z-index: 121
 	background-color: #fff
 	color: $color-main-dark
 	font-family: $font-main
@@ -9,6 +9,7 @@ nav.top-nav
 	width: 100%
 	.container
 		display: flex
+		position: relative
 	img
 		height: 40px
 		float: left
@@ -32,26 +33,61 @@ nav.top-nav
 		span.bold-links
 			font-weight: 600
 			border-left: 1px solid $color-main-dark
+	.lang-dropdown
+		position: absolute
+		top: 48px
+		right: 0
+		background: #fff
+		border-radius: 0 0 5px 5px
+		box-shadow: 0 6px 15px rgba(0,0,0,0.12)
+		text-align: right
+		font-weight: bold
+		visibility: hidden
+		&.show
+			visibility: visible
+		ul
+			a
+				display: block
+				padding: 0.5em 1em
+				color: #000
+				text-decoration: none
+				&:hover
+					background: $color-main
+					color: #fff
+				img
+					height: 10px
+					float: none
+			li:not(:last-child)
+				border-bottom: 1px solid #dbdfe1
+			li:last-child
+				a
+					border-radius: 0 0 5px 5px
+
 .mobile-nav
 	position: fixed
 	z-index: 120
-	margin-top: 58px
-	padding: 1em
+	padding: 4em 1em 1em
 	background-color: rgba(45, 86, 158, 0.8)
 	-webkit-backdrop-filter: blur(10px)
 	width: 100%
 	height: 100%
 	display: none
-	a
-		display: block
-		padding: 1em 0
-		border-bottom: 1px solid #e6e6e6
-		text-decoration: none
-		color: #fff
-		&:last-of-type
-			border-bottom: none
-		&:hover
-			font-weight: bold
+	overflow-y: auto
+	ul
+		li
+			padding: 1em 0
+			border-bottom: 1px solid #e6e6e6
+			color: #fff
+			//&:last-of-type
+				border-bottom: none
+			&:hover
+				font-weight: bold
+			a
+				text-decoration: none
+				color: #fff
+		&:last-child
+			li:last-child
+				border-bottom: none
 .top-nav-secondary
 	position: fixed
 	top: 59px
@@ -96,6 +132,25 @@ nav.top-nav
 			a
 				color: #000
 				text-decoration: none
+
+@media screen and (max-width: 768px)
+	nav.top-nav
+		padding-left: 1em
+		padding-right: 1em
+		.nav-links
+			display: none
+		.logo
+			flex: 1
+		a
+			float: none
+		img.nav-chevron
+			display: inline-block
+			height: 28px
+			margin-top: 8px
+		.lang-dropdown
+			visibility: hidden
+			&.show
+				visibility: hidden
 
 @media screen and (max-width: 414px)
 	nav.top-nav
