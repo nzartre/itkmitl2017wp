@@ -1,10 +1,10 @@
-jQuery(document).ready(function( $ ) {
+jQuery(document).ready(function ($) {
 
     if ($('#main-feat-image').height() > $('#main-feat-image').width()) {
         $('#main-feat-image').style('max-width', '400px');
     }
     
-    $('.nav-chevron').click(function(){
+    $('.nav-chevron').click(function (){
         $('.mobile-nav').toggle();
     });
 
@@ -12,7 +12,12 @@ jQuery(document).ready(function( $ ) {
         if ($("#splash-modal").attr('splash') == "on") {
             jQuery('button[data-target=#splash-modal]').trigger('click');        
         }
-    }
+    };
+
+    $('html').click(function (e) {
+        if (e.target.id != 'lang-switch') $('#lang-list').removeClass('show');
+        else $('#lang-list').toggleClass('show');
+    });
 
 });
 console.log("%cOoooooooh!", "color: blue; font-size: xx-large; font-weight: bold");
