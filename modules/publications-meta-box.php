@@ -37,14 +37,11 @@ function itkmitl_save_publications_meta( $post_id ) {
         return;
     }
     // Checks for input and sanitizes/saves if needed
-    if( isset( $_POST['author'] ) ) {
-        update_post_meta( $post_id, 'author', sanitize_text_field( $_POST['author'] ) );
-    }
-    if( isset( $_POST['year'] ) ) {
-        update_post_meta( $post_id, 'year', sanitize_text_field( $_POST['year'] ) );
-    }
-    if( isset( $_POST['book'] ) ) {
-        update_post_meta( $post_id, 'book', sanitize_text_field( $_POST['book'] ) );
+    $fields = ['author', 'year', 'book'];
+    foreach ($fields as $field) {
+        if( isset( $_POST[$field] ) ) {
+            update_post_meta( $post_id, $field, sanitize_text_field( $_POST[$field] ) );
+        }
     }
 }
 add_action( 'save_post', 'itkmitl_save_publications_meta' );

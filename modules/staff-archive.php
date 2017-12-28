@@ -24,7 +24,7 @@
                 <hr class="more-space">
                 <h3 class="text-center">บุคลากรสายสนับสนุน</h3>
                 <div class="staff-wrap">
-                    <?php $staff_query = new WP_Query('post_type=staff&staff_position=support&nopaging=1&order=ASC');
+                    <?php $staff_query = new WP_Query('post_type=staff&staff_position=supportive-staff&nopaging=1&order=ASC');
                     if ($staff_query->have_posts()) :
                         while ($staff_query->have_posts()) : $staff_query->the_post(); ?>
                             <div class="card person-card" id="<?php echo 'staff-' . get_the_id(); ?>"

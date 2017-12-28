@@ -55,32 +55,11 @@ function itkmitl_save_staff_meta( $post_id ) {
         return;
     }
     // Checks for input and sanitizes/saves if needed
-    if( isset( $_POST['prefix'] ) ) {
-        update_post_meta( $post_id, 'prefix', sanitize_text_field( $_POST['prefix'] ) );
-    }
-    if( isset( $_POST['first_name'] ) ) {
-        update_post_meta( $post_id, 'first_name', sanitize_text_field( $_POST['first_name'] ) );
-    }
-    if( isset( $_POST['last_name'] ) ) {
-        update_post_meta( $post_id, 'last_name', sanitize_text_field( $_POST['last_name'] ) );
-    }
-    if( isset( $_POST['role'] ) ) {
-        update_post_meta( $post_id, 'role', sanitize_text_field( $_POST['role'] ) );
-    }
-    if( isset( $_POST['phone'] ) ) {
-        update_post_meta( $post_id, 'phone', sanitize_text_field( $_POST['phone'] ) );
-    }
-    if( isset( $_POST['lab'] ) ) {
-        update_post_meta( $post_id, 'lab', sanitize_text_field( $_POST['lab'] ) );
-    }
-    if( isset( $_POST['email'] ) ) {
-        update_post_meta( $post_id, 'email', sanitize_text_field( $_POST['email'] ) );
-    }
-    if( isset( $_POST['website'] ) ) {
-        update_post_meta( $post_id, 'website', sanitize_text_field( $_POST['website'] ) );
-    }
-    if( isset( $_POST['linkedin'] ) ) {
-        update_post_meta( $post_id, 'linkedin', sanitize_text_field( $_POST['linkedin'] ) );
+    $fields = ['prefix', 'first_name', 'last_name', 'role', 'phone', 'lab', 'email', 'website', 'linkedin'];
+    foreach ($fields as $field) {
+        if( isset( $_POST[$field] ) ) {
+            update_post_meta( $post_id, $field, sanitize_text_field( $_POST[$field] ) );
+        }
     }
 }
 add_action( 'save_post', 'itkmitl_save_staff_meta' );
