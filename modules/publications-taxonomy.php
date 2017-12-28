@@ -5,8 +5,8 @@ function itkmitl_create_publications_category() {
         'publications',
         array(
             'labels' => array(
-                'name' => __('Categories'),
-                'singular_name' => __('Category'),
+                'name' => __('Publication Categories'),
+                'singular_name' => __('Publication Category'),
                 'add_new_item' => ('Add New Category'),
                 'not_found' => __('No category found'),
                 'parent_item' => __('Parent category')
