@@ -10,41 +10,38 @@ if (have_posts()) :
 		<section class="page page--courses">
 			<div class="page-content">
 				<div class="page-hero">
-					<h1 class="text-center">หลักสูตร</h1>
-					<h3 class="text-center">ผลิตบัณฑิตที่พร้อมด้วยคุณสมบัติอันพึงประสงค์ ในสาขาวิชาที่สอดคล้องกับความต้องการของสังคม</h3>
+					<h1 class="text-center"><?php the_title(); ?></h1>
+					<h3 class="text-center"><?php pll_e('programs_subtitle'); ?></h3>
 				</div>
 				<section class="all-courses">
 					<div class="container">
 						<div class="col-group">
 							<div class="col-12">
 								<div class="bg-box" style="background-image: url(<?php echo get_theme_file_uri('img/course-1.jpg'); ?>);">
-									<h3>หลักสูตรปริญญาตรี</h3>
-									<p>หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ<br/>
-									(Bachelor of Science Program in Information Technology)</p>
+									<h3><?php pll_e('programs_bachelor_title'); ?></h3>
+									<p><?php pll_e('programs_bachelor_name'); ?></p>
 									<div class="btn-wrap">
-										<a href="it-program" class="button outline inverted">สาขาวิชาเทคโนโลยีสารสนเทศ</a>
+										<a href="it-program" class="button outline inverted"><?php pll_e('programs_bachelor_it'); ?></a>
 									</div>
 									<div class="btn-wrap">
-										<a href="datasci-program" class="button outline inverted">สาขาวิชาวิทยาการข้อมูลและการวิเคราะห์เชิงธุรกิจ</a>
+										<a href="datasci-program" class="button outline inverted"><?php pll_e('programs_bachelor_dsba'); ?></a>
 									</div>
 									<div class="btn-wrap">
-										<a href="bit-program" class="button outline inverted">สาขาเทคโนโลยีสารสนเทศทางธุรกิจ (หลักสูตรนานาชาติ)</a>
+										<a href="bit-program" class="button outline inverted"><?php pll_e('programs_bachelor_bit'); ?></a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="box-wrap">
 							<div class="bg-box" style="background-image: url(<?php echo get_theme_file_uri('img/course-2.jpg'); ?>);">
-								<h3>หลักสูตรปริญญาโท</h3>
-								<p>หลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ<br/>
-								(Master of Science Program in Information Technology)</p>
-								<a href="master-degree" class="button outline inverted">รายละเอียด</a>
+								<h3><?php pll_e('programs_master_title'); ?></h3>
+								<p><?php pll_e('programs_master_name'); ?></p>
+								<a href="master-degree" class="button outline inverted"><?php pll_e('misc_read-more'); ?></a>
 							</div>
 							<div class="bg-box" style="background-image: url(<?php echo get_theme_file_uri('img/course-3.jpg'); ?>);">
-								<h3>หลักสูตรปริญญาเอก</h3>
-								<p>หลักสูตรปรัชญาดุษฎีบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ<br/>
-								(Doctor of Philosophy Program in Information Technology)</p>
-								<a href="#" class="button outline inverted">รายละเอียด</a>
+								<h3><?php pll_e('programs_phd_title'); ?></h3>
+								<p><?php pll_e('programs_phd_name'); ?></p>
+								<a href="#" class="button outline inverted"><?php pll_e('misc_read-more'); ?></a>
 							</div>
 						</div>
 					</div>

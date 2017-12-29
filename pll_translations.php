@@ -21,11 +21,12 @@ pll_register_string('Sitemap page title', 'page_sitemap', 'page_title', false);
 pll_register_string('All Events page title', 'page_events_all-events', 'page_title', false);
 pll_register_string('Calendar page title', 'page_events-calendar', 'page_title', false);
 pll_register_string('Subjects page title', 'page_subjects', 'page_title', false); /* subjects-archive */
+pll_register_string('Programs page title', 'page_programs', 'page_title', false); /* courses-page */
 
 // Miscellaneous
 pll_register_string('Social Media title', 'misc_social-media', 'misc', false); /* footer */
-pll_register_string('Read more', 'misc_read-more', 'misc', false); /* front-news */
-pll_register_string('View all news', 'misc_view-all-news', 'misc', false); /* front-newssssss */
+pll_register_string('Read more', 'misc_read-more', 'misc', false); /* front-news, courses-page */
+pll_register_string('View all news', 'misc_view-all-news', 'misc', false); /* front-news */
 
 // Home
 pll_register_string('Home: Programs', 'home_programs', 'home', false);
@@ -43,4 +44,16 @@ pll_register_string('Home: Banner 2: Research', 'home_banner2', 'home', false);
 pll_register_string('Home: Banner 1 details', 'home_banner1_details', 'home', true);
 pll_register_string('Home: Banner 2 details', 'home_banner2_details', 'home', true);
 pll_register_string('Home: Banner 3 details', 'home_banner3_details', 'home', true);
+
+// Programs page (courses-page)
+pll_register_string('Programs: Subtitle', 'programs_subtitle', 'programs', true);
+pll_register_string('Programs: Bachelor title', 'programs_bachelor_title', 'programs', false);
+pll_register_string('Programs: Bachelor degree name', 'programs_bachelor_name', 'programs', true);
+pll_register_string('Programs: Bachelor: IT', 'programs_bachelor_it', 'programs', false);
+pll_register_string('Programs: Bachelor: DSBA', 'programs_bachelor_dsba', 'programs', false);
+pll_register_string('Programs: Bachelor: BIT', 'programs_bachelor_bit', 'programs', false);
+pll_register_string('Programs: Master title', 'programs_master_title', 'programs', false);
+pll_register_string('Programs: Master degree name', 'programs_master_name', 'programs', true);
+pll_register_string('Programs: Ph.D title', 'programs_phd_title', 'programs', false);
+pll_register_string('Programs: Ph.D degree name', 'programs_phd_name', 'programs', true);
 ?>
