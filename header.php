@@ -114,7 +114,7 @@
                 <?php if (function_exists('pll_current_language')): ?>
                     <?php $globe = '';
                     if (pll_current_language() == 'th') $globe = '🌏'; else $globe = '🌎'; ?>
-                    <a href="#" id="lang-switch"><?php echo $globe; ?> <span class="caret down"></span></a>
+                    <a id="lang-switch"><?php echo $globe; ?> <span class="caret down" id="lang-switch-caret"></span></a>
                 <?php endif; ?>
                 </span>
         </div>

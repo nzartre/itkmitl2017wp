@@ -21,7 +21,6 @@ pll_register_string('Sitemap page title', 'page_sitemap', 'page_title', false);
 pll_register_string('All Events page title', 'page_events_all-events', 'page_title', false);
 pll_register_string('Calendar page title', 'page_events-calendar', 'page_title', false);
 pll_register_string('Subjects page title', 'page_subjects', 'page_title', false); /* subjects-archive */
-pll_register_string('Programs page title', 'page_programs', 'page_title', false); /* courses-page */
 
 // Miscellaneous
 pll_register_string('Social Media title', 'misc_social-media', 'misc', false); /* footer */
@@ -56,4 +55,20 @@ pll_register_string('Programs: Master title', 'programs_master_title', 'programs
 pll_register_string('Programs: Master degree name', 'programs_master_name', 'programs', true);
 pll_register_string('Programs: Ph.D title', 'programs_phd_title', 'programs', false);
 pll_register_string('Programs: Ph.D degree name', 'programs_phd_name', 'programs', true);
+
+// Admissions page
+pll_register_string('Admissions: Subtitle', 'admissions_subtitle', 'admissions', 1);
+pll_register_string('Admissions: Bachelor degree title', 'admissions_bachelor', 'admissions', 0);
+pll_register_string('Admissions: Advanced Bachelor degree title', 'admissions_adv-bachelor', 'admissions', 0);
+pll_register_string('Admissions: Master and Ph.D degrees title', 'admissions_master-phd', 'admissions', 0);
+pll_register_string('Admissions: Scholarship', 'admissions_scholarship', 'admissions', 0);
+
+pll_register_string('Admissions: Bachelor: portfolio', 'admissions_bach_portfolio', 'admissions', 0);
+pll_register_string('Admissions: Bachelor: quota', 'admissions_bach_quota', 'admissions', 0);
+pll_register_string('Admissions: Bachelor: tcas', 'admissions_bach_tcas', 'admissions', 0);
+pll_register_string('Admissions: Bachelor: admission', 'admissions_bach_admission', 'admissions', 0);
+pll_register_string('Admissions: Bachelor: entrance', 'admissions_bach_entrance', 'admissions', 0);
+pll_register_string('Admissions: Adv. Bachelor: entrance', 'admissions_adv-bach_entrance', 'admissions', 0);
+pll_register_string('Admissions: Master and Ph.D: entrance', 'admissions_master-doctor_entrance', 'admissions', 0);
+pll_register_string('Admissions: Master and Ph.D: government', 'admissions_master-doctor_govt', 'admissions', 0);
 ?>
