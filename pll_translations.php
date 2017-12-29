@@ -16,7 +16,7 @@ pll_register_string('Language', 'func_language', 'functionality', false); /* hea
 // Page Titles
 pll_register_string('Hub page title', 'page_service-hub', 'page_title', false); /* hub-page */
 pll_register_string('Staff page title', 'page_staff', 'page_title', false); /* staff-archive */
-pll_register_string('Publication page title', 'page_publications', 'page_title', false); /* publications-archive */
+pll_register_string('Publication page title', 'page_publications', 'page_title', false); /* publications-archive, research-page */
 pll_register_string('Sitemap page title', 'page_sitemap', 'page_title', false);
 pll_register_string('All Events page title', 'page_events_all-events', 'page_title', false);
 pll_register_string('Calendar page title', 'page_events-calendar', 'page_title', false);
@@ -85,4 +85,18 @@ pll_register_string('Acad Services: Banner 2: list', 'acad-serv_banner-2_list', 
 pll_register_string('Acad Services: Banner 3: title', 'acad-serv_banner-3_title', 'acad-serv', 0);
 pll_register_string('Acad Services: Banner 3: details', 'acad-serv_banner-3_details', 'acad-serv', 1);
 pll_register_string('Acad Services: Banner 3: list', 'acad-serv_banner-3_list', 'acad-serv', 1);
+
+// Research page
+pll_register_string('Research: Subtitle', 'research_subtitle', 'research', 0);
+pll_register_string('Research: Laboratories', 'research_labs', 'research', 0);
+pll_register_string('Research: ISIS Group', 'research_isis', 'research', 0);
+pll_register_string('Research: ISIS details', 'research_isis_details', 'research', 1);
+pll_register_string('Research: NI Group', 'research_ni', 'research', 0);
+pll_register_string('Research: NI details', 'research_ni_details', 'research', 1);
+pll_register_string('Research: MET Group', 'research_met', 'research', 0);
+pll_register_string('Research: MET details', 'research_met_details', 'research', 1);
+pll_register_string('Research: IT Journal details', 'research_journal_details', 'research', 1);
+pll_register_string('Research: View Journal button', 'research_view-journal', 'research', 1);
+pll_register_string('Research: Publications details', 'research_publications_details', 'research', 1);
+pll_register_string('Research: View Publications button', 'research_view-publications', 'research', 1);
 ?>
