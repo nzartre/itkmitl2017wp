@@ -5,7 +5,7 @@
     <?php
     $the_query = new WP_Query(array(
         'posts_per_page' => 5,
-        'category_name' => 'news',
+        'category_name' => 'news'
     ));
     if ($the_query->have_posts()) :
         while ($the_query->have_posts()) : $the_query->the_post();
@@ -23,8 +23,9 @@
         </div>
 
     <?php
-        endwhile;
-        endif
+            endwhile;
+        else: echo '<p class="text-center">no post</p>';
+        endif;
     ?>
 
     </div>
