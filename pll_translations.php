@@ -71,4 +71,18 @@ pll_register_string('Admissions: Bachelor: entrance', 'admissions_bach_entrance'
 pll_register_string('Admissions: Adv. Bachelor: entrance', 'admissions_adv-bach_entrance', 'admissions', 0);
 pll_register_string('Admissions: Master and Ph.D: entrance', 'admissions_master-doctor_entrance', 'admissions', 0);
 pll_register_string('Admissions: Master and Ph.D: government', 'admissions_master-doctor_govt', 'admissions', 0);
+
+// Academic Services page
+pll_register_string('Acad Services: Subtitle', 'acad-serv_subtitle', 'acad-serv', 1);
+pll_register_string('Acad Services: View Calendar button', 'acad-serv_view-calendar', 'acad-serv', 0);
+pll_register_string('Acad Services: Training Course', 'acad-serv_training-course', 'acad-serv', 0);
+pll_register_string('Acad Services: Banner 1: title', 'acad-serv_banner-1_title', 'acad-serv', 0);
+pll_register_string('Acad Services: Banner 1: details', 'acad-serv_banner-1_details', 'acad-serv', 1);
+pll_register_string('Acad Services: Banner 1: list', 'acad-serv_banner-1_list', 'acad-serv', 1);
+pll_register_string('Acad Services: Banner 2: title', 'acad-serv_banner-2_title', 'acad-serv', 0);
+pll_register_string('Acad Services: Banner 2: details', 'acad-serv_banner-2_details', 'acad-serv', 1);
+pll_register_string('Acad Services: Banner 2: list', 'acad-serv_banner-2_list', 'acad-serv', 1);
+pll_register_string('Acad Services: Banner 3: title', 'acad-serv_banner-3_title', 'acad-serv', 0);
+pll_register_string('Acad Services: Banner 3: details', 'acad-serv_banner-3_details', 'acad-serv', 1);
+pll_register_string('Acad Services: Banner 3: list', 'acad-serv_banner-3_list', 'acad-serv', 1);
 ?>
