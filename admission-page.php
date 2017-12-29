@@ -10,45 +10,45 @@ if (have_posts()) :
 		<section class="page page--admission">
 			<div class="page-content">
 				<div class="page-hero">
-					<h1 class="text-center">การรับสมัคร</h1>
-					<h3 class="text-center">หลักสูตรที่มุ่งพัฒนาผู้เรียน ให้มีความรอบรู้อย่างกว้างขวาง มีโลกทัศน์ที่กว้างไกล มีความเข้าใจตนเอง ผู้อื่น และสังคม</h3>
+					<h1 class="text-center"><?php the_title(); ?></h1>
+					<h3 class="text-center"><?php pll_e('admissions_subtitle'); ?></h3>
 				</div>
 				<section class="admission--admssn-types">
 					<div class="container">
 						<div class="box-w-image">
 							<div class="the-img" style="background-image: url(<?php echo get_theme_file_uri('img/admssn-1.jpg'); ?>)"></div>
 							<div class="the-text">
-								<h3>ปริญญาตรี</h3>
+								<h3><?php pll_e('admissions_bachelor'); ?></h3>
 								<hr>
 								<ul class="unstyled">
 									<li>
-										<a href="#">
-											<span class="caret right"></span> คัดเลือกโดยพิจารณาจากแฟ้มสะสมผลงาน
+										<a href="bach-portfolio">
+											<span class="caret right"></span> <?php pll_e('admissions_bach_portfolio'); ?>
 										</a>
 									</li>
 									<li>
-										<a href="#">
-											<span class="caret right"></span> โควต้า
+										<a href="bach-quota">
+											<span class="caret right"></span> <?php pll_e('admissions_bach_quota'); ?>
 										</a>
 									</li>
 									<li>
-										<a href="#">
-											<span class="caret right"></span> รับตรงร่วมกัน
+										<a href="bach-tcas">
+											<span class="caret right"></span> <?php pll_e('admissions_bach_tcas'); ?>
 										</a>
 									</li>
 									<li>
-										<a href="#">
-											<span class="caret right"></span> แอดมิชชัน
+										<a href="bach-admission">
+											<span class="caret right"></span> <?php pll_e('admissions_bach_admission'); ?>
 										</a>
 									</li>
 									<li>
-										<a href="#">
-											<span class="caret right"></span> รับตรงอิสระ
+										<a href="bach-entrance">
+											<span class="caret right"></span> <?php pll_e('admissions_bach_entrance'); ?>
 										</a>
 									</li>
 									<li>
-										<a href="#">
-											<span class="caret right"></span> ทุนการศึกษา
+										<a href="bach-scholarship">
+											<span class="caret right"></span> <?php pll_e('admissions_scholarship'); ?>
 										</a>
 									</li>
 								</ul>
@@ -57,17 +57,17 @@ if (have_posts()) :
 						<div class="box-w-image">
 							<div class="the-img" style="background-image: url(<?php echo get_theme_file_uri('img/admssn-2.jpg'); ?>)"></div>
 							<div class="the-text">
-								<h3>ปริญญาตรีแบบก้าวหน้า</h3>
+								<h3><?php pll_e('admissions_adv-bachelor'); ?></h3>
 								<hr>
 								<ul class="unstyled">
 									<li>
-										<a href="#">
-											<span class="caret right"></span> สอบข้อเขียนและสอบสัมภาษณ์
+										<a href="adv-bach-entrance">
+											<span class="caret right"></span> <?php pll_e('admissions_adv-bach_entrance'); ?>
 										</a>
 									</li>
 									<li>
-										<a href="#">
-											<span class="caret right"></span> ทุนการศึกษา
+										<a href="adv-bach-scholarship">
+											<span class="caret right"></span> <?php pll_e('admissions_scholarship'); ?>
 										</a>
 									</li>
 								</ul>
@@ -76,22 +76,22 @@ if (have_posts()) :
 						<div class="box-w-image">
 							<div class="the-img" style="background-image: url(<?php echo get_theme_file_uri('img/admssn-3.jpg'); ?>)"></div>
 							<div class="the-text">
-								<h3>ปริญญาโทและเอก</h3>
+								<h3><?php pll_e('admissions_master-phd'); ?></h3>
 								<hr>
 								<ul class="unstyled">
 									<li>
-										<a href="#">
-											<span class="caret right"></span> สอบข้อเขียนและสอบสัมภาษณ์
+										<a href="master-doctor-entrance">
+											<span class="caret right"></span> <?php pll_e('admissions_master-doctor_entrance'); ?>
 										</a>
 									</li>
 									<li>
-										<a href="#">
-											<span class="caret right"></span> โครงการข้าราชการ พนักงานรัฐ
+										<a href="master-doctor-govt">
+											<span class="caret right"></span> <?php pll_e('admissions_master-doctor_govt'); ?>
 										</a>
 									</li>
 									<li>
-										<a href="#">
-											<span class="caret right"></span> ทุนการศึกษา
+										<a href="master-doctor-scholarship">
+											<span class="caret right"></span> <?php pll_e('admissions_scholarship'); ?>
 										</a>
 									</li>
 								</ul>
