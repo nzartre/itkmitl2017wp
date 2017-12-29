@@ -33,12 +33,12 @@ if (have_posts()) :
 							</div>
 						</div>
 						<div class="box-wrap">
-							<div class="bg-box" style="background-image: url(<?php echo get_theme_file_uri('img/course-2.jpg'); ?>);">
+							<div class="bg-box half" style="background-image: url(<?php echo get_theme_file_uri('img/course-2.jpg'); ?>);">
 								<h3><?php pll_e('programs_master_title'); ?></h3>
 								<p><?php pll_e('programs_master_name'); ?></p>
 								<a href="master-degree" class="button outline inverted"><?php pll_e('misc_read-more'); ?></a>
 							</div>
-							<div class="bg-box" style="background-image: url(<?php echo get_theme_file_uri('img/course-3.jpg'); ?>);">
+							<div class="bg-box half" style="background-image: url(<?php echo get_theme_file_uri('img/course-3.jpg'); ?>);">
 								<h3><?php pll_e('programs_phd_title'); ?></h3>
 								<p><?php pll_e('programs_phd_name'); ?></p>
 								<a href="#" class="button outline inverted"><?php pll_e('misc_read-more'); ?></a>
