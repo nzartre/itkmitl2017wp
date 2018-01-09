@@ -1,10 +1,10 @@
 <?php get_header();
 if (is_post_type_archive('staff')):
-    include_once('modules/staff-archive.php');
+   include_once('modules/staff-archive.php');
 elseif (is_post_type_archive('publications')):
-    include_once('modules/publications-archive.php');
+   include_once('modules/publications-archive.php');
 elseif (is_post_type_archive('subjects')):
-    include_once('modules/subjects-archive.php');
+   include_once('modules/subjects-archive.php');
 else:
     ?>
     <section class="page archive">

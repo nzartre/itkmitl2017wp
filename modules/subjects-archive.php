@@ -14,7 +14,7 @@
                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </h2>
                                 <?php $meta = get_post_meta($post->ID); ?>
-                                <span class="post-meta"><strong><?php echo $meta['name_en'][0]; ?></strong></span>
+                                <span class="post-meta"><strong><?php echo $meta['name_th'][0]; ?></strong></span>
                                 <span class="post-meta">หน่วยกิต: <?php echo $meta['credit'][0]; ?></span>
                                 <div class="subject-detail"><?php the_excerpt(); ?></div>
                             </article>
