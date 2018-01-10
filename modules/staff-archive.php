@@ -7,9 +7,17 @@
                      class="divider-short">
                 <h3 class="text-center">บุคลากรสายวิชาการ</h3>
                 <div class="staff-wrap">
-                    <?php $staff_query = new WP_Query('post_type=staff&staff_position=lecturer&nopaging=1&order=ASC');
-                    if ($staff_query->have_posts()) :
-                        while ($staff_query->have_posts()) : $staff_query->the_post(); ?>
+                    <?php
+                    $lecturer_query_args = array(
+                        'post_type' => 'staff',
+                        'staff_position' => 'lecturer',
+                        'no_paging' => true,
+                        'order' => 'ASC',
+                        'orderby' => 'meta_value_num',
+                        'meta_key' => 'order');
+                    $lecturer_query = new WP_Query($lecturer_query_args);
+                    if ($lecturer_query->have_posts()) :
+                        while ($lecturer_query->have_posts()) : $lecturer_query->the_post(); ?>
                             <div class="card person-card" id="<?php echo 'staff-' . get_the_id(); ?>"
                                  onclick="showStaffModal(<?php echo get_the_id(); ?>);">
                                 <?php the_post_thumbnail('full', array('id' => 'staff-' . get_the_id() . '-img')); ?>
@@ -24,7 +32,15 @@
                 <hr class="more-space">
                 <h3 class="text-center">บุคลากรสายสนับสนุน</h3>
                 <div class="staff-wrap">
-                    <?php $staff_query = new WP_Query('post_type=staff&staff_position=supportive-staff&nopaging=1&order=ASC');
+                    <?php
+                    $staff_query_args = array(
+                        'post_type' => 'staff',
+                        'staff_position' => 'supportive-staff',
+                        'no_paging' => true,
+                        'order' => 'ASC',
+                        'orderby' => 'meta_value_num',
+                        'meta_key' => 'order');
+                    $staff_query = new WP_Query($staff_query_args);
                     if ($staff_query->have_posts()) :
                         while ($staff_query->have_posts()) : $staff_query->the_post(); ?>
                             <div class="card person-card" id="<?php echo 'staff-' . get_the_id(); ?>"
