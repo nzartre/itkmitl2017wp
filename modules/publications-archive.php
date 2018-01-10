@@ -25,7 +25,7 @@
                                 // close tags when not the first table
                                 if (!$is_first_year) echo '</tbody></table></div></div>';
                                 // create a toggler
-                                echo "<h4><a href=\"#$current_year\" class=\"collapse-toggle\">$current_year</a></h4>";
+                                echo "<h4 class=\"toggler\"><a href=\"#$current_year\" class=\"collapse-toggle\">$current_year</a></h4>";
                                 // collapse non-first toggles at start
                                 if (!$is_first_year) echo "<div class=\"collapse-box hide\" id=\"$current_year\">";
                                 else echo "<div class=\"collapse-box\" id=\"$current_year\">";
