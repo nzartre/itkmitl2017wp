@@ -17,6 +17,9 @@ function itkmitl_staff_meta_cb( $post ) {
     // Get the data if it's already been entered
     $stored_staff_meta = get_post_meta( $post->ID );
 
+    echo '<label for="order">ลำดับแสดงผล</label>';
+    echo '<input type="text" class="widefat" name="order" value="' . esc_textarea($stored_staff_meta['order'][0]) . '">';
+
     echo '<label for="prefix">คำนำหน้า (ย่อ)</label>';
     echo '<input type="text" class="widefat" name="prefix" value="' . esc_textarea($stored_staff_meta['prefix'][0]) . '">';
 
@@ -55,7 +58,7 @@ function itkmitl_save_staff_meta( $post_id ) {
         return;
     }
     // Checks for input and sanitizes/saves if needed
-    $fields = ['prefix', 'first_name', 'last_name', 'role', 'phone', 'lab', 'email', 'website', 'linkedin'];
+    $fields = ['order', 'prefix', 'first_name', 'last_name', 'role', 'phone', 'lab', 'email', 'website', 'linkedin'];
     foreach ($fields as $field) {
         if( isset( $_POST[$field] ) ) {
             update_post_meta( $post_id, $field, sanitize_text_field( $_POST[$field] ) );
