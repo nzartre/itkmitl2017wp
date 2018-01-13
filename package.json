@@ -23,5 +23,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1"
+  },
+  "dependencies": {
+    "scrollreveal": "^3.3.6"
   }
 }

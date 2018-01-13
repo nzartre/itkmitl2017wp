@@ -24,6 +24,14 @@
 		<link rel="stylesheet" href="' . $owl_theme . '"><script src="' . $owl_js . '"></script>';
 	}
 	?>
+
+	<?php if (is_page('life')): ?>
+		<script type="text/javascript" src="<?php echo get_theme_file_uri("vendor/scrollreveal.min.js")?>"></script>
+		<script>
+      		window.sr = ScrollReveal();
+    	</script>
+	<?php endif; ?>
+
 	<title>
 		<?php
 
