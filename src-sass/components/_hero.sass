@@ -1,8 +1,14 @@
 // Hero section
-.hero
-	background: rgb(16, 162, 255) url("./img/hero.jpg") center/cover no-repeat
+div#hero-wrap
+	display: flex
+	flex-direction: column
 	height: 100%
 	min-height: 450px
+	div#spacer-top
+		height: 100px
+.hero
+	background: rgb(16, 162, 255) url("./img/hero.jpg") center/cover no-repeat
+	flex: 1
 	color: #fff
 	overflow: hidden
 	.overlay
@@ -47,6 +53,7 @@
 			font-size: 50px
 			line-height: 1em
 			color: #fff
+			margin-bottom: 1.6em
 	div#scroll-wrap
 		position: absolute
 		bottom: 0
@@ -89,3 +96,44 @@
 		transform: translateY(0)
 	to
 		transform: translateY(-10px)
+
+@media screen and (max-width: 768px)
+	.hero
+		.site-name
+			h1
+				font-size: 66px
+			h2
+				font-size: 38px
+				span
+					display: block
+		.secondary-nav
+			display: block
+			overflow-x: auto
+			white-space: nowrap
+			padding: 0
+			text-align: center
+			a
+				display: inline-block
+				padding: 1em 1.5em
+		video
+			display: none
+
+@media screen and (max-width: 414px)
+	div#hero-wrap
+		div#spacer-top
+			height: 57px
+	.hero
+		padding-bottom: 5em
+		div#scroll-wrap
+			padding-bottom: 2.5em
+
+@media screen and (max-height: 450px)
+	.hero
+		height: 450px
+		.overlay
+			height: 450px
+		.site-name
+			h2
+				margin-bottom: 16px
+		div#scroll-wrap
+			display: none
