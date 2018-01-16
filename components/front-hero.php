@@ -26,7 +26,12 @@
     </div>
 </div>
 <script>
-    if (window.innerWidth > 768) titleMin = 60; else titleMin = 34;
-    fitty('#hero-title', {minSize: titleMin, maxSize: 90});
+    if (window.innerWidth > 768) {
+        titleMin = 60;
+        titleMax = 90; }
+    else {
+        titleMin = 45;
+        titleMax = 55; }
+    fitty('#hero-title', {minSize: titleMin, maxSize: titleMax});
     fitty('#hero-subtitle', {minSize: 23, maxSize: 45});
 </script>
