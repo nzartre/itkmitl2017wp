@@ -1,9 +1,11 @@
 <div class="hero">
     <div class="site-name text-center">
-        <h1><?php pll_e('hero_faculty-IT'); ?></h1>
-        <h2>
-            <?php pll_e('hero_KMITL'); ?>
-        </h2>
+        <div id="hero-title-wrap">
+            <h1 id="hero-title"><?php pll_e('hero_faculty-IT'); ?></h1>
+        </div>
+        <div id="hero-subtitle-wrap">
+            <h2 id="hero-subtitle"><?php pll_e('hero_KMITL'); ?></h2>
+        </div>
     </div>
     <div class="overlay"></div>
     <video autoplay loop id="hero-video"></video>
@@ -23,3 +25,8 @@
         </div>
     </div>
 </div>
+<script>
+    if (window.innerWidth > 768) titleMin = 60; else titleMin = 34;
+    fitty('#hero-title', {minSize: titleMin, maxSize: 90});
+    fitty('#hero-subtitle', {minSize: 23, maxSize: 45});
+</script>

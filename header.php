@@ -16,17 +16,20 @@
 	<meta property="article:publisher" content="111528678864534">
 	<meta property="article:author" content="111528678864534">
 	<?php wp_head(); ?>
-	<?php if (is_front_page()) {
+
+	<?php if (is_front_page()) :
 		$owl_carousel = get_theme_file_uri('vendor/owl/assets/owl.carousel.min.css');
 		$owl_theme = get_theme_file_uri('vendor/owl/assets/owl.theme.default.min.css');
 		$owl_js = get_theme_file_uri('vendor/owl/owl.carousel.min.js');
-		echo '<link rel="stylesheet" href="' . $owl_carousel . '">
-		<link rel="stylesheet" href="' . $owl_theme . '"><script src="' . $owl_js . '"></script>';
-	}
 	?>
+		<link rel="stylesheet" href="<?php echo $owl_carousel; ?>">
+		<link rel="stylesheet" href="<?php echo $owl_theme; ?>">
+		<script type="text/javascript" src="<?php echo $owl_js; ?>"></script>
+		<script type="text/javascript" src="<?php echo get_theme_file_uri('vendor/fitty.min.js'); ?>"></script>
+	<?php endif; ?>
 
 	<?php if (is_page('life')): ?>
-		<script type="text/javascript" src="<?php echo get_theme_file_uri("vendor/scrollreveal.min.js")?>"></script>
+		<script type="text/javascript" src="<?php echo get_theme_file_uri("vendor/scrollreveal.min.js"); ?>"></script>
 		<script>
       		window.sr = ScrollReveal();
     	</script>
@@ -34,7 +37,6 @@
 
 	<title>
 		<?php
-
 		if (is_category()) {
 			echo 'Category Archive for &quot;';
 			single_cat_title();
@@ -65,11 +67,12 @@
 			echo wp_title(' | ', false, right);
 			bloginfo('name');
 		}
-
 		?>
-
 	</title>
-	<?php if (get_site_url() == 'http://www.it.kmitl.ac.th') : ?>
+
+	<?php
+	$enable_analytics = false;
+	if ($enable_analytics) : ?>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-90533167-1"></script-->
 		<!--script>
