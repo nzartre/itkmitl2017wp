@@ -4,6 +4,7 @@
 // Hero
 pll_register_string('Hero Text 1', 'hero_faculty-IT', 'hero', 0);
 pll_register_string('Hero Text 2', 'hero_KMITL', 'hero', 0);
+pll_register_string('Hero scroll', 'hero_scroll', 'hero', 0);
 
 // WordPress
 pll_register_string('Not found', 'wp_no-result-found', 'WordPress', 0);
