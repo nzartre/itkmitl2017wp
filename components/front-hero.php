@@ -7,6 +7,10 @@
             <h2 id="hero-subtitle"><?php pll_e('hero_KMITL'); ?></h2>
         </div>
     </div>
+    <div id="scroll-wrap">
+        <img src="<?php echo get_theme_file_uri('img/scroll.png'); ?>" id="scroll-icon" width="32" height="32">
+        <span id="scroll-text">scroll down</span>
+    </div>
     <div class="overlay"></div>
     <video autoplay loop id="hero-video"></video>
     <div class="container">
@@ -19,7 +23,6 @@
                     'depth'           => 0,
                     'theme_location'  => 'header',
                 );
-                
                 echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
             ?>
         </div>

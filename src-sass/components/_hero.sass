@@ -47,7 +47,21 @@
 			font-size: 50px
 			line-height: 1em
 			color: #fff
+	div#scroll-wrap
+		position: absolute
+		bottom: 0
+		z-index: 2
+		width: 100%
+		text-align: center
+		padding-bottom: 1em
+	img#scroll-icon
+		animation: scrollWiggle 0.5s infinite alternate
+	span#scroll-text
+		display: block
+		font-family: $font-main
+		margin-bottom: 1em
 	.secondary-nav
+		// unused
 		display: flex
 		justify-content: center
 		position: absolute
@@ -69,3 +83,9 @@
 			&:hover
 				background-color: rgba(255,255,255,0.8)
 				color: #000
+
+@keyframes scrollWiggle
+	from
+		transform: translateY(0)
+	to
+		transform: translateY(-10px)
