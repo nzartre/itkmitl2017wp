@@ -126,7 +126,7 @@ nav.top-nav
 		li
 			display: inline-block
 			padding: 0.6em 0
-			margin-right: 1em
+			margin-right: 3em
 			&:hover, &.active, &.current-menu-item
 				box-shadow: inset 0 -2px 0 $color-main
 				color: #000
@@ -135,6 +135,16 @@ nav.top-nav
 			a
 				color: #000
 				text-decoration: none
+
+@media screen and (max-width: 1023px)
+	.content-nav, .top-nav-secondary
+		ul
+			li:first-child
+				margin-left: 1em
+			li:last-child
+				margin-right: 1em
+			li:not(:last-child)
+				margin-right: 1em
 
 @media screen and (max-width: 768px)
 	nav.top-nav
