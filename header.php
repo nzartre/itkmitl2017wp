@@ -15,6 +15,7 @@
 	<meta property="og:site_name" content="คณะเทคโนโลยีสารสนเทศ พระจอมเกล้าลาดกระบัง">
 	<meta property="article:publisher" content="111528678864534">
 	<meta property="article:author" content="111528678864534">
+	<meta name="theme-color" content="#1c86f2">
 	<?php wp_head(); ?>
 
 	<?php if (is_front_page()) :
