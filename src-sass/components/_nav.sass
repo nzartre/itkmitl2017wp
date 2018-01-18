@@ -77,20 +77,28 @@ nav.top-nav
 	display: none
 	overflow-y: auto
 	ul
+		text-align: center
 		li
-			padding: 1em 0
-			border-bottom: 1px solid #e6e6e6
+			border-bottom: 1px solid rgb(45, 86, 158)+65
 			color: #fff
-			//&:last-of-type
-				border-bottom: none
-			&:hover
+			transition: all .2s
+			&:hover:not(.nohover)
 				font-weight: bold
+				color: $color-main
+				background-color: #fff
+				a
+					color: $color-main
 			a
+				display: block
+				padding: 1em 0
 				text-decoration: none
 				color: #fff
 		&:last-child
 			li:last-child
 				border-bottom: none
+		ul:not(.unstyled)
+			margin-left: 1.3em
+			margin-right: 1.3em
 .top-nav-secondary
 	position: fixed
 	top: 59px

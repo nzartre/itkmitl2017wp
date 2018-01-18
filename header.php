@@ -144,15 +144,28 @@
 </nav>
 <div class="mobile-nav">
 	<ul class="unstyled">
-		<li data-component="modal" data-target="#search-modal"><?php pll_e('func_search'); ?></li>
+		<li data-component="modal" data-target="#search-modal">
+			<a><?php pll_e('func_search'); ?></a>
+		</li>
 		<?php
-		$top_menu = array(
+		$mobile_top = array(
 			'menu_class' => 'unstyled',
 			'theme_location' => 'primary',
 		);
-		wp_nav_menu($top_menu);
+		wp_nav_menu($mobile_top);
 		?>
-		<li><?php pll_e('func_language'); ?></li>
+		<?php
+		$mobile_header = array(
+			'menu_class' => 'unstyled',
+			'container' => false,
+			'depth' => 0,
+			'theme_location' => 'header',
+		);
+		wp_nav_menu($mobile_header);
+		?>
+		<li class="nohover">
+			<a><?php pll_e('func_language'); ?></a>
+		</li>
 		<ul>
 			<?php pll_the_languages(); ?>
 		</ul>
