@@ -7,8 +7,8 @@ if (have_posts()) :
 
         <section class="single">
             <div class="page-content">
-                <div class="container">
-                    <h3 style="margin-top: 2em"><?php the_title(); ?></h3>
+                <div class="staff_card">
+                    <h3><?php the_title(); ?></h3>
                     <div class="col-group">
                         <div class="col-12 col-dt-9">
                             <?php $meta = get_post_meta($post->ID); ?>
@@ -41,7 +41,7 @@ if (have_posts()) :
                             <?php the_content(); ?>
                         </div><!-- post content -->
                     </div><!-- .col-group -->
-                </div><!-- .container -->
+                </div><!-- .staff_card -->
             </div><!-- .page-content -->
         </section>
 
