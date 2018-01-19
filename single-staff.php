@@ -3,44 +3,61 @@
 get_header();
 
 if (have_posts()) :
-    while (have_posts()) : the_post(); ?>
+    while (have_posts()) : the_post();
+        $meta = get_post_meta($post->ID);
 
-        <section class="single">
+        ?>
+
+        <section class="single" style="background-color: #f6f6f6">
             <div class="page-content">
                 <div class="staff_card">
-                    <h3><?php the_title(); ?></h3>
-                    <div class="col-group">
-                        <div class="col-12 col-dt-9">
-                            <?php $meta = get_post_meta($post->ID); ?>
-                            <table class="stack-on-tl" style="margin-top: 1em">
-                                <tr>
-                                    <th>ตำแหน่ง</th>
-                                    <td><?php echo $meta['role'][0]; ?></td>
-                                </tr>
-                                <tr>
-                                    <th>โทรศัพท์</th>
-                                    <td><?php echo $meta['phone'][0]; ?></td>
-                                </tr>
-                                <tr>
-                                    <th>ห้อง</th>
-                                    <td><?php echo $meta['lab'][0]; ?></td>
-                                </tr>
-                                <tr>
-                                    <th>อีเมล</th>
-                                    <td><?php echo $meta['email'][0]; ?></td>
-                                </tr>
-                                <tr>
-                                    <th>เว็บไซต์</th>
-                                    <td><?php echo $meta['website'][0]; ?></td>
-                                </tr>
-                                <tr>
-                                    <th>LinkedIn</th>
-                                    <td><?php echo $meta['linkedin'][0]; ?></td>
-                                </tr>
-                            </table>
+                    <header>
+                        <?php the_post_thumbnail($class = 'avatar'); ?>
+                        <h1 class="name text-center"><?php the_title(); ?></h1>
+                        <h2 class="role text-center"><?php echo $meta['role'][0]; ?></h2>
+                        <?php if ($meta['lab'][0]) : ?>
+                            <div class="office">
+                                <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-lab.png') ?>" alt="office">
+                                <?php echo $meta['lab'][0]; ?>
+                            </div>
+                        <?php endif; ?>
+                    </header>
+                    <div class="container">
+                        <?php
+                        // add meta to display in metaList
+                        $metaList = ['phone', 'email'];
+                        foreach ($metaList as $item) :
+                            if ($meta[$item][0]) :
+                                ?>
+                                <div class="meta-box">
+                                    <div class="icon-box">
+                                        <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-' . $item . '.png') ?>"
+                                             alt="<?php echo $item; ?>">
+                                    </div>
+                                    <div class="data"><?php echo $meta[$item][0]; ?></div>
+                                </div>
+                            <?php endif;
+                        endforeach;
+                        ?>
+                        <div class="links-box">
+                            <?php
+                            $links = ['website', 'linkedin'];
+                            foreach ($links as $link) :
+                                if ($meta[$link][0]) :
+                                    ?>
+                                    <a href="<?php echo $meta[$link][0]; ?>" title="<?php echo $link; ?>">
+                                        <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-' . $link . '.png') ?>"
+                                             alt="<?php echo $link; ?>">
+                                    </a>
+                                <?php endif;
+                            endforeach;
+                            ?>
+                        </div>
+                        <hr>
+                        <div style="font-size: 14px">
                             <?php the_content(); ?>
-                        </div><!-- post content -->
-                    </div><!-- .col-group -->
+                        </div>
+                    </div><!-- .container -->
                 </div><!-- .staff_card -->
             </div><!-- .page-content -->
         </section>

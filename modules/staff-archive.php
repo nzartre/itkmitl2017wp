@@ -72,7 +72,7 @@
                     <span id="role"></span>
                     <div class="contact-wrap">
                         <div id="email-wrap">
-                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-mail.png') ?>" alt="mail" class="icon">
+                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-email.png') ?>" alt="mail" class="icon">
                             <span class="meta-detail" id="email"></span>
                         </div>
                         <div id="website-wrap">
