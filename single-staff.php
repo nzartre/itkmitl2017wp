@@ -53,7 +53,6 @@ if (have_posts()) :
                             endforeach;
                             ?>
                         </div>
-                        <hr>
                         <div style="font-size: 14px">
                             <?php the_content(); ?>
                         </div>

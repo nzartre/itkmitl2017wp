@@ -18,15 +18,14 @@
                     $lecturer_query = new WP_Query($lecturer_query_args);
                     if ($lecturer_query->have_posts()) :
                         while ($lecturer_query->have_posts()) : $lecturer_query->the_post(); ?>
-                            <div class="card person-card" id="<?php echo 'staff-' . get_the_id(); ?>"
-                                 onclick="showStaffModal(<?php echo get_the_id(); ?>);">
+                            <a class="card person-card" href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail('full', array('id' => 'staff-' . get_the_id() . '-img')); ?>
                                 <div class="padded">
                                     <h3><?php echo get_post_meta(get_the_id(), 'prefix', true) . ' ' . get_post_meta(get_the_id(), 'first_name', true); ?></h3>
                                     <p class="role"><?php echo get_post_meta(get_the_id(), 'role', true); ?></p>
                                     <p class="email"><?php echo get_post_meta(get_the_id(), 'email', true); ?></p>
                                 </div>
-                            </div>
+                            </a>
                         <?php endwhile; endif; ?>
                 </div><!-- .staff-wrap -->
                 <hr class="more-space">
@@ -43,14 +42,13 @@
                     $staff_query = new WP_Query($staff_query_args);
                     if ($staff_query->have_posts()) :
                         while ($staff_query->have_posts()) : $staff_query->the_post(); ?>
-                            <div class="card person-card" id="<?php echo 'staff-' . get_the_id(); ?>"
-                                 onclick="showStaffModal(<?php echo get_the_id(); ?>);">
+                            <a class="card person-card" href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail('full', array('id' => 'staff-' . get_the_id() . '-img')); ?>
                                 <div class="padded">
                                     <h3><?php echo get_post_meta(get_the_id(), 'prefix', true) . get_post_meta(get_the_id(), 'first_name', true); ?></h3>
                                     <p class="email"><?php echo get_post_meta(get_the_id(), 'email', true) ?></p>
                                 </div>
-                            </div>
+                            </a>
                         <?php endwhile; endif; ?>
                 </div><!-- .staff-wrap -->
             </div><!-- .container -->
@@ -58,6 +56,7 @@
     </div><!-- .page-content -->
 </section>
 
+<!-- MODAL IS UNUSED -->
 <div id="staff-modal" class="modal-box staff-modal hide">
     <div class="modal">
         <span class="close"></span>
@@ -72,19 +71,24 @@
                     <span id="role"></span>
                     <div class="contact-wrap">
                         <div id="email-wrap">
-                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-email.png') ?>" alt="mail" class="icon">
+                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-email.png') ?>" alt="mail"
+                                 class="icon">
                             <span class="meta-detail" id="email"></span>
                         </div>
                         <div id="website-wrap">
-                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-website.png') ?>" alt="website" class="icon">
-                            <span class="meta-detail" id="website"><a href="#" id="website-link" target="_blank"></a></span>
+                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-website.png') ?>" alt="website"
+                                 class="icon">
+                            <span class="meta-detail" id="website"><a href="#" id="website-link"
+                                                                      target="_blank"></a></span>
                         </div>
                         <div id="phone-wrap">
-                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-phone.png') ?>" alt="phone" class="icon">
+                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-phone.png') ?>" alt="phone"
+                                 class="icon">
                             <span class="meta-detail" id="phone"></span>
                         </div>
                         <div id="lab-wrap">
-                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-lab.png') ?>" alt="lab" class="icon">
+                            <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-lab.png') ?>" alt="lab"
+                                 class="icon">
                             <span class="meta-detail" id="lab"></span>
                         </div>
                     </div>
@@ -95,6 +99,7 @@
     </div>
 </div>
 
+<!-- MODAL IS UNUSED -->
 <script>
     var staff;
 
