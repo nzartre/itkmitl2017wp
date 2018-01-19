@@ -3,6 +3,7 @@ get_header();
 
 get_template_part( 'components/front', 'hero' );
 get_template_part( 'components/front', 'detail' );
+get_template_part( 'components/front', 'prize' );
 get_template_part( 'components/front', 'news' );
 get_template_part( 'components/front', 'info' );
 

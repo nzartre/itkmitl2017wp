@@ -1,0 +1,1 @@
+<h1>This is Prize Section Placeholder</h1>
