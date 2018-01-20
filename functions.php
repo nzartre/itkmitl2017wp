@@ -37,15 +37,6 @@ function wpdocs_excerpt_more($more) {
 
 add_filter('excerpt_more', 'wpdocs_excerpt_more');
 
-function itkmitl_redirect_post() {
-    if (is_single() && 'staff' == get_query_var('post_type')) {
-        wp_redirect(get_post_type_archive_link('staff'), 301);
-        exit;
-    }
-}
-
-add_action('template_redirect', 'itkmitl_redirect_post');
-
 function itkmitl_cpt_search($query) {
     if ($query->is_search) $query->set('post_type', array('post', 'page', 'staff', 'publications'));
     return $query;

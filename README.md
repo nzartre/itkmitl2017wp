@@ -25,5 +25,8 @@ A 2017 WordPress theme for Faculty of Information Technology, King Mongkut's Ins
 * Gulp
 * WordPress installed on local server
 
-## Style-related Development
-For stylesheet-related development, edit the files in `src-sass` folder and run `gulp` to enable live compilation of Sass.
+## Sass Development
+For Sass-related development, edit the files in `src-sass` folder and run `gulp` to enable live compilation of Sass.
+
+## JS Development
+For JavaScript-related development, edit the file `script/main.src.js` and also run `gulp` to enable live minification.
