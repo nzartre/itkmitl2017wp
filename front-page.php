@@ -3,7 +3,7 @@ get_header();
 
 get_template_part( 'components/front', 'hero' );
 get_template_part( 'components/front', 'detail' );
-get_template_part( 'components/front', 'prize' );
+get_template_part( 'components/front', 'achievement' );
 get_template_part( 'components/front', 'news' );
 get_template_part( 'components/front', 'info' );
 
@@ -35,6 +35,16 @@ get_footer();
                 720: {items: 3, nav: 1},
                 1280: {items: 4, nav: 1}
             }
+        });
+        $('#home-achievement').owlCarousel({
+            center: true,
+            margin: 10,
+            loop: 1,
+            lazyLoad: 1,
+            dots: 0,
+            navText: ['&larr;', '&rarr;'],
+            items: 1,
+            nav: 1
         });
     });
 </script>
