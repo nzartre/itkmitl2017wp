@@ -17,6 +17,17 @@ jQuery(document).ready(function ($) {
         $('.overlay').css('top', overlayHeight+shift);
         $('.hero .wrapper').css('top', wrapperHeight+shift);
     }
+
+    function wpadminbarScroll() {
+        if (jQuery('#wpadminbar').length && jQuery('#wpadminbar').css('position') == 'absolute') {
+            
+            tHeight = jQuery('.top-nav').outerHeight(true);
+            adminHeight = jQuery('#wpadminbar').outerHeight();
+
+            jQuery('.top-nav').css('top', Math.max(adminHeight-jQuery(document).scrollTop(), 0));
+            jQuery('.top-nav-secondary').css('top', tHeight+Math.max(adminHeight-jQuery(document).scrollTop(), 0));
+        }
+    }
     
     wpadminbarHandler();
     //end wpadminbar handler
@@ -38,9 +49,16 @@ jQuery(document).ready(function ($) {
 
     jQuery(window).on('resize', function () {
         wpadminbarHandler();
+        wpadminbarScroll();
     });
 
+    jQuery(document).scroll(function() {
+        wpadminbarHandler();
+        wpadminbarScroll();
+    })
+
 });
+
 console.log("%cOoooooooh!", "color: blue; font-size: xx-large; font-weight: bold");
 console.log("%cWanna sneak into our code? Feel free!", "color: blue; font-size: x-large;");
 console.log("%cIT KMITL web developer", "color: orange; font-size: large");
