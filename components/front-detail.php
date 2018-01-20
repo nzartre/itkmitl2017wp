@@ -1,3 +1,4 @@
+<div data-aos="fade-up">
 <section style="background-color: #f6f6f6">
     <div class="container">
         <div class="col-group">
@@ -34,3 +35,4 @@
         </div>
     </div>
 </section>
+</div>
