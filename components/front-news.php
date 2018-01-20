@@ -14,7 +14,7 @@
             ?>
                 <div class="wrapper">
                 <div class="col-group">
-                    <div class="col-12 canvas">
+                    <div class="canvas">
                         <?php the_post_thumbnail( 'full', array('class' => 'featured-image', 'id' => 'achievement-image')); ?>                    
                     </div>
                     <div class="col-9 col-dt-4 text">
