@@ -3,7 +3,24 @@ jQuery(document).ready(function ($) {
     if ($('#main-feat-image').height() > $('#main-feat-image').width()) {
         $('#main-feat-image').style('max-width', '400px');
     }
+
+    //wpadminbar handler
+    navHeight = parseInt($('.top-nav').css('top'));
+    secondNavHeight = parseInt($('.top-nav-secondary').css('top'));
+    overlayHeight = parseInt($('.overlay').css('top'));
+    wrapperHeight = parseInt($('.hero .wrapper').css('top'));
+
+    function wpadminbarHandler() {
+        shift = $('#wpadminbar').outerHeight(true);
+        $('.top-nav').css('top', navHeight+shift);
+        $('.top-nav-secondary').css('top', secondNavHeight+shift);
+        $('.overlay').css('top', overlayHeight+shift);
+        $('.hero .wrapper').css('top', wrapperHeight+shift);
+    }
     
+    wpadminbarHandler();
+    //end wpadminbar handler
+
     $('.nav-chevron').click(function (){
         $('.mobile-nav').toggle();
     });
@@ -17,6 +34,10 @@ jQuery(document).ready(function ($) {
     $('html').click(function (e) {
         if (e.target.id != 'lang-switch' && e.target.id != 'lang-switch-caret') $('#lang-list').removeClass('show');
         else $('#lang-list').toggleClass('show');
+    });
+
+    jQuery(window).on('resize', function () {
+        wpadminbarHandler();
     });
 
 });
