@@ -1,6 +1,6 @@
 <section id="home-banner">
-    <div data-aos="fade-right">
     <div class="col-group banner-row">
+    <div data-aos="fade-right">
         <div class="col-12 col-dt-8">
             <img class="banner clip" src="<?php echo get_theme_file_uri('img/home-banner-1.jpg') ?>">
         </div>
@@ -13,8 +13,8 @@
         </div>
     </div><!-- .col-group .banner-row -->
     </div>
-    <div data-aos="fade-left">
     <div class="col-group banner-row">
+    <div data-aos="fade-right">
         <div class="col-12 col-dt-8 push-last">
             <img class="banner clip clip-left" src="<?php echo get_theme_file_uri('img/home-banner-2.jpg') ?>">
         </div>
@@ -27,8 +27,8 @@
         </div>
     </div><!-- .col-group .banner-row -->
     </div>
-    <div data-aos="fade-right">
     <div class="col-group banner-row">
+    <div data-aos="fade-right">
         <div class="col-12 col-dt-8">
             <img class="banner clip" src="<?php echo get_theme_file_uri('img/home-banner-3.jpg') ?>">
         </div>
