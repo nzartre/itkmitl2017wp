@@ -45,7 +45,7 @@
                         <h3><?php the_title(); ?></h3>
                         <p><?php echo this_excerpt(200); ?></p>
                         <a href="<?php echo get_the_permalink() ?>"
-                           class="button round"><?php pll_e('misc_read-more'); ?></a>
+                           class="button round outline"><?php pll_e('misc_read-more'); ?></a>
                     </div>
                 </div>
 
