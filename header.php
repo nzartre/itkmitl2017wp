@@ -27,6 +27,7 @@
 		<link rel="stylesheet" href="<?php echo $owl_theme; ?>">
 		<script type="text/javascript" src="<?php echo $owl_js; ?>"></script>
 		<script type="text/javascript" src="<?php echo get_theme_file_uri('vendor/fitty.min.js'); ?>"></script>
+		<script type="text/javascript" src="<?php echo get_theme_file_uri("scripts/aos.js"); ?>"></script>
 	<?php endif; ?>
 
 	<?php if (is_page('life')): ?>

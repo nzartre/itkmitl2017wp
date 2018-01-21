@@ -63,3 +63,4 @@ console.log("%cOoooooooh!", "color: blue; font-size: xx-large; font-weight: bold
 console.log("%cWanna sneak into our code? Feel free!", "color: blue; font-size: x-large;");
 console.log("%cIT KMITL web developer", "color: orange; font-size: large");
 console.log("lelelelelelelelelelelelelelelel");
+AOS.init();

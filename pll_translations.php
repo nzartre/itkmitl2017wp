@@ -38,6 +38,7 @@ pll_register_string('Home: Training details', 'home_training_details', 'home', 1
 pll_register_string('Home: Travel details', 'home_travel_details', 'home', 1);
 
 pll_register_string('Home: News & Updates', 'home_news-updates', 'home', 0);
+pll_register_string('Home: Achievements', 'home_achievements', 'home', 0);
 pll_register_string('Home: Banner 1: Courses', 'home_banner1', 'home', 0);
 pll_register_string('Home: Banner 2: Research', 'home_banner2', 'home', 0);
 
