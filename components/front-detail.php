@@ -1,6 +1,3 @@
-<script type="text/javascript">
-    if(window.innerWidth )
-</script>
 <section style="background-color: #f6f6f6">
     <div class="container">
         <div class="col-group">
