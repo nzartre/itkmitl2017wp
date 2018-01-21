@@ -1,5 +1,5 @@
 <section style="background-color: #d7d7d7" id="home-news-section">
-    <h1 class="title"><?php pll_e('home_news-updates'); ?></h1>
+    <h1 class="title"><?php pll_e('home_achievements'); ?></h1>
     <div id="achievement-section">
         <div class="owl-carousel owl-theme" id="home-achievement">
             <?php
@@ -27,6 +27,7 @@
             <?php endwhile; endif; ?>
         </div>
     </div><!-- #achievement-section -->
+    <h1 class="title"><?php pll_e('home_news-updates'); ?></h1>
     <div class="owl-carousel owl-theme" id="home-news">
         <?php
         $the_query = new WP_Query(array(
