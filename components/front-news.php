@@ -66,7 +66,7 @@
         else: echo '<p class="text-center">no post</p>';
         endif;
     ?>
-
+    </div>
     </div>
     <div style="text-align: center; margin: 2em 1em 1em">
         <a href="/category/news" class="button outline"><?php pll_e('misc_view-all-news'); ?></a>

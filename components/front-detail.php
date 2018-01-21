@@ -1,6 +1,10 @@
+<script type="text/javascript">
+    if(window.innerWidth )
+</script>
 <section style="background-color: #f6f6f6">
     <div class="container">
         <div class="col-group">
+            <div data-aos="fade-up" >
             <div class="col-12 col-dt-4">
                 <div class="card">
                     <div class="padded">
@@ -31,6 +35,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </section>

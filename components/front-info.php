@@ -1,4 +1,5 @@
 <section id="home-banner">
+    <div data-aos="fade-right">
     <div class="col-group banner-row">
         <div class="col-12 col-dt-8">
             <img class="banner clip" src="<?php echo get_theme_file_uri('img/home-banner-1.jpg') ?>">
@@ -11,6 +12,8 @@
             </div>
         </div>
     </div><!-- .col-group .banner-row -->
+    </div>
+    <div data-aos="fade-right">
     <div class="col-group banner-row">
         <div class="col-12 col-dt-8 push-last">
             <img class="banner clip clip-left" src="<?php echo get_theme_file_uri('img/home-banner-2.jpg') ?>">
@@ -23,6 +26,8 @@
             </div>
         </div>
     </div><!-- .col-group .banner-row -->
+    </div>
+    <div data-aos="fade-right">
     <div class="col-group banner-row">
         <div class="col-12 col-dt-8">
             <img class="banner clip" src="<?php echo get_theme_file_uri('img/home-banner-3.jpg') ?>">
@@ -35,4 +40,8 @@
             </div>
         </div>
     </div><!-- .col-group .banner-row -->
+    </div>
 </section><!-- section#home-banner -->
+
+<link rel="stylesheet"  href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"/>
+<!-- <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> -->
