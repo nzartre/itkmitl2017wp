@@ -14,7 +14,7 @@ get_footer();
     function heroVideo() {
         if (window.innerWidth > 768 && window.innerHeight < window.innerWidth) {
             var browser = detectBrowser();
-            var browsers = ['ie', 'firefox'];
+            var browsers = ['ie'];
             if (browsers.indexOf(browser.name) == -1) {
                 var heroVideo = document.createElement('source');
                 heroVideo.setAttribute('src', '<?php echo get_theme_file_uri('img/itkmitl-h264.mp4'); ?>');
