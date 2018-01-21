@@ -13,8 +13,8 @@
         </div>
     </div><!-- .col-group .banner-row -->
     </div>
-    <div class="col-group banner-row">
     <div data-aos="fade-right">
+    <div class="col-group banner-row">
         <div class="col-12 col-dt-8 push-last">
             <img class="banner clip clip-left" src="<?php echo get_theme_file_uri('img/home-banner-2.jpg') ?>">
         </div>
