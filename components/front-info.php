@@ -1,6 +1,6 @@
 <section id="home-banner">
-    <div class="col-group banner-row">
     <div data-aos="fade-right">
+    <div class="col-group banner-row">
         <div class="col-12 col-dt-8">
             <img class="banner clip" src="<?php echo get_theme_file_uri('img/home-banner-1.jpg') ?>">
         </div>
@@ -27,8 +27,8 @@
         </div>
     </div><!-- .col-group .banner-row -->
     </div>
-    <div class="col-group banner-row">
     <div data-aos="fade-right">
+    <div class="col-group banner-row">
         <div class="col-12 col-dt-8">
             <img class="banner clip" src="<?php echo get_theme_file_uri('img/home-banner-3.jpg') ?>">
         </div>
