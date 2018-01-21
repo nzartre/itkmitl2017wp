@@ -1,5 +1,6 @@
 <section style="background-color: #d7d7d7" id="home-news-section">
     <h1 class="title"><?php pll_e('home_news-updates'); ?></h1>
+    <div data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="500">
     <?php
         $the_query = new WP_Query(array(
             'posts_per_page' => 5,
