@@ -11,7 +11,7 @@
                     $lecturer_query_args = array(
                         'post_type' => 'staff',
                         'staff_position' => 'lecturer',
-                        'no_paging' => true,
+                        'nopaging' => true,
                         'order' => 'ASC',
                         'orderby' => 'meta_value_num',
                         'meta_key' => 'order');
@@ -35,7 +35,7 @@
                     $staff_query_args = array(
                         'post_type' => 'staff',
                         'staff_position' => 'supportive-staff',
-                        'no_paging' => true,
+                        'nopaging' => true,
                         'order' => 'ASC',
                         'orderby' => 'meta_value_num',
                         'meta_key' => 'order');
