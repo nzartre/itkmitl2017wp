@@ -34,6 +34,7 @@ jQuery(document).ready(function ($) {
 
     $('.nav-chevron').click(function (){
         $('.mobile-nav').toggle();
+        $('.nav-chevron').toggleClass('active');
     });
 
     window.onload = function () {
