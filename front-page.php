@@ -2,7 +2,6 @@
 get_header();
 
 get_template_part( 'components/front', 'hero' );
-get_template_part( 'components/front', 'detail' );
 get_template_part( 'components/front', 'news' );
 get_template_part( 'components/front', 'info' );
 
@@ -15,7 +14,7 @@ get_footer();
         if (window.innerWidth > 768 && window.innerHeight < window.innerWidth) {
             var browser = detectBrowser();
             var browsers = ['ie'];
-            if (browsers.indexOf(browser.name) == -1) {
+            if (browsers.indexOf(browser.name) == -1 && window.location.host != 'localhost') {
                 var heroVideo = document.createElement('source');
                 heroVideo.setAttribute('src', '<?php echo get_theme_file_uri('img/itkmitl-h264.mp4'); ?>');
                 heroVideo.setAttribute('type', 'video/mp4');
@@ -31,7 +30,7 @@ get_footer();
     });
     
     jQuery(document).ready(function( $ ) {
-        $('#home-news').owlCarousel({
+        /*$('#home-news').owlCarousel({
             center: true,
             margin: 10,
             loop: 1,
@@ -43,16 +42,16 @@ get_footer();
                 720: {items: 3, nav: 1},
                 1280: {items: 4, nav: 1}
             }
-        });
+        });*/
         $('#home-achievement').owlCarousel({
             center: true,
             margin: 10,
             loop: 1,
             lazyLoad: 1,
-            dots: 0,
+            dots: 1,
             navText: ['&larr;', '&rarr;'],
             items: 1,
-            nav: 1
+            nav: 0
         });
     });
 </script>
