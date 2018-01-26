@@ -11,7 +11,10 @@
             while ($the_query->have_posts()) : $the_query->the_post();
                 $thumbnail = get_the_post_thumbnail_url();
                 ?>
-                <div class="canvas" style="background-image: url('<?php echo $thumbnail; ?>')">
+                <div class="canvas">
+                    <?php if (has_post_thumbnail()) {
+                        the_post_thumbnail('home_slider', array('class' => 'featured-image'));
+                    } ?>
                     <div class="text-box">
                         <h3>
                             <?php the_title(); ?>
@@ -45,7 +48,7 @@
                         <a href="<?php echo get_the_permalink() ?>" class="card news-card">
                             <picture>
                                 <?php if (has_post_thumbnail()) {
-                                    the_post_thumbnail('medium', array('class' => 'featured-image', 'id' => 'main-feat-image'));
+                                    the_post_thumbnail('medium', array('class' => 'featured-image'));
                                 } ?>
                             </picture>
                             <div class="padded">

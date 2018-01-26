@@ -9,20 +9,18 @@ section
 		#achievement
 			margin-bottom: 2em
 			.canvas
-				height: 550px
-				background-size: cover
-				background-position: center
-				border-radius: 5px
-			.text-box
-				position: absolute
-				bottom: 0
-				left: 0
-				padding: 1em
-				margin: 1em
-				background: rgba(255, 255, 255, 0.9)
-				backdrop-filter: blur(10px)
-				border-radius: 25px
-				max-width: 700px
+				img.featured-image
+					display: block
+				.text-box
+					position: absolute
+					bottom: 0
+					left: 0
+					padding: 1em
+					margin: 1em
+					background: rgba(255, 255, 255, 0.9)
+					backdrop-filter: blur(10px)
+					border-radius: 25px
+					max-width: 700px
 		#news
 			article
 				padding-right: 0
@@ -87,6 +85,14 @@ section
 					display: none
 
 @media screen and (max-width: 991px)
+	section#home-news-section
+		#achievement
+			.text-box
+				position: relative
+				max-width: none
+				margin: 0
+				border-radius: 0
+				text-align: center
 	section#home-banner
 		.banner-row
 			display: block
@@ -101,13 +107,6 @@ section
 
 @media screen and (max-width: 719px)
 	section#home-news-section
-		#achievement
-			.canvas
-				height: 420px
-			.text-box
-				margin: 0
-				border-radius: 0
-				text-align: center
 		#news
 			article
 				width: 100%
