@@ -87,12 +87,13 @@ section
 @media screen and (max-width: 991px)
 	section#home-news-section
 		#achievement
-			.text-box
-				position: relative
-				max-width: none
-				margin: 0
-				border-radius: 0
-				text-align: center
+			.canvas
+				.text-box
+					position: relative
+					max-width: none
+					margin: 0
+					border-radius: 0
+					text-align: center
 	section#home-banner
 		.banner-row
 			display: block
@@ -114,9 +115,9 @@ section
 					padding-bottom: 0
 
 @media screen and (max-width: 414px)
-	section
-		&.home-news-section
-			#achievement
-				.canvas
+	section#home-news-section
+		#achievement
+			.canvas
+				.text-box
 					p.excerpt
 						display: none
