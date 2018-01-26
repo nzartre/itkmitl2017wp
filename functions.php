@@ -1,6 +1,7 @@
 <?php
 // Theme Support
 add_theme_support('post-thumbnails');
+add_image_size('home_slider', 1300, 550, true);
 
 // Registration Section
 function home_inc() {
