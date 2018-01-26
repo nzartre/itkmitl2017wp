@@ -27,7 +27,7 @@
 		<link rel="stylesheet" href="<?php echo $owl_theme; ?>">
 		<script type="text/javascript" src="<?php echo $owl_js; ?>"></script>
 		<script type="text/javascript" src="<?php echo get_theme_file_uri('vendor/fitty.min.js'); ?>"></script>
-		<script type="text/javascript" src="<?php echo get_theme_file_uri("scripts/aos.js"); ?>"></script>
+		<script type="text/javascript" src="<?php echo get_theme_file_uri('vendor/aos.js'); ?>"></script>
 	<?php endif; ?>
 
 	<?php if (is_page('life')): ?>
@@ -84,8 +84,7 @@
 
 			gtag('config', 'UA-90533167-1');
 		</script-->
-	<?php endif; ?>
-	<?php
+	<?php endif;
 	$enable_hotjar = false;
 	if ($enable_hotjar) : ?>
 		<script>

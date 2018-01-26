@@ -1,3 +1,4 @@
+<!-- Unused as of 25 Jan 2018 -->
 <section style="background-color: #f6f6f6">
     <div class="container">
         <div class="col-group">
