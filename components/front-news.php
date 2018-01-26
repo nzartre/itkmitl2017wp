@@ -20,7 +20,7 @@
                             <?php the_title(); ?>
                         </h3>
                         <p class="excerpt">
-                            <?php echo this_excerpt(10); ?>
+                            <?php echo this_excerpt(100); ?>
                         </p>
                         <a href="<?php echo get_the_permalink() ?>" class="button round">
                             <?php pll_e('misc_read-more'); ?>
