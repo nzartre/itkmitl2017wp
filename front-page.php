@@ -10,6 +10,7 @@ get_footer();
 
 <script src="<?php echo get_theme_file_uri('scripts/detectbrowser.js'); ?>"></script>
 <script>
+    AOS.init();
     function heroVideo() {
         if (window.innerWidth > 768 && window.innerHeight < window.innerWidth) {
             var browser = detectBrowser();
