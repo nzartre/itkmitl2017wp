@@ -30,7 +30,6 @@
                                 if (!$is_first_year) echo "<div class=\"collapse-box hide\" id=\"$current_year\">";
                                 else echo "<div class=\"collapse-box\" id=\"$current_year\">";
                                 echo "
-                                        <h1 class=\"label year-label big strong\">$current_year</h1>
                                         <div style=\"overflow-x: auto;margin-bottom: 1em;\">
                                         <table class=\"striped\" style=\"min-width: 530px;\">
                                         <thead>
@@ -66,10 +65,5 @@
     </div>
 </section>
 <style>
-    @media screen and (max-width: 414px) {
-        h1.year-label {
-            display: block;
-            text-align: center;
-        }
-    }
+    @media screen and (max-width: 414px) {.collapse-toggle {text-align: center;}}
 </style>
