@@ -17,7 +17,7 @@ if (have_posts()) :
                         <h2 class="role text-center"><?php echo $meta['role'][0]; ?></h2>
                         <?php if ($meta['lab'][0]) : ?>
                             <div class="office">
-                                <img src="<?php echo get_theme_file_uri('img/staff-icn/icon-lab.png') ?>" alt="office">
+                                <i class="fas fa-building"></i>
                                 <?php echo $meta['lab'][0]; ?>
                             </div>
                         <?php endif; ?>
