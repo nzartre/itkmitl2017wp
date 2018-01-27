@@ -12,7 +12,7 @@ if (have_posts()) :
             <div class="page-content">
                 <div class="staff_card">
                     <header>
-                        <?php the_post_thumbnail($class = 'avatar'); ?>
+                        <?php the_post_thumbnail('thumbnail', ['class' => 'avatar']); ?>
                         <h1 class="name text-center"><?php the_title(); ?></h1>
                         <h2 class="role text-center"><?php echo $meta['role'][0]; ?></h2>
                         <?php if ($meta['lab'][0]) : ?>

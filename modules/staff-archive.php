@@ -19,7 +19,7 @@
                     if ($lecturer_query->have_posts()) :
                         while ($lecturer_query->have_posts()) : $lecturer_query->the_post(); ?>
                             <a class="card person-card" href="<?php the_permalink(); ?>">
-                                <?php the_post_thumbnail('full', array('id' => 'staff-' . get_the_id() . '-img')); ?>
+                                <?php the_post_thumbnail('medium', array('id' => 'staff-' . get_the_id() . '-img')); ?>
                                 <div class="padded">
                                     <h3><?php echo get_post_meta(get_the_id(), 'prefix', true) . ' ' . get_post_meta(get_the_id(), 'first_name', true); ?></h3>
                                     <p class="role"><?php echo get_post_meta(get_the_id(), 'role', true); ?></p>
@@ -43,7 +43,7 @@
                     if ($staff_query->have_posts()) :
                         while ($staff_query->have_posts()) : $staff_query->the_post(); ?>
                             <a class="card person-card" href="<?php the_permalink(); ?>">
-                                <?php the_post_thumbnail('full', array('id' => 'staff-' . get_the_id() . '-img')); ?>
+                                <?php the_post_thumbnail('medium', array('id' => 'staff-' . get_the_id() . '-img')); ?>
                                 <div class="padded">
                                     <h3><?php echo get_post_meta(get_the_id(), 'prefix', true) . get_post_meta(get_the_id(), 'first_name', true); ?></h3>
                                     <p class="email"><?php echo get_post_meta(get_the_id(), 'email', true) ?></p>
