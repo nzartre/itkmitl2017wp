@@ -114,7 +114,10 @@
 		</div>
 		<div class="nav-links">
 				<span class="normal-links">
-					<a href="#" data-component="modal" data-target="#search-modal"><?php pll_e('func_search'); ?></a>
+					<a href="#" data-component="modal" data-target="#search-modal">
+                        <span class="typcn typcn-zoom"></span>
+                        <?php pll_e('func_search'); ?>
+                    </a>
 					<?php
 					$menuParameters = array(
 						'container' => false,
@@ -128,7 +131,7 @@
 				</span>
 			<span class="bold-links">
                 <a id="lang-switch">
-                    <span class="typcn typcn-world" id="lang-switch-icon"></span>
+                    <i class="fas fa-language" id="lang-switch-icon"></i>
                     <span class="caret down" id="lang-switch-caret"></span>
                 </a>
             </span>
