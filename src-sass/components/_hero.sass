@@ -11,8 +11,6 @@ div#hero-wrap
 	flex: 1
 	color: #fff
 	overflow: hidden
-
-	// new solution
 	.wrapper
 		width: 100%
 		height: 100%
@@ -31,29 +29,13 @@ div#hero-wrap
 		width: auto
 		height: auto
 		z-index: 0
-		-webkit-transition: 1s opacity
 		transition: 1s opacity
-	//end solution
-
-
 	.overlay
 		background-color: rgba(11, 84, 131, 0.25)
 		width: 100%
 		height: 100%
 		position: absolute
 		z-index: 1
-	// video
-	// 	position: relative
-	// 	top: 50%
-	// 	left: 50%
-	// 	min-width: 100%
-	// 	min-height: 100%
-	// 	max-width: initial
-	// 	width: auto
-	// 	height: auto
-	// 	z-index: 0
-	// 	transform: translateX(-50%) translateY(-100%)
-	// 	transition: 1s opacity
 	.site-name
 		width: 100%
 		height: 100%
@@ -73,11 +55,13 @@ div#hero-wrap
 			font-size: 90px
 			line-height: 1em
 			color: #fff
+			text-shadow: 0 5px 10px rgba(0,0,0,0.5)
 		h2
 			font-size: 50px
 			line-height: 1em
 			color: #fff
 			margin-bottom: 1.6em
+			text-shadow: 0 5px 10px rgba(0,0,0,0.5)
 	div#scroll-wrap
 		position: absolute
 		bottom: 0
@@ -150,9 +134,10 @@ div#hero-wrap
 		div#spacer-top
 			height: 57px
 	.hero
-		padding-bottom: 5em
-		div#scroll-wrap
-			padding-bottom: 2.5em
+		padding-bottom: 4em
+		.site-name
+			h2
+				margin-bottom: 0
 
 @media screen and (max-height: 450px)
 	.hero
