@@ -46,11 +46,9 @@
                     ?>
                     <article>
                         <a href="<?php echo get_the_permalink() ?>" class="card news-card">
-                            <picture>
                                 <?php if (has_post_thumbnail()) {
                                     the_post_thumbnail('medium', array('class' => 'featured-image'));
                                 } ?>
-                            </picture>
                             <div class="padded">
                                 <h5>
                                     <?php

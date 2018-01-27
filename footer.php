@@ -5,13 +5,15 @@
             <div class="col-4">
                 <p>คณะเทคโนโลยีสารสนเทศ<br>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
                 <p>เลขที่ 1 ซอยฉลองกรุง 1 แขวงลาดกระบัง เขตลาดกระบัง กรุงเทพฯ 10520</p>
-                <p>โทรศัพท์​ +66 (0) 2723 4900<br>โทรสาร +66 (0) 2723 4910</p>
+                <p><i class="fas fa-fw fa-phone fa-flip-horizontal"></i>​ +66 (0) 2723 4900<br>
+                    <i class="fas fa-fw fa-fax"></i> +66 (0) 2723 4910</p>
             </div>
             <?php elseif (pll_current_language() == 'en'): ?>
             <div class="col-4">
                 <p>Faculty of Information Technology<br>King Monkut's Institute of Technology Ladkrabang</p>
                 <p>1, Chalong Krung 1, Ladkrabang, Bangkok 10520</p>
-                <p>Tel. +66 (0) 2723 4900<br>Fax. +66 (0) 2723 4910</p>
+                <p><i class="fas fa-fw fa-phone fa-flip-horizontal"></i> +66 (0) 2723 4900<br>
+                    <i class="fas fa-fw fa-fax"></i> +66 (0) 2723 4910</p>
             </div>
             <?php endif; ?>
             <div class="col-3 col-mb-offset-0 col-dt-offset-5">

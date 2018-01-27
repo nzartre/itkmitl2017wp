@@ -114,7 +114,10 @@
 		</div>
 		<div class="nav-links">
 				<span class="normal-links">
-					<a href="#" data-component="modal" data-target="#search-modal"><?php pll_e('func_search'); ?></a>
+					<a href="#" data-component="modal" data-target="#search-modal">
+                        <span class="typcn typcn-zoom"></span>
+                        <?php pll_e('func_search'); ?>
+                    </a>
 					<?php
 					$menuParameters = array(
 						'container' => false,
@@ -127,12 +130,11 @@
 					?>
 				</span>
 			<span class="bold-links">
-				<?php if (function_exists('pll_current_language')): ?>
-					<?php $globe = '';
-					if (pll_current_language() == 'th') $globe = '🌏'; else $globe = '🌎'; ?>
-					<a id="lang-switch"><?php echo $globe; ?> <span class="caret down" id="lang-switch-caret"></span></a>
-				<?php endif; ?>
-				</span>
+                <a id="lang-switch">
+                    <i class="fas fa-language" id="lang-switch-icon"></i>
+                    <span class="caret down" id="lang-switch-caret"></span>
+                </a>
+            </span>
 		</div>
 		<img src="<?php echo get_theme_file_uri('img/nav-chevron.png'); ?>" alt="menu" class="nav-chevron"
 			 id="nav-chevron">

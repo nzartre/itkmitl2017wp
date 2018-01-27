@@ -85,8 +85,9 @@ div#hero-wrap
 		width: 100%
 		text-align: center
 		padding-bottom: 1em
-	img#scroll-icon
-		animation: scrollWiggle 0.5s infinite alternate
+	i
+		margin-bottom: 0.2em
+		animation: scrollWiggle 1s 4 normal
 	span#scroll-text
 		display: block
 		font-family: $font-main
@@ -116,10 +117,12 @@ div#hero-wrap
 				color: #000
 
 @keyframes scrollWiggle
-	from
+	0%
 		transform: translateY(0)
-	to
-		transform: translateY(-10px)
+	50%
+		transform: translateY(10px)
+	100%
+		transform: translateY(0)
 
 @media screen and (max-width: 768px)
 	.hero
