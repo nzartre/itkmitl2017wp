@@ -31,7 +31,7 @@
         </div>
     </div><!-- #achievement -->
     <div style="text-align: center; margin: 1em">
-        <a href="/category/achievement" class="button outline"><?php pll_e('misc_view-all-achievements'); ?></a>
+        <a href="/category/achievement" class="button"><?php pll_e('misc_view-all-achievements'); ?></a>
     </div>
     <h1 class="title"><?php pll_e('home_news-updates'); ?></h1>
     <div class="container" id="news">
@@ -73,6 +73,6 @@
         </div>
     </div>
     <div style="text-align: center; margin: 2em 1em 1em">
-        <a href="/category/news" class="button outline"><?php pll_e('misc_view-all-news'); ?></a>
+        <a href="/category/news" class="button"><?php pll_e('misc_view-all-news'); ?></a>
     </div>
 </section>
