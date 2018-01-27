@@ -5,9 +5,10 @@ add_image_size('home_slider', 1300, 550, true);
 
 // Registration Section
 function home_inc() {
-    wp_enqueue_style('kube', get_template_directory_uri() . '/styles/kube.css');
-    wp_enqueue_style('fluidable', get_template_directory_uri() . '/styles/fluidable.css');
+    wp_enqueue_style('kube', get_theme_file_uri('styles/kube.css'));
+    wp_enqueue_style('fluidable', get_theme_file_uri('styles/fluidable.css'));
     wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('typicons', get_theme_file_uri('styles/typicons/typicons.min.css'));
 
     wp_enqueue_script('main-js', get_template_directory_uri() . '/scripts/main.js', array('jquery'), null, true);
     wp_enqueue_script('kube-js', get_template_directory_uri() . '/vendor/kube.min.js', array('jquery'), null, true);

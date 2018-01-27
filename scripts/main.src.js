@@ -44,7 +44,9 @@ jQuery(document).ready(function ($) {
     };
 
     $('html').click(function (e) {
-        if (e.target.id != 'lang-switch' && e.target.id != 'lang-switch-caret') $('#lang-list').removeClass('show');
+        if (e.target.id != 'lang-switch' && e.target.id != 'lang-switch-caret' && e.target.id != 'lang-switch-icon') {
+            $('#lang-list').removeClass('show');
+        }
         else $('#lang-list').toggleClass('show');
     });
 
