@@ -1,9 +1,14 @@
 // Hero section
+
+$clipHero: true
+
 div#hero-wrap
 	display: flex
 	flex-direction: column
-	height: 100%
+	height: if($clipHero, 111%, 100%)
 	min-height: 450px
+	@if $clipHero
+		background-color: #f2f7ff
 	div#spacer-top
 		height: 100px
 .hero
@@ -11,6 +16,8 @@ div#hero-wrap
 	flex: 1
 	color: #fff
 	overflow: hidden
+	@if $clipHero
+		clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0)
 	.wrapper
 		width: 100%
 		height: 100%
@@ -33,7 +40,7 @@ div#hero-wrap
 	.overlay
 		background-color: rgba(11, 84, 131, 0.25)
 		width: 100%
-		height: 100%
+		height: if($clipHero, 111%, 100%)
 		position: absolute
 		z-index: 1
 	.site-name
@@ -45,6 +52,8 @@ div#hero-wrap
 		justify-content: center
 		flex-direction: column
 		z-index: 2
+		@if $clipHero
+			padding-bottom: 6em
 		#hero-title-wrap
 			width: 90%
 			max-width: 500px
@@ -135,6 +144,8 @@ div#hero-wrap
 			height: 57px
 	.hero
 		padding-bottom: 4em
+		@if $clipHero
+			clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0)
 		.site-name
 			h2
 				margin-bottom: 0
@@ -145,6 +156,8 @@ div#hero-wrap
 		.overlay
 			height: 450px
 		.site-name
+			@if $clipHero
+				padding-bottom: 2em
 			h2
 				margin-bottom: 16px
 		div#scroll-wrap
