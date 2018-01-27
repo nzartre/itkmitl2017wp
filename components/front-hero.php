@@ -10,7 +10,7 @@
             </div>
         </div>
         <div id="scroll-wrap">
-            <img src="<?php echo get_theme_file_uri('img/scroll.png'); ?>" id="scroll-icon" width="32" height="32">
+            <i class="fas fa-chevron-down fa-2x" onclick="doScrolling('#home-news-section', 500)"></i>
             <span id="scroll-text"><?php pll_e('hero_scroll'); ?></span>
         </div>
         <div class="overlay"></div>
