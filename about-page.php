@@ -51,49 +51,49 @@ if (have_posts()) :
 					<ul class="timeline">
 						<li class="event" data-date="2537">
 							<h3 class="year">2537</h3>
-							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/hero.jpg'); ?>)"></div>
+							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2537.jpg'); ?>)"></div>
 							<div class="text">
 								<p>โครงการจัดตั้งคณะเทคโนโลยีสารสนเทศ ได้รับความเห็นชอบจากสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง เมื่อวันที่ 12 กรกฎาคม 2537</p>
 							</div>
 						</li>
 						<li class="event" data-date="2539">
 							<h3 class="year">2539</h3>
-							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/hero.jpg'); ?>)"></div>
+							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2539.jpg'); ?>)"></div>
 							<div class="text">
 								<p>ได้รับสถาปนาเป็นส่วนราชการเมื่อวันที่ 27 กุมภาพันธ์ 2539 คณะฯ ได้พัฒนาหลักสูตรปริญญาโท วิทยาศาสตรมหาบัณฑิต สาขาเทคโนโลยีสารสนเทศ เป็นหลักสูตรแรก ซึ่งมีสองแขนงวิชา คือ การจัดการเทคโนโลยีสารสนเทศ (Information Management) และ วิทยาการสารสนเทศ (Information Science) โดยเปิดสอนตั้งแต่ภาคการศึกษาที่ 2/2538</p>
 							</div>
 						</li>
 						<li class="event" data-date="2545">
 							<h3 class="year">2545</h3>
-							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/hero.jpg'); ?>)"></div>
+							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2545.jpg'); ?>)"></div>
 							<div class="text">
 								<p>คณะเทคโนโลยีสารสนเทศ ได้พัฒนาหลักสูตรปริญญาตรีวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ เพิ่มขึ้นอีกหนึ่งหลักสูตร เพื่อสร้างบัณฑิตที่มีความแข็งแรงทางด้านวิชาการและคุณธรรม เพื่อตอบสนองสังคม รวมทั้งเป็นการปูพื้นฐานบัณฑิตเพื่อต่อยอดเข้าศึกษาในระดับปริญญาโท ซึ่งได้เปิดรับนักศึกษารุ่นแรกในปีการศึกาษา 2546</p>
 							</div>
 						</li>
 						<li class="event" data-date="2547">
 							<h3 class="year">2547</h3>
-							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/hero.jpg'); ?>)"></div>
+							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2547.jpg'); ?>)"></div>
 							<div class="text">
 								<p>คณะเทคโนโลยีสารสนเทศ ได้พัฒนาหลักสูตรระดับปริญญาเอก ปรัชญาดุษฎีบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ เปิดรับนักศึกษารุ่นแรกในปีการศึกษา 2547</p>
 							</div>
 						</li>
 						<li class="event" data-date="2551">
 							<h3 class="year">2551</h3>
-							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/hero.jpg'); ?>)"></div>
+							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2551.jpg'); ?>)"></div>
 							<div class="text">
 								<p>ปรับปรุงหลักสูตรระดับปริญญาโท วิทยาศาสตร์มหาบัณฑิต เป็น 2 แขนงวิชา คือ เทคโนโลยีระบบสารสนเทศ (Infornation System Technologies - IST) และ เทคโนโลยีสารสนเทศและการจัดการ (Information Technology and Management - ITM)</p>
 							</div>
 						</li>
 						<li class="event" data-date="2552">
 							<h3 class="year">2552</h3>
-							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/hero.jpg'); ?>)"></div>
+							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2552.jpg'); ?>)"></div>
 							<div class="text">
 								<p>ปรับปรุงหลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ แบ่งเป็น 2 แขนงวิชา คือ แขนงวิชาเทคโนโลยีระบบสารสนเทศ (Information System Technologies - IST) และ แขนงวิชาเทคโนโลยีสารสนเทศและการจัดการ (Information Technology and Management - ITM)</p>
 							</div>
 						</li>
 						<li class="event" data-date="2554">
 							<h3 class="year">2554</h3>
-							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/hero.jpg'); ?>)"></div>
+							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2554.jpg'); ?>)"></div>
 							<div class="text">
 								<p>ปรับปรุงหลักสูตร ป.ตรี ป.โท และ ป.เอก ให้เป็นไปตามตามกรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติ (TQF) โดยหลักสูตรของ ป.โท (วิทยาศาสตรมหาบัณฑิต) แบ่งเป็น 4 แขนงวิชา คือ</p>
 								<ol>
