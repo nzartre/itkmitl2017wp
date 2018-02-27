@@ -18,7 +18,7 @@
 	<meta name="theme-color" content="#1c86f2">
 	<?php wp_head(); ?>
 
-	<?php if (is_front_page()) :
+	<?php if (is_front_page() || is_page('research')) :
 		$owl_carousel = get_theme_file_uri('vendor/owl/assets/owl.carousel.min.css');
 		$owl_theme = get_theme_file_uri('vendor/owl/assets/owl.theme.default.min.css');
 		$owl_js = get_theme_file_uri('vendor/owl/owl.carousel.min.js');
