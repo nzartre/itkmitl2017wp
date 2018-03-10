@@ -28,7 +28,7 @@
                     </div>
                 </div>
             <?php endwhile; endif; ?>
-        </div>
+        </div><!-- #home-achievement -->
     </div><!-- #achievement -->
     <div style="text-align: center; margin: 1em">
         <a href="/category/achievement" class="button"><?php pll_e('misc_view-all-achievements'); ?></a>

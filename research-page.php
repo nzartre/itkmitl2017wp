@@ -13,37 +13,38 @@ if (have_posts()) :
                     <h1 class="text-center"><?php the_title(); ?></h1>
                     <h3 class="text-center"><?php pll_e('research_subtitle'); ?></h3>
                 </div>
-                <section style="padding-bottom: 0">
-                    <?php $the_query = new WP_Query(array(
-                        'posts_per_page' => 4,
-                        'category_name' => 'research-highlight'
-                    ));
-                    if ($the_query->have_posts()) :
-                    while ($the_query->have_posts()) : $the_query->the_post();
-                    $thumbnail = get_the_post_thumbnail_url();
-                    ?>
+                <section style="padding-bottom: 0" id="research-highlight-section">
                     <div class="container">
                         <div class="owl-carousel owl-theme owl-news-slider" id="research-highlight">
-                            <div class="canvas">
-                                <?php if (has_post_thumbnail()) {
-                                    the_post_thumbnail('home_slider', array('class' => 'slider-featured-image'));
-                                } ?>
-                                <div class="text-box">
-                                    <h3>
-                                        <?php the_title(); ?>
-                                    </h3>
-                                    <p class="excerpt">
-                                        <?php echo this_excerpt(100); ?>
-                                    </p>
-                                    <a href="<?php echo get_the_permalink() ?>" class="button round">
-                                        <?php pll_e('misc_read-more'); ?>
-                                    </a>
+                            <?php
+                            $the_query = new WP_Query(array(
+                                'posts_per_page' => 4,
+                                'category_name' => 'research-highlight'
+                            ));
+                            if ($the_query->have_posts()) :
+                            while ($the_query->have_posts()) : $the_query->the_post();
+                                $thumbnail = get_the_post_thumbnail_url();
+                                ?>
+                                <div class="canvas">
+                                    <?php if (has_post_thumbnail()) {
+                                        the_post_thumbnail('home_slider', array('class' => 'slider-featured-image'));
+                                    } ?>
+                                    <div class="text-box">
+                                        <h3>
+                                            <?php the_title(); ?>
+                                        </h3>
+                                        <p class="excerpt">
+                                            <?php echo this_excerpt(100); ?>
+                                        </p>
+                                        <a href="<?php echo get_the_permalink() ?>" class="button round">
+                                            <?php pll_e('misc_read-more'); ?>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            <?php endwhile; endif; ?>
+                        </div><!-- #research-highlight -->
                     </div>
-                </section>
-                <?php endwhile; endif; ?>
+                </section><!-- #research-highlight-section -->
                 <section class="research--lab">
                     <h1 class="title">ห้องปฏิบัติการ</h1>
                     <div class="container">
