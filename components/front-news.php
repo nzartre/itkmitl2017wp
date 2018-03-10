@@ -1,7 +1,7 @@
 <section style="background-color: #f2f7ff" id="home-news-section">
     <h1 class="title"><?php pll_e('home_achievements'); ?></h1>
     <div class="container" id="achievement">
-        <div class="owl-carousel owl-theme" id="home-achievement">
+        <div class="owl-carousel owl-theme owl-news-slider" id="home-achievement">
             <?php
             $the_query = new WP_Query(array(
                 'posts_per_page' => 4,
@@ -13,7 +13,7 @@
                 ?>
                 <div class="canvas">
                     <?php if (has_post_thumbnail()) {
-                        the_post_thumbnail('home_slider', array('class' => 'featured-image'));
+                        the_post_thumbnail('home_slider', array('class' => 'slider-featured-image'));
                     } ?>
                     <div class="text-box">
                         <h3>
