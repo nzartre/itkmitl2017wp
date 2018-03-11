@@ -115,7 +115,7 @@
 		</div>
 		<div class="nav-links">
 				<span class="normal-links">
-					<a href="#" data-component="modal" data-target="#search-modal">
+					<a href="#" data-component="modal" data-target="#search-modal" onclick="focusSearchForm()">
                         <span class="typcn typcn-zoom"></span>
                         <?php pll_e('func_search'); ?>
                     </a>
@@ -149,7 +149,7 @@
 <div class="mobile-nav">
 	<ul class="unstyled">
 		<li data-component="modal" data-target="#search-modal">
-			<a><?php pll_e('func_search'); ?></a>
+			<a onclick="focusSearchForm()"><?php pll_e('func_search'); ?></a>
 		</li>
 		<?php
 		$mobile_top = array(
