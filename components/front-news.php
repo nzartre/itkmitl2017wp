@@ -5,7 +5,7 @@
             <?php
             $the_query = new WP_Query(array(
                 'posts_per_page' => 4,
-                'category_name' => 'ข่าวผลงานคณะ'
+                'category_name' => 'achievement'
             ));
             if ($the_query->have_posts()) :
             while ($the_query->have_posts()) : $the_query->the_post();
