@@ -12,7 +12,7 @@ if (have_posts()) :
 				<div class="page-hero">
 					<h1 class="text-center"><?php the_title(); ?></h1>
 					<h3 class="text-center"><?php pll_e('acad-serv_subtitle'); ?></h3>
-					<a href="<?php get_site_url() ?>/events" class="button outline inverted big"><?php pll_e('acad-serv_view-calendar'); ?></a>
+					<a href="events" class="button outline inverted big"><?php pll_e('acad-serv_view-calendar'); ?></a>
 				</div>
 				<section class="acadserv--categories">
 					<div class="container">
