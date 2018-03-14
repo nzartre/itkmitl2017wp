@@ -1,0 +1,35 @@
+// News Slider
+
+.owl-news-slider
+	margin-bottom: 2em
+	.canvas
+		position: relative
+		img.slider-featured-image
+			display: block
+		.text-box
+			position: absolute
+			bottom: 0
+			left: 0
+			padding: 1em
+			margin: 1em
+			background: rgba(255, 255, 255, 0.9)
+			backdrop-filter: blur(10px)
+			border-radius: 25px
+			max-width: 700px
+
+@media screen and (max-width: 991px)
+	.owl-news-slider
+		.canvas
+			.text-box
+				position: relative
+				max-width: none
+				margin: 0
+				border-radius: 0
+				text-align: center
+
+@media screen and (max-width: 414px)
+	.owl-news-slider
+		.canvas
+			.text-box
+				p.excerpt
+					display: none

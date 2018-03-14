@@ -18,7 +18,7 @@
 	<meta name="theme-color" content="#1c86f2">
 	<?php wp_head(); ?>
 
-	<?php if (is_front_page()) :
+	<?php if (is_front_page() || is_page('research') || is_page('rd')) :
 		$owl_carousel = get_theme_file_uri('vendor/owl/assets/owl.carousel.min.css');
 		$owl_theme = get_theme_file_uri('vendor/owl/assets/owl.theme.default.min.css');
 		$owl_js = get_theme_file_uri('vendor/owl/owl.carousel.min.js');
@@ -115,7 +115,7 @@
 		</div>
 		<div class="nav-links">
 				<span class="normal-links">
-					<a href="#" data-component="modal" data-target="#search-modal">
+					<a href="#" data-component="modal" data-target="#search-modal" onclick="focusSearchForm()">
                         <span class="typcn typcn-zoom"></span>
                         <?php pll_e('func_search'); ?>
                     </a>
@@ -149,7 +149,7 @@
 <div class="mobile-nav">
 	<ul class="unstyled">
 		<li data-component="modal" data-target="#search-modal">
-			<a><?php pll_e('func_search'); ?></a>
+			<a onclick="focusSearchForm()"><?php pll_e('func_search'); ?></a>
 		</li>
 		<?php
 		$mobile_top = array(

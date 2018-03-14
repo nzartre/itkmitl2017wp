@@ -41,7 +41,7 @@ if (have_posts()) :
 							<div class="bg-box half" style="background-image: url(<?php echo get_theme_file_uri('img/course-3.jpg'); ?>);">
 								<h3><?php pll_e('programs_phd_title'); ?></h3>
 								<p><?php pll_e('programs_phd_name'); ?></p>
-								<a href="#" class="button outline inverted"><?php pll_e('misc_read-more'); ?></a>
+								<a href="doctorial-degree" class="button outline inverted"><?php pll_e('misc_read-more'); ?></a>
 							</div>
 						</div>
 					</div>

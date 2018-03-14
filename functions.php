@@ -51,6 +51,8 @@ if (function_exists('pll_register_string')) {
     include_once('pll_translations.php');
 }
 
+include_once('modules/page-meta-box.php');
+
 include_once('modules/staff-post-type.php');
 include_once('modules/staff-meta-box.php');
 include_once('modules/staff-taxonomy.php');
@@ -61,6 +63,7 @@ include_once('modules/publications-taxonomy.php');
 
 include_once('modules/subjects-post-type.php');
 include_once('modules/subjects-meta-box.php');
+
 // Customization
 include('customizer.php');
 

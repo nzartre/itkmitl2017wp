@@ -1,7 +1,7 @@
 <section style="background-color: #f2f7ff" id="home-news-section">
     <h1 class="title"><?php pll_e('home_achievements'); ?></h1>
     <div class="container" id="achievement">
-        <div class="owl-carousel owl-theme" id="home-achievement">
+        <div class="owl-carousel owl-theme owl-news-slider" id="home-achievement">
             <?php
             $the_query = new WP_Query(array(
                 'posts_per_page' => 4,
@@ -30,7 +30,7 @@
                     </div>
                 </div>
             <?php endwhile; endif; ?>
-        </div>
+        </div><!-- #home-achievement -->
     </div><!-- #achievement -->
     <div style="text-align: center; margin: 1em">
         <a href="/category/achievement" class="button"><?php pll_e('misc_view-all-achievements'); ?></a>
