@@ -14,7 +14,9 @@
                 <div class="canvas">
                     <?php if (has_post_thumbnail()) {
                         the_post_thumbnail('home_slider', array('class' => 'featured-image'));
-                    } ?>
+                    } else { ?>
+                        <img src="<?php echo get_theme_file_uri('img/news_slider-thumb.jpg'); ?>" class="featured-image">
+                    <?php } ?>
                     <div class="text-box">
                         <h3>
                             <?php the_title(); ?>
@@ -48,7 +50,9 @@
                         <a href="<?php echo get_the_permalink() ?>" class="card news-card">
                                 <?php if (has_post_thumbnail()) {
                                     the_post_thumbnail('medium', array('class' => 'featured-image'));
-                                } ?>
+                                } else { ?>
+                                    <img src="<?php echo get_theme_file_uri('img/300x200-thumb.png'); ?>" class="featured-image">
+                                <?php } ?>
                             <div class="padded">
                                 <h5>
                                     <?php
