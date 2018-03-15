@@ -46,7 +46,7 @@ if (have_posts()) :
                     </div>
                 </section><!-- #research-highlight-section -->
                 <section class="research--lab">
-                    <h1 class="title">ห้องปฏิบัติการ</h1>
+                    <h1 class="title"><?php pll_e('research_labs'); ?></h1>
                     <div class="container">
                         <a href="isis-group" class="bg-box lab-box"
                            style="background-image: url(<?php echo get_theme_file_uri('img/lab-isis.jpg'); ?>);">
