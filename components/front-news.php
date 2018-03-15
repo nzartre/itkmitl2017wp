@@ -1,14 +1,22 @@
+<?php 
+$the_query_1 = new WP_Query(array(
+    'posts_per_page' => 4,
+    'category_name' => 'achievement'
+));
+$the_query_2 = new WP_Query(array(
+    'posts_per_page' => 4,
+    'category_name' => 'news'
+));
+
+if ($the_query_1->have_posts() || $the_query_2->have_posts()):
+if ($the_query_1->have_posts()):
+?>
 <section style="background-color: #f2f7ff" id="home-news-section">
     <h1 class="title"><?php pll_e('home_achievements'); ?></h1>
     <div class="container" id="achievement">
         <div class="owl-carousel owl-theme owl-news-slider" id="home-achievement">
             <?php
-            $the_query = new WP_Query(array(
-                'posts_per_page' => 4,
-                'category_name' => 'achievement'
-            ));
-            if ($the_query->have_posts()) :
-            while ($the_query->have_posts()) : $the_query->the_post();
+            while ($the_query_1->have_posts()) : $the_query_1->the_post();
                 $thumbnail = get_the_post_thumbnail_url();
                 ?>
                 <div class="canvas">
@@ -29,22 +37,21 @@
                         </a>
                     </div>
                 </div>
-            <?php endwhile; endif; ?>
+            <?php endwhile; ?>
         </div><!-- #home-achievement -->
     </div><!-- #achievement -->
     <div style="text-align: center; margin: 1em">
         <a href="/category/achievement" class="button"><?php pll_e('misc_view-all-achievements'); ?></a>
     </div>
+    <?php endif;
+
+    if ($the_query_2->have_posts()) :
+    ?>
     <h1 class="title"><?php pll_e('home_news-updates'); ?></h1>
     <div class="container" id="news">
         <div class="flex-row space-between wrap">
             <?php
-            $the_query = new WP_Query(array(
-                'posts_per_page' => 4,
-                'category_name' => 'news'
-            ));
-            if ($the_query->have_posts()) :
-                while ($the_query->have_posts()) : $the_query->the_post();
+                while ($the_query_2->have_posts()) : $the_query_2->the_post();
                     ?>
                     <article>
                         <a href="<?php echo get_the_permalink() ?>" class="card news-card">
@@ -71,12 +78,12 @@
                     </article>
                 <?php
                 endwhile;
-            else: echo '<p class="text-center">no post</p>';
-            endif;
             ?>
         </div>
     </div>
     <div style="text-align: center; margin: 2em 1em 1em">
         <a href="/category/news" class="button"><?php pll_e('misc_view-all-news'); ?></a>
     </div>
+    <?php endif; ?>
 </section>
+<?php endif; ?>
