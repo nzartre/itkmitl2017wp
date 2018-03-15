@@ -118,7 +118,7 @@ pll_register_string('About: Life details', 'about_life_details', 'about', 0);
 pll_register_string('About: Description Word', 'about_description_word', 'about', 1);
 pll_register_string('About: Description Person', 'about_description_person', 'about', 0);
 pll_register_string('About: Description Position', 'about_description_position', 'about', 0);
-pll_register_string('About: 2537', 'about_2534', 'about', 1);
+pll_register_string('About: 2537', 'about_2537', 'about', 1);
 pll_register_string('About: 2539', 'about_2539', 'about', 1);
 pll_register_string('About: 2545', 'about_2545', 'about', 1);
 pll_register_string('About: 2547', 'about_2547', 'about', 1);
