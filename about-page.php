@@ -10,42 +10,42 @@ if (have_posts()) :
 		<section class="page page--about">
 			<div class="page-content">
 				<div class="page-hero about--hero">
-					<h2>เป็นองค์กรที่ใช้นวัตกรรม<br/>เพื่อความเป็นเลิศทางการศึกษา<br/>ด้านเทคโนโลยีสารสนเทศ</h2>
+					<h2><?php pll_e('about_subtitle'); ?></h2>
 				</div>
 				<section class="about--stats">
 					<div class="container">
 						<a href="#scroll-history" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-foundation.png'); ?>" alt="about-foundation">
-							<h3>ก่อตั้ง</h3>
-							<p>23 กุมภาพันธ์ 2539</p>
+							<h3><?php pll_e('about_found'); ?></h3>
+							<p><?php pll_e('about_found_details'); ?></p>
 						</a>
 						<a href="travel" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-location.png'); ?>" alt="about-location">
-							<h3>สถานที่ตั้ง</h3>
-							<p>ลาดกระบัง กทม. <span id="weather"></span></p>
+							<h3><?php pll_e('about_location'); ?></h3>
+							<p><?php pll_e('about_location_details'); ?><span id="weather"></span></p>
 						</a>
 						<a href="<?php echo home_url() . '/staff'; ?>" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-personnel.png'); ?>" alt="about-personnel">
-							<h3>บุคลากร</h3>
-							<p>คณาจารย์และเจ้าหน้าที่</p>
+							<h3><?php pll_e('about_staff'); ?></h3>
+							<p><?php pll_e('about_staff_details'); ?></p>
 						</a>
 						<a href="contact" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-contact.png'); ?>" alt="about-contact">
-							<h3>ติดต่อ</h3>
-							<p>การติดต่อคณะ</p>
+							<h3><?php pll_e('about_contact'); ?></h3>
+							<p><?php pll_e('about_contact_details'); ?></p>
 						</a>
                         <a href="life" class="stat-box">
                             <img src="<?php echo get_theme_file_uri('img/about-life.png'); ?>" alt="about-life">
-                            <h3>Life@IT</h3>
-                            <p>บรรยากาศในคณะ</p>
+                            <h3><?php pll_e('about_life'); ?></h3>
+                            <p><?php pll_e('about_life_details'); ?></p>
                         </a>
 					</div><!-- .container -->
 				</section><!-- section.about——stats -->
 				<div class="about--dean">
 					<img src="<?php echo get_theme_file_uri('img/person.jpg'); ?>" alt="Dean">
-					<p class="large dean-words">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore laudantium fugit tempora temporibus debitis veritatis voluptates culpa ea, minus consequatur, hic quam mollitia ipsa dolor voluptatem vero! Voluptate, molestias!"</p>
-					<p class="big dean-name" id="scroll-history">รศ.ดร. นพพร โชติกกำธร</p>
-					<p class="dean-position">คณบดี</p>
+					<p class="large dean-words"><?php pll_e('about_description_word'); ?></p>
+					<p class="big dean-name" id="scroll-history"><?php pll_e('about_description_person'); ?></p>
+					<p class="dean-position"><?php pll_e('about_description_position'); ?></p>
 				</div>
 				<div class="timeline-wrapper">
 					<ul class="timeline">
@@ -53,55 +53,49 @@ if (have_posts()) :
 							<h3 class="year">2537</h3>
 							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2537.jpg'); ?>)"></div>
 							<div class="text">
-								<p>โครงการจัดตั้งคณะเทคโนโลยีสารสนเทศ ได้รับความเห็นชอบจากสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง เมื่อวันที่ 12 กรกฎาคม 2537</p>
+								<p><?php pll_e('about_2537'); ?></p>
 							</div>
 						</li>
 						<li class="event" data-date="2539">
 							<h3 class="year">2539</h3>
 							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2539.jpg'); ?>)"></div>
 							<div class="text">
-								<p>ได้รับสถาปนาเป็นส่วนราชการเมื่อวันที่ 27 กุมภาพันธ์ 2539 คณะฯ ได้พัฒนาหลักสูตรปริญญาโท วิทยาศาสตรมหาบัณฑิต สาขาเทคโนโลยีสารสนเทศ เป็นหลักสูตรแรก ซึ่งมีสองแขนงวิชา คือ การจัดการเทคโนโลยีสารสนเทศ (Information Management) และ วิทยาการสารสนเทศ (Information Science) โดยเปิดสอนตั้งแต่ภาคการศึกษาที่ 2/2538</p>
+								<p><?php pll_e('about_2539'); ?></p>
 							</div>
 						</li>
 						<li class="event" data-date="2545">
 							<h3 class="year">2545</h3>
 							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2545.jpg'); ?>)"></div>
 							<div class="text">
-								<p>คณะเทคโนโลยีสารสนเทศ ได้พัฒนาหลักสูตรปริญญาตรีวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ เพิ่มขึ้นอีกหนึ่งหลักสูตร เพื่อสร้างบัณฑิตที่มีความแข็งแรงทางด้านวิชาการและคุณธรรม เพื่อตอบสนองสังคม รวมทั้งเป็นการปูพื้นฐานบัณฑิตเพื่อต่อยอดเข้าศึกษาในระดับปริญญาโท ซึ่งได้เปิดรับนักศึกษารุ่นแรกในปีการศึกาษา 2546</p>
+								<p><?php pll_e('about_2545'); ?></p>
 							</div>
 						</li>
 						<li class="event" data-date="2547">
 							<h3 class="year">2547</h3>
 							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2547.jpg'); ?>)"></div>
 							<div class="text">
-								<p>คณะเทคโนโลยีสารสนเทศ ได้พัฒนาหลักสูตรระดับปริญญาเอก ปรัชญาดุษฎีบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ เปิดรับนักศึกษารุ่นแรกในปีการศึกษา 2547</p>
+								<p><?php pll_e('about_2547'); ?></p>
 							</div>
 						</li>
 						<li class="event" data-date="2551">
 							<h3 class="year">2551</h3>
 							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2551.jpg'); ?>)"></div>
 							<div class="text">
-								<p>ปรับปรุงหลักสูตรระดับปริญญาโท วิทยาศาสตร์มหาบัณฑิต เป็น 2 แขนงวิชา คือ เทคโนโลยีระบบสารสนเทศ (Infornation System Technologies - IST) และ เทคโนโลยีสารสนเทศและการจัดการ (Information Technology and Management - ITM)</p>
+								<p><?php pll_e('about_2551'); ?></p>
 							</div>
 						</li>
 						<li class="event" data-date="2552">
 							<h3 class="year">2552</h3>
 							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2552.jpg'); ?>)"></div>
 							<div class="text">
-								<p>ปรับปรุงหลักสูตรวิทยาศาสตรมหาบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ แบ่งเป็น 2 แขนงวิชา คือ แขนงวิชาเทคโนโลยีระบบสารสนเทศ (Information System Technologies - IST) และ แขนงวิชาเทคโนโลยีสารสนเทศและการจัดการ (Information Technology and Management - ITM)</p>
+								<p><?php pll_e('about_2552'); ?></p>
 							</div>
 						</li>
 						<li class="event" data-date="2554">
 							<h3 class="year">2554</h3>
 							<div class="thumb" style="background-image: url(<?php echo get_theme_file_uri('img/fcl2554.jpg'); ?>)"></div>
 							<div class="text">
-								<p>ปรับปรุงหลักสูตร ป.ตรี ป.โท และ ป.เอก ให้เป็นไปตามตามกรอบมาตรฐานคุณวุฒิระดับอุดมศึกษาแห่งชาติ (TQF) โดยหลักสูตรของ ป.โท (วิทยาศาสตรมหาบัณฑิต) แบ่งเป็น 4 แขนงวิชา คือ</p>
-								<ol>
-									<li>แขนงวิชาวิทยาการสารสนเทศ (IS)</li>
-									<li>แขนงวิชาเทคโนโลยีระบบสารสนเทศ (IST)</li>
-									<li>แขนงวิชาเทคโนโลยีเครือข่ายและระบบ (NST)</li>
-									<li>แขนงวิชาเทคโนโลยีสารสนเทศและการจัดการ (ITM)</li>
-								</ol>
+								<p><?php pll_e('about_2554'); ?></p>
 							</div>
 						</li>
 					</ul><!-- ul.timeline -->
@@ -110,22 +104,22 @@ if (have_posts()) :
 					<div class="container">
 						<div class="col-group">
 							<div class="identity col-dt-4">
-								<h2>ค่านิยม</h2>
-								<h5>IT@WORKS</h5>
+								<h2><?php pll_e('about_appreciation'); ?></h2>
+								<h5><?php pll_e('about_appreciation_subtitle'); ?></h5>
 								<hr>
-								<p>บุคลากร นักศึกษา และบัณฑิตของคณะ มีความสามารถทำงานได้จริง และเป็นมืออาชีพด้านเทคโนโลยีสารสนเทศ</p>
+								<p><?php pll_e('about_appreciation_details'); ?></p>
 							</div>
 							<div class="identity col-dt-4">
-								<h2>อัตลักษณ์</h2>
-								<h5>บัณฑิตพร้อมทำงาน (IT Prompt)</h5>
+								<h2><?php pll_e('about_identity'); ?></h2>
+								<h5><?php pll_e('about_identity_subtitle'); ?></h5>
 								<hr>
-								<p>บัณฑิตมีความรู้และทักษะพร้อมในการทำงานที่ตรงกับสายงานและความเชี่ยวชาญเฉพาะทางตามหลักสูตรที่ศึกษา</p>
+								<p><?php pll_e('about_identity_details'); ?></p>
 							</div>
 							<div class="identity col-dt-4">
-								<h2>เอกลักษณ์</h2>
-								<h5>นวัตกรรมล้ำสมัย</h5>
+								<h2><?php pll_e('about_entity'); ?></h2>
+								<h5><?php pll_e('about_entity_subtitle'); ?></h5>
 								<hr>
-								<p>คณะเน้นการใช้เทคโนโลยีและนวัตกรรมเพื่อสนับสนุนการเรียนการสอนที่มีประสิทธิภาพ และเป็นผู้นำในการวิจัยและพัฒนาเทคโนโลยีและนวัตกรรม</p>
+								<p><?php pll_e('about_entity_details'); ?></p>
 							</div>
 						</div>
 					</div>

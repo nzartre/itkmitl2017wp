@@ -102,4 +102,37 @@ pll_register_string('Research: IT Journal details', 'research_journal_details', 
 pll_register_string('Research: View Journal button', 'research_view-journal', 'research', 0);
 pll_register_string('Research: Publications details', 'research_publications_details', 'research', 1);
 pll_register_string('Research: View Publications button', 'research_view-publications', 'research', 0);
+
+// About page
+pll_register_string('About: Subtitle', 'about_subtitle', 'about', 1);
+pll_register_string('About: Found', 'about_found', 'about', 0);
+pll_register_string('About: Found details', 'about_found_details', 'about', 0);
+pll_register_string('About: Location', 'about_location', 'about', 0);
+pll_register_string('About: Location details', 'about_location_details', 'about', 0);
+pll_register_string('About: Staff', 'about_staff', 'about', 0);
+pll_register_string('About: Staff details', 'about_staff_details', 'about', 0);
+pll_register_string('About: Contact', 'about_contact', 'about', 0);
+pll_register_string('About: Contact details', 'about_contact_details', 'about', 0);
+pll_register_string('About: Life', 'about_life', 'about', 0);
+pll_register_string('About: Life details', 'about_life_details', 'about', 0);
+pll_register_string('About: Description Word', 'about_description_word', 'about', 1);
+pll_register_string('About: Description Person', 'about_description_person', 'about', 0);
+pll_register_string('About: Description Position', 'about_description_position', 'about', 0);
+pll_register_string('About: 2537', 'about_2534', 'about', 1);
+pll_register_string('About: 2539', 'about_2539', 'about', 1);
+pll_register_string('About: 2545', 'about_2545', 'about', 1);
+pll_register_string('About: 2547', 'about_2547', 'about', 1);
+pll_register_string('About: 2551', 'about_2551', 'about', 1);
+pll_register_string('About: 2552', 'about_2552', 'about', 1);
+pll_register_string('About: 2554', 'about_2554', 'about', 1);
+pll_register_string('About: Appreciation', 'about_appreciation', 'about', 0);
+pll_register_string('About: Appreciation Subtitle', 'about_appreciation_subtitle', 'about', 0);
+pll_register_string('About: Appreciation details', 'about_appreciation_details', 'about', 1);
+pll_register_string('About: Identity', 'about_identity', 'about', 0);
+pll_register_string('About: Identity Subtitle', 'about_identity_subtitle', 'about', 0);
+pll_register_string('About: Identity details', 'about_identity_details', 'about', 1);
+pll_register_string('About: Entity', 'about_entity', 'about', 0);
+pll_register_string('About: Entity Subtitle', 'about_entity_subtitle', 'about', 0);
+pll_register_string('About: Entity details', 'about_entity_details', 'about', 1);
+
 ?>
