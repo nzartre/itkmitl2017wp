@@ -53,7 +53,7 @@ if (have_posts()) :
                             <h3><?php pll_e('research_isis'); ?></h3>
                             <p><?php pll_e('research_isis_details'); ?></p>
                         </a>
-                        <a href="ni-lab" class="bg-box lab-box"
+                        <a href="ni-group" class="bg-box lab-box"
                            style="background-image: url(<?php echo get_theme_file_uri('img/lab-ni.jpg'); ?>);">
                             <h3><?php pll_e('research_ni'); ?></h3>
                             <p><?php pll_e('research_ni_details'); ?></p>
