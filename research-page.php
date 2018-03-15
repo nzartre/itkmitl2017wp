@@ -48,7 +48,7 @@ if (have_posts()) :
                 <section class="research--lab">
                     <h1 class="title">ห้องปฏิบัติการ</h1>
                     <div class="container">
-                        <a href="isis-lab" class="bg-box lab-box"
+                        <a href="isis-group" class="bg-box lab-box"
                            style="background-image: url(<?php echo get_theme_file_uri('img/lab-isis.jpg'); ?>);">
                             <h3><?php pll_e('research_isis'); ?></h3>
                             <p><?php pll_e('research_isis_details'); ?></p>
@@ -58,7 +58,7 @@ if (have_posts()) :
                             <h3><?php pll_e('research_ni'); ?></h3>
                             <p><?php pll_e('research_ni_details'); ?></p>
                         </a>
-                        <a href="met-lab" class="bg-box lab-box"
+                        <a href="met-group" class="bg-box lab-box"
                            style="background-image: url(<?php echo get_theme_file_uri('img/lab-met.jpg'); ?>);">
                             <h3><?php pll_e('research_met'); ?></h3>
                             <p><?php pll_e('research_met_details'); ?></p>
