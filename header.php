@@ -110,7 +110,11 @@
 	<div class="container">
 		<div class="logo">
 			<a href="<?php echo home_url() ?>">
-				<img src="<?php echo get_theme_file_uri('img/nav-logo-blue.png'); ?>" alt="IT KMITL">
+				<?php if (pll_current_language() == 'th') : ?>
+					<img src="<?php echo get_theme_file_uri('img/nav-thai.svg'); ?>" alt="IT KMITL">
+				<?php else : ?>
+					<img src="<?php echo get_theme_file_uri('img/nav-eng.svg'); ?>" alt="IT KMITL">
+				<?php endif; ?>
 			</a>
 		</div>
 		<div class="nav-links">
