@@ -69,6 +69,17 @@ if (have_posts()) :
                                 </div>
                             </div>
                         </div>
+                        <div class="col-mb-12 col-6 col-dt-4">
+                            <div class="bg-box"
+                                 style="background-image: url(<?php echo get_theme_file_uri('img/services/workspace.png'); ?>); text-align: center;">
+                                <h3 style="color: white">Workspace</h3>
+                                <div class="btn-wrap">
+                                    <a href="https://workspace.it.kmitl.ac.th" class="button inverted">
+                                        <i class="fas fa-sign-in-alt"></i> Workspace
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div><!-- .col-group -->
                 </div><!-- .container -->
             </div><!-- .page-content -->
