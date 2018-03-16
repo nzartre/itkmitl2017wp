@@ -22,7 +22,9 @@ else:
                                     <h2 class="post-title">
                                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h2>
-                                    <?php the_content(''); ?>
+                                    <div class="the_content">
+                                        <?php the_content(''); ?>
+                                    </div>
                                     <span class="post-meta"><?php the_time('j F Y'); ?></span>
                                 </article>
                             <?php endwhile;
