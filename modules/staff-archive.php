@@ -17,13 +17,14 @@
                         'meta_key' => 'order');
                     $lecturer_query = new WP_Query($lecturer_query_args);
                     if ($lecturer_query->have_posts()) :
-                        while ($lecturer_query->have_posts()) : $lecturer_query->the_post(); ?>
+                        while ($lecturer_query->have_posts()) : $lecturer_query->the_post();
+                            $lecmeta = get_post_meta($post->ID); ?>
                             <a class="card person-card" href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail('medium', array('id' => 'staff-' . get_the_id() . '-img')); ?>
                                 <div class="padded">
-                                    <h3><?php echo get_post_meta(get_the_id(), 'prefix', true) . ' ' . get_post_meta(get_the_id(), 'first_name', true); ?></h3>
-                                    <p class="role"><?php echo get_post_meta(get_the_id(), 'role', true); ?></p>
-                                    <p class="email"><?php echo get_post_meta(get_the_id(), 'email', true); ?></p>
+                                    <h3><?php echo $lecmeta['prefix'][0] . ' ' . $lecmeta['first_name'][0] . ' ' . $lecmeta['last_name'][0]; ?></h3>
+                                    <p class="role"><?php echo $lecmeta['role'][0]; ?></p>
+                                    <p class="email"><?php echo $lecmeta['email'][0]; ?></p>
                                 </div>
                             </a>
                         <?php endwhile; endif; ?>
@@ -41,12 +42,13 @@
                         'meta_key' => 'order');
                     $staff_query = new WP_Query($staff_query_args);
                     if ($staff_query->have_posts()) :
-                        while ($staff_query->have_posts()) : $staff_query->the_post(); ?>
+                        while ($staff_query->have_posts()) : $staff_query->the_post();
+                            $stfmeta = get_post_meta($post->ID); ?>
                             <a class="card person-card" href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail('medium', array('id' => 'staff-' . get_the_id() . '-img')); ?>
                                 <div class="padded">
-                                    <h3><?php echo get_post_meta(get_the_id(), 'prefix', true) . get_post_meta(get_the_id(), 'first_name', true); ?></h3>
-                                    <p class="email"><?php echo get_post_meta(get_the_id(), 'email', true) ?></p>
+                                    <h3><?php echo $stfmeta['prefix'][0] . ' ' . $stfmeta['first_name'][0] . ' ' . $stfmeta['last_name'][0]; ?></h3>
+                                    <p class="email"><?php echo $stfmeta['email'][0]; ?></p>
                                 </div>
                             </a>
                         <?php endwhile; endif; ?>
