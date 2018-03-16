@@ -5,7 +5,7 @@
                 <h1 class="page-title"><?php pll_e('page_staff'); ?></h1>
                 <img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider"
                      class="divider-short">
-                <h3 class="text-center">บุคลากรสายวิชาการ</h3>
+                <h3 class="text-center"><?php pll_e('staff_academic'); ?></h3>
                 <div class="staff-wrap">
                     <?php
                     $lecturer_query_args = array(
@@ -30,7 +30,7 @@
                         <?php endwhile; endif; ?>
                 </div><!-- .staff-wrap -->
                 <hr class="more-space">
-                <h3 class="text-center">บุคลากรสายสนับสนุน</h3>
+                <h3 class="text-center"><?php pll_e('staff_support'); ?></h3>
                 <div class="staff-wrap">
                     <?php
                     $staff_query_args = array(

@@ -135,4 +135,8 @@ pll_register_string('About: Entity', 'about_entity', 'about', 0);
 pll_register_string('About: Entity Subtitle', 'about_entity_subtitle', 'about', 0);
 pll_register_string('About: Entity details', 'about_entity_details', 'about', 1);
 
+// Staff
+pll_register_string('Staff: Academic', 'staff_academic', 'staff', 0);
+pll_register_string('Staff: Support', 'staff_support', 'staff', 0);
+
 ?>
