@@ -5,7 +5,7 @@ const srcmaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const minifyjs = require('gulp-js-minify');
 
-gulp.task('sass', function() {
+function _sass() {
 	return gulp.src('src-sass/main.sass')
 		.pipe(srcmaps.init())
 		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -16,21 +16,26 @@ gulp.task('sass', function() {
 		.pipe(rename('style.css'))
 		.pipe(srcmaps.write('./'))
 		.pipe(gulp.dest('./'));
-})
+};
 
-gulp.task('js', function(){
+function _js() {
 	return gulp.src('scripts/main.src.js')
 	.pipe(srcmaps.init())
 	.pipe(minifyjs())
 	.pipe(rename('main.js'))
 	.pipe(srcmaps.write('./'))
 	.pipe(gulp.dest('./scripts'));
- });
+ };
 
-gulp.task('watch', function() {
-	gulp.watch('src-sass/**/*.sass', ['sass']);
-	gulp.watch('scripts/*.src.js', ['js']);
+function watch() {
+	gulp.watch('src-sass/**/*.sass', _sass);
+	gulp.watch('scripts/*.src.js', _js);
 	console.log('Watching for changes...');
-})
+};
 
-gulp.task('default', ['watch']);
+const build = gulp.parallel(_sass, _js);
+
+exports.sass = _sass;
+exports.js = _js;
+
+gulp.task('default', build);
