@@ -14,18 +14,29 @@ else:
                 <img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider"
                      class="divider-short">
                 <div class="col-group">
-                    <div class="col-12 col-dt-8 col-dt-offset-2">
+                    <div class="col-12 col-dt-10 col-dt-offset-1">
                         <?php
                         if (have_posts()) :
                             while (have_posts()) : the_post(); ?>
                                 <article>
-                                    <h2 class="post-title">
-                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                    </h2>
-                                    <div class="the_content">
-                                        <?php the_content(''); ?>
+                                    <div class="col-group">
+                                        <div class="col-2">
+                                            <?php if (has_post_thumbnail()) {
+                                                the_post_thumbnail('medium', array('class' => 'featured-image'));
+                                            } else { ?>
+                                                <img src="<?php echo get_theme_file_uri('img/300x200-thumb.png'); ?>" class="featured-image">
+                                            <?php } ?>
+                                        </div>
+                                        <div class="col-10">
+                                            <h2 class="post-title">
+                                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                            </h2>
+                                            <div class="the_content">
+                                                <?php the_content(''); ?>
+                                            </div>
+                                            <span class="post-meta"><?php the_time('j F Y'); ?></span>
+                                        </div>
                                     </div>
-                                    <span class="post-meta"><?php the_time('j F Y'); ?></span>
                                 </article>
                             <?php endwhile;
                         else :
