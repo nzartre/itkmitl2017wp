@@ -7,7 +7,9 @@
             <div class="banner-content" style="margin:auto;">
                 <h2><?php pll_e('home_banner1'); ?></h2>
                 <p><?php pll_e('home_banner1_details'); ?></p>
-                <a href="program" class="button round inverted outline"><?php pll_e('misc_read-more'); ?></a>
+                <a href="program<?php addForeignSuffix() ?>" class="button round inverted outline">
+                    <?php pll_e('misc_read-more'); ?>
+                </a>
             </div>
         </div>
     </div><!-- .col-group .banner-row -->
@@ -19,7 +21,9 @@
             <div class="banner-content left" style="margin:auto;">
                 <h2><?php pll_e('home_banner2'); ?></h2>
                 <p><?php pll_e('home_banner2_details'); ?></p>
-                <a href="research" class="button round inverted outline"><?php pll_e('misc_read-more'); ?></a>
+                <a href="research<?php addForeignSuffix() ?>" class="button round inverted outline">
+                    <?php pll_e('misc_read-more'); ?>
+                </a>
             </div>
         </div>
     </div><!-- .col-group .banner-row -->
@@ -31,7 +35,9 @@
             <div class="banner-content" style="margin:auto;">
                 <h2>Life@IT</h2>
                 <p><?php pll_e('home_banner3_details'); ?></p>
-                <a href="about/life" class="button round inverted outline"><?php pll_e('misc_read-more'); ?></a>
+                <a href="about<?php addForeignSuffix() ?>/life" class="button round inverted outline">
+                    <?php pll_e('misc_read-more'); ?>
+                </a>
             </div>
         </div>
     </div><!-- .col-group .banner-row -->

@@ -44,6 +44,11 @@ function itkmitl_cpt_search($query) {
     return $query;
 }
 
+function addForeignSuffix() {
+    $lang = pll_current_language();
+    if ($lang == 'en') echo '-en';
+}
+
 add_filter('pre_get_posts', 'itkmitl_cpt_search');
 
 // Translation Section
