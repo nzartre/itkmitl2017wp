@@ -29,6 +29,9 @@ if (have_posts()) :
 									<div class="btn-wrap">
 										<a href="bit-program" class="button outline inverted"><?php pll_e('programs_bachelor_bit'); ?></a>
 									</div>
+                                    <div class="btn-wrap">
+                                        <a href="adv-bachelor" class="button outline inverted"><?php pll_e('programs_bachelor_adv'); ?></a>
+                                    </div>
 								</div>
 							</div>
 						</div>
