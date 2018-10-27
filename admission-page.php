@@ -21,31 +21,16 @@ if (have_posts()) :
 								<h3><?php pll_e('admissions_bachelor'); ?></h3>
 								<hr>
 								<ul class="unstyled">
-									<li>
-										<a href="bach-portfolio">
-											<span class="caret right"></span> <?php pll_e('admissions_bach_portfolio'); ?>
-										</a>
-									</li>
-									<li>
-										<a href="bach-quota">
-											<span class="caret right"></span> <?php pll_e('admissions_bach_quota'); ?>
-										</a>
-									</li>
-									<li>
-										<a href="bach-tcas">
-											<span class="caret right"></span> <?php pll_e('admissions_bach_tcas'); ?>
-										</a>
-									</li>
-									<li>
-										<a href="bach-admission">
-											<span class="caret right"></span> <?php pll_e('admissions_bach_admission'); ?>
-										</a>
-									</li>
-									<li>
-										<a href="bach-entrance">
-											<span class="caret right"></span> <?php pll_e('admissions_bach_entrance'); ?>
-										</a>
-									</li>
+                                    <?php
+                                    $bachSuffixes = ['overview', 'portfolio', 'quota', 'tcas', 'admission', 'entrance'];
+                                    foreach ($bachSuffixes as $s):
+                                    ?>
+                                    <li>
+                                        <a href="<?php echo 'bach-' . $s ?>">
+                                            <span class="caret right"></span> <?php pll_e('admissions_bach_' . $s); ?>
+                                        </a>
+                                    </li>
+                                    <?php endforeach; ?>
 									<li>
 										<a href="bach-scholarship">
 											<span class="caret right"></span> <?php pll_e('admissions_scholarship'); ?>
