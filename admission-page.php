@@ -21,6 +21,11 @@ if (have_posts()) :
 								<h3><?php pll_e('admissions_bachelor'); ?></h3>
 								<hr>
 								<ul class="unstyled">
+                                    <li>
+                                        <a href="bach-overview">
+                                            <span class="caret right"></span> <?php pll_e('admissions_bach_overview'); ?>
+                                        </a>
+                                    </li>
 									<li>
 										<a href="bach-portfolio">
 											<span class="caret right"></span> <?php pll_e('admissions_bach_portfolio'); ?>

@@ -67,6 +67,7 @@ pll_register_string('Admissions: Advanced Bachelor degree title', 'admissions_ad
 pll_register_string('Admissions: Master and Ph.D degrees title', 'admissions_master-phd', 'admissions', 0);
 pll_register_string('Admissions: Scholarship', 'admissions_scholarship', 'admissions', 0);
 
+pll_register_string('Admissions: Bachelor: overview', 'admissions_bach_overview', 'admissions', 0);
 pll_register_string('Admissions: Bachelor: portfolio', 'admissions_bach_portfolio', 'admissions', 0);
 pll_register_string('Admissions: Bachelor: quota', 'admissions_bach_quota', 'admissions', 0);
 pll_register_string('Admissions: Bachelor: tcas', 'admissions_bach_tcas', 'admissions', 0);
