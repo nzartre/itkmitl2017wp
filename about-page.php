@@ -42,7 +42,7 @@ if (have_posts()) :
 					</div><!-- .container -->
 				</section><!-- section.about——stats -->
 				<div class="about--dean">
-					<img src="<?php echo get_theme_file_uri('img/person.jpg'); ?>" alt="Dean">
+					<img src="<?php echo get_theme_file_uri('img/about-dean-avatar.jpg'); ?>" alt="Dean">
 					<p class="large dean-words"><?php pll_e('about_description_word'); ?></p>
 					<p class="big dean-name" id="scroll-history"><?php pll_e('about_description_person'); ?></p>
 					<p class="dean-position"><?php pll_e('about_description_position'); ?></p>
