@@ -142,5 +142,6 @@ pll_register_string('About: Entity details', 'about_entity_details', 'about', 1)
 // Staff
 pll_register_string('Staff: Academic', 'staff_academic', 'staff', 0);
 pll_register_string('Staff: Support', 'staff_support', 'staff', 0);
+pll_register_string('Staff: Executives', 'staff_executives', 'staff', 0);
 
 ?>
