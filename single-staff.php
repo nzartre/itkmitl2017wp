@@ -15,9 +15,15 @@ if (have_posts()) :
                         <?php the_post_thumbnail('thumbnail', ['class' => 'avatar']); ?>
                         <h1 class="name text-center"><?php the_title(); ?></h1>
                         <h2 class="role text-center"><?php echo $meta['role'][0]; ?></h2>
-                        <?php if ($meta['lab'][0]) : ?>
+                        <?php if ($meta['office'][0]) : ?>
                             <div class="office">
-                                <i class="fas fa-building"></i>
+                                Office:
+                                <?php echo $meta['office'][0]; ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php if ($meta['lab'][0]) : ?>
+                            <div class="lab">
+                                Lab:
                                 <?php echo $meta['lab'][0]; ?>
                             </div>
                         <?php endif; ?>
