@@ -46,6 +46,9 @@ function itkmitl_staff_meta_cb( $post ) {
 
     echo '<label for="linkedin">LinkedIn</label>';
     echo '<input type="text" class="widefat" name="linkedin" value="' . esc_textarea($stored_staff_meta['linkedin'][0]) . '">';
+
+    echo '<label for="scopus">Scopus</label>';
+    echo '<input type="text" class="widefat" name="scopus" value="' . esc_textarea($stored_staff_meta['scopus'][0]) . '">';
 }
 
 function itkmitl_save_staff_meta( $post_id ) {
@@ -58,7 +61,7 @@ function itkmitl_save_staff_meta( $post_id ) {
         return;
     }
     // Checks for input and sanitizes/saves if needed
-    $fields = ['order', 'prefix', 'first_name', 'last_name', 'role', 'phone', 'lab', 'email', 'website', 'linkedin'];
+    $fields = ['order', 'prefix', 'first_name', 'last_name', 'role', 'phone', 'lab', 'email', 'website', 'linkedin', 'scopus'];
     foreach ($fields as $field) {
         if( isset( $_POST[$field] ) ) {
             update_post_meta( $post_id, $field, sanitize_text_field( $_POST[$field] ) );
