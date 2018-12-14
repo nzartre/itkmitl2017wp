@@ -59,7 +59,8 @@
 </section>
 
 <!-- MODAL IS UNUSED -->
-<div id="staff-modal" class="modal-box staff-modal hide">
+<?php
+/* <div id="staff-modal" class="modal-box staff-modal hide">
     <div class="modal">
         <span class="close"></span>
         <div class="modal-body">
@@ -99,10 +100,12 @@
             </div>
         </div>
     </div>
-</div>
+</div> */
+?>
 
 <!-- MODAL IS UNUSED -->
-<script>
+<?php
+/* <script>
     var staff;
 
     function showStaffModal(staffID) {
@@ -145,4 +148,5 @@
             jQuery('#staff-' + staffID).removeClass('loading');
         });
     }
-</script>
+</script> */
+?>
