@@ -43,7 +43,8 @@ function filter_staff_json( $data, $post, $context ) {
         'lab'       => $custom_meta['lab'][0],
         'email'     => $custom_meta['email'][0],
         'website'   => $custom_meta['website'][0],
-        'linkedin'  => $custom_meta['linkedin'][0]
+        'linkedin'  => $custom_meta['linkedin'][0],
+        'scopus'    => $custom_meta['scopus'][0]
     ];
 }
 add_filter( 'rest_prepare_staff', 'filter_staff_json', 10, 3 );
