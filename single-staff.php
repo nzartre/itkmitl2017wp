@@ -22,7 +22,7 @@ if (have_posts()) :
                             </div>
                         <?php endif; ?>
                         <?php if ($meta['lab'][0]) : ?>
-                            <div class="lab">
+                            <div class="office">
                                 Lab:
                                 <?php echo $meta['lab'][0]; ?>
                             </div>
