@@ -40,6 +40,7 @@ function filter_staff_json( $data, $post, $context ) {
         'last_name'  => $custom_meta['last_name'][0],
         'role'      => $custom_meta['role'][0],
         'phone'     => $custom_meta['phone'][0],
+        'office'    => $custom_meta['office'][0],
         'lab'       => $custom_meta['lab'][0],
         'email'     => $custom_meta['email'][0],
         'website'   => $custom_meta['website'][0],
