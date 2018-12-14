@@ -41,7 +41,7 @@ if (have_posts()) :
                         ?>
                         <div class="links-box">
                             <?php
-                            $links = ['website', 'linkedin'];
+                            $links = ['website', 'linkedin', 'scopus'];
                             foreach ($links as $link) :
                                 if ($meta[$link][0]) :
                                     ?>
