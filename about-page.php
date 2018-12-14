@@ -30,7 +30,7 @@ if (have_posts()) :
 							<p><?php pll_e('about_staff_details'); ?></p>
 						</a>
                         <a href="<?php echo home_url() . '/executives'; ?>" class="stat-box">
-                            <img src="<?php echo get_theme_file_uri('img/about-personnel.png'); ?>" alt="about-personnel">
+                            <img src="<?php echo get_theme_file_uri('img/about-executives.png'); ?>" alt="about-personnel">
                             <h3><?php pll_e('about_executives'); ?></h3>
                             <p><?php pll_e('about_executives_details'); ?></p>
                         </a>
