@@ -113,6 +113,8 @@ pll_register_string('About: Location', 'about_location', 'about', 0);
 pll_register_string('About: Location details', 'about_location_details', 'about', 0);
 pll_register_string('About: Staff', 'about_staff', 'about', 0);
 pll_register_string('About: Staff details', 'about_staff_details', 'about', 0);
+pll_register_string('About: Executives', 'about_executives', 'about', 0);
+pll_register_string('About: Executives details', 'about_executives_details', 'about', 0);
 pll_register_string('About: Contact', 'about_contact', 'about', 0);
 pll_register_string('About: Contact details', 'about_contact_details', 'about', 0);
 pll_register_string('About: Life', 'about_life', 'about', 0);
