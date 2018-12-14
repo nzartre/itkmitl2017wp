@@ -35,7 +35,10 @@ function itkmitl_staff_meta_cb( $post ) {
     echo '<label for="phone">เบอร์ติดต่อ</label>';
     echo '<input type="text" class="widefat" name="phone" value="' . esc_textarea($stored_staff_meta['phone'][0]) . '">';
 
-    echo '<label for="lab">ห้อง</label>';
+    echo '<label for="office">ห้องทำงาน</label>';
+    echo '<input type="text" class="widefat" name="office" value="' . esc_textarea($stored_staff_meta['office'][0]) . '">';
+
+    echo '<label for="lab">ห้องแล็บ</label>';
     echo '<input type="text" class="widefat" name="lab" value="' . esc_textarea($stored_staff_meta['lab'][0]) . '">';
 
     echo '<label for="email">อีเมล</label>';
@@ -61,7 +64,7 @@ function itkmitl_save_staff_meta( $post_id ) {
         return;
     }
     // Checks for input and sanitizes/saves if needed
-    $fields = ['order', 'prefix', 'first_name', 'last_name', 'role', 'phone', 'lab', 'email', 'website', 'linkedin', 'scopus'];
+    $fields = ['order', 'prefix', 'first_name', 'last_name', 'role', 'phone', 'office', 'lab', 'email', 'website', 'linkedin', 'scopus'];
     foreach ($fields as $field) {
         if( isset( $_POST[$field] ) ) {
             update_post_meta( $post_id, $field, sanitize_text_field( $_POST[$field] ) );
