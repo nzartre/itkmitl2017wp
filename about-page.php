@@ -19,27 +19,27 @@ if (have_posts()) :
 							<h3><?php pll_e('about_found'); ?></h3>
 							<p><?php pll_e('about_found_details'); ?></p>
 						</a>
-						<a href="travel" class="stat-box">
+						<a href="./travel/" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-location.png'); ?>" alt="about-location">
 							<h3><?php pll_e('about_location'); ?></h3>
 							<p><?php pll_e('about_location_details'); ?><span id="weather"></span></p>
 						</a>
-						<a href="<?php echo home_url() . '/staff'; ?>" class="stat-box">
+						<a href="<?php echo home_url() . '/staff/'; ?>" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-personnel.png'); ?>" alt="about-personnel">
 							<h3><?php pll_e('about_staff'); ?></h3>
 							<p><?php pll_e('about_staff_details'); ?></p>
 						</a>
-                        <a href="<?php echo home_url() . '/executives'; ?>" class="stat-box">
+                        <a href="./executives/" class="stat-box">
                             <img src="<?php echo get_theme_file_uri('img/about-executives.png'); ?>" alt="about-personnel">
                             <h3><?php pll_e('about_executives'); ?></h3>
                             <p><?php pll_e('about_executives_details'); ?></p>
                         </a>
-						<a href="contact" class="stat-box">
+						<a href="./contact/" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-contact.png'); ?>" alt="about-contact">
 							<h3><?php pll_e('about_contact'); ?></h3>
 							<p><?php pll_e('about_contact_details'); ?></p>
 						</a>
-                        <a href="life" class="stat-box">
+                        <a href="./life/" class="stat-box">
                             <img src="<?php echo get_theme_file_uri('img/about-life.png'); ?>" alt="about-life">
                             <h3><?php pll_e('about_life'); ?></h3>
                             <p><?php pll_e('about_life_details'); ?></p>
