@@ -23,7 +23,7 @@ if (have_posts()) :
                                 'nopaging' => true,
                                 'order' => 'ASC',
                                 'orderby' => 'meta_value_num',
-                                'meta_key' => 'order');
+                                'meta_key' => 'order_exec');
                             $executive_query = new WP_Query($executive_query_args);
                             if ($executive_query->have_posts()) :
                                 while ($executive_query->have_posts()) : $executive_query->the_post();
