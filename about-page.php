@@ -24,15 +24,15 @@ if (have_posts()) :
 							<h3><?php pll_e('about_location'); ?></h3>
 							<p><?php pll_e('about_location_details'); ?><span id="weather"></span></p>
 						</a>
-						<a href="<?php echo home_url() . '/staff/'; ?>" class="stat-box">
-							<img src="<?php echo get_theme_file_uri('img/about-personnel.png'); ?>" alt="about-personnel">
-							<h3><?php pll_e('about_staff'); ?></h3>
-							<p><?php pll_e('about_staff_details'); ?></p>
-						</a>
                         <a href="./executives/" class="stat-box">
                             <img src="<?php echo get_theme_file_uri('img/about-executives.png'); ?>" alt="about-personnel">
                             <h3><?php pll_e('about_executives'); ?></h3>
                             <p><?php pll_e('about_executives_details'); ?></p>
+                        </a>
+                        <a href="<?php echo home_url() . '/staff/'; ?>" class="stat-box">
+                            <img src="<?php echo get_theme_file_uri('img/about-personnel.png'); ?>" alt="about-personnel">
+                            <h3><?php pll_e('about_staff'); ?></h3>
+                            <p><?php pll_e('about_staff_details'); ?></p>
                         </a>
 						<a href="./contact/" class="stat-box">
 							<img src="<?php echo get_theme_file_uri('img/about-contact.png'); ?>" alt="about-contact">
