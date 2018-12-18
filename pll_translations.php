@@ -22,6 +22,7 @@ pll_register_string('Sitemap page title', 'page_sitemap', 'page_title', 0);
 pll_register_string('All Events page title', 'page_events_all-events', 'page_title', 0);
 pll_register_string('Calendar page title', 'page_events-calendar', 'page_title', 0);
 pll_register_string('Subjects page title', 'page_subjects', 'page_title', 0); /* subjects-archive */
+pll_register_string('Executives page title', 'page_executives', 'page_title', 0);
 
 // Miscellaneous
 pll_register_string('Social Media title', 'misc_social-media', 'misc', 0); /* footer */

@@ -11,7 +11,7 @@ if (have_posts()) :
             <div class="page-content">
                 <div class="paper">
                     <div class="container">
-                        <h1 class="page-title"><?php pll_e('page_staff'); ?></h1>
+                        <h1 class="page-title"><?php pll_e('page_executives'); ?></h1>
                         <img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider"
                              class="divider-short">
                         <h3 class="text-center"><?php pll_e('staff_executives'); ?></h3>
