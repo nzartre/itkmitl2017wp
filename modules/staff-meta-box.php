@@ -20,6 +20,9 @@ function itkmitl_staff_meta_cb( $post ) {
     echo '<label for="order">ลำดับแสดงผล</label>';
     echo '<input type="text" class="widefat" name="order" value="' . esc_textarea($stored_staff_meta['order'][0]) . '">';
 
+    echo '<label for="order_exec">ลำดับแสดงผลในหน้าผู้บริหาร (เฉพาะผู้บริหาร)</label>';
+    echo '<input type="text" class="widefat" name="order_exec" value="' . esc_textarea($stored_staff_meta['order_exec'][0]) . '">';
+
     echo '<label for="prefix">คำนำหน้า (ย่อ)</label>';
     echo '<input type="text" class="widefat" name="prefix" value="' . esc_textarea($stored_staff_meta['prefix'][0]) . '">';
 
@@ -64,7 +67,7 @@ function itkmitl_save_staff_meta( $post_id ) {
         return;
     }
     // Checks for input and sanitizes/saves if needed
-    $fields = ['order', 'prefix', 'first_name', 'last_name', 'role', 'phone', 'office', 'lab', 'email', 'website', 'linkedin', 'scopus'];
+    $fields = ['order', 'order_exec', 'prefix', 'first_name', 'last_name', 'role', 'phone', 'office', 'lab', 'email', 'website', 'linkedin', 'scopus'];
     foreach ($fields as $field) {
         if( isset( $_POST[$field] ) ) {
             update_post_meta( $post_id, $field, sanitize_text_field( $_POST[$field] ) );
