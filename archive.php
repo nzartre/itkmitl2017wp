@@ -13,6 +13,14 @@ else:
                 <h1 class="page-title"><?php single_cat_title(); ?></h1>
                 <img src="<?php echo get_theme_file_uri('img/divider-short.png'); ?>" alt="divider"
                      class="divider-short">
+                <?php
+                $menuParameters = array(
+                    'container_class' => 'content-nav',
+                    'depth' => 0,
+                    'theme_location' => 'archive',
+                );
+                wp_nav_menu($menuParameters);
+                ?>
                 <div class="col-group">
                     <div class="col-12 col-dt-10 col-dt-offset-1">
                         <?php

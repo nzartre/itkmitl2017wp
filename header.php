@@ -74,7 +74,7 @@
 	</title>
 
 	<?php
-	$enable_analytics = false;
+	$enable_analytics = true;
 	if ($enable_analytics) : ?>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-90533167-1"></script-->

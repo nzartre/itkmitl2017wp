@@ -21,7 +21,8 @@ function nav_loader() {
         array(
             'primary' => __('Top Fixed Menu'),
             'header' => __('Header Menu'),
-            'inpage' => __('In-Page Menu')
+            'inpage' => __('In-Page Menu'),
+            'archive' => __('Archive Page Menu')
         )
     );
 }
