@@ -11,7 +11,7 @@ if (have_posts()) :
 			<div class="page-content">
 				<div class="page-hero">
 					<h1 class="text-center"><?php the_title(); ?></h1>
-					<h3 class="text-center"><?php pll_e('acad-serv_subtitle'); ?></h3>
+					<!-- <h3 class="text-center"><?php pll_e('acad-serv_subtitle'); ?></h3> -->
 					<a href="<?php echo pll_home_url() . 'events'; ?>" class="button outline inverted big"><?php pll_e('acad-serv_view-calendar'); ?></a>
 				</div>
 				<section class="acadserv--categories">

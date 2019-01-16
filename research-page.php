@@ -11,7 +11,7 @@ if (have_posts()) :
             <div class="page-content">
                 <div class="page-hero">
                     <h1 class="text-center"><?php the_title(); ?></h1>
-                    <h3 class="text-center"><?php pll_e('research_subtitle'); ?></h3>
+                    <!-- <h3 class="text-center"><?php pll_e('research_subtitle'); ?></h3> -->
                 </div>
                 <section style="padding-bottom: 0" id="research-highlight-section">
                     <div class="container">
