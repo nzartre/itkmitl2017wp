@@ -41,7 +41,13 @@ if (have_posts()) :
 										"pll_deg_name" => "programs_bachelor_name",
 										"years" => 2,
 										"link" => "adv-bachelor"
-									]
+									],
+									"master" => [
+										"pll_prog_name" => "programs_master_it",
+										"pll_deg_name" => "programs_master_name",
+										"years" => 2,
+										"link" => "master-degree"
+									],
 								];
 							?>
 							<?php foreach ($bach_programs as $prog): ?>
@@ -62,11 +68,6 @@ if (have_posts()) :
 							<?php endforeach; ?>
 						</div>
 						<div class="box-wrap">
-							<div class="bg-box half" style="background-image: url(<?php echo get_theme_file_uri('img/course-2.jpg'); ?>);">
-								<h3><?php pll_e('programs_master_title'); ?></h3>
-								<p><?php pll_e('programs_master_name'); ?></p>
-								<a href="master-degree" class="button outline"><?php pll_e('misc_read-more'); ?></a>
-							</div>
 							<div class="bg-box half" style="background-image: url(<?php echo get_theme_file_uri('img/course-3.jpg'); ?>);">
 								<h3><?php pll_e('programs_phd_title'); ?></h3>
 								<p><?php pll_e('programs_phd_name'); ?></p>
