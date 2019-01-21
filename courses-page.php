@@ -15,7 +15,7 @@ if (have_posts()) :
 				</div>
 				<section class="all-courses">
 					<div class="container">
-						<div class="col-group">
+						<div class="col-group flex-row wrap">
 							<?php
 								$bach_programs = [
 									"it" => [
@@ -45,8 +45,8 @@ if (have_posts()) :
 								];
 							?>
 							<?php foreach ($bach_programs as $prog): ?>
-							<div class="col-4">
-								<div class="card simple-card">
+							<div class="col-mb-12 col-6 col-dt-4">
+								<div class="card simple-card no-bottom-mg">
 									<div class="padded">
 										<h4><?php pll_e($prog["pll_prog_name"]); ?></h4>
 										<p><?php pll_e($prog["pll_deg_name"]); ?></p>
