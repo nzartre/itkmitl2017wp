@@ -37,5 +37,6 @@ const build = gulp.parallel(_sass, _js);
 
 exports.sass = _sass;
 exports.js = _js;
+exports.watch = watch;
 
 gulp.task('default', build);

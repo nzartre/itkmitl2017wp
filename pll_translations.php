@@ -29,6 +29,7 @@ pll_register_string('Social Media title', 'misc_social-media', 'misc', 0); /* fo
 pll_register_string('Read more', 'misc_read-more', 'misc', 0); /* front-news, courses-page */
 pll_register_string('View all news', 'misc_view-all-news', 'misc', 0); /* front-news */
 pll_register_string('View all achievements', 'misc_view-all-achievements', 'misc', 0); /* front-news */
+pll_register_string('Years', 'misc_years', 'misc', 0);
 
 // Home
 pll_register_string('Home: Programs', 'home_programs', 'home', 0);
@@ -58,8 +59,10 @@ pll_register_string('Programs: Bachelor: BIT', 'programs_bachelor_bit', 'program
 pll_register_string('Programs: Honors', 'programs_bachelor_adv', 'programs', 0);
 pll_register_string('Programs: Master title', 'programs_master_title', 'programs', 0);
 pll_register_string('Programs: Master degree name', 'programs_master_name', 'programs', 1);
+pll_register_string('Programs: Master degree: IT', 'programs_master_it', 'programs', 0);
 pll_register_string('Programs: Ph.D title', 'programs_phd_title', 'programs', 0);
 pll_register_string('Programs: Ph.D degree name', 'programs_phd_name', 'programs', 1);
+pll_register_string('Programs: Ph.D degree: IT', 'programs_phd_it', 'programs', 0);
 
 // Admissions page
 pll_register_string('Admissions: Subtitle', 'admissions_subtitle', 'admissions', 1);

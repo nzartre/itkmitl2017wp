@@ -67,7 +67,7 @@
 		} elseif (is_single()) {
 			wp_title('');
 		} else {
-			echo wp_title(' | ', false, right);
+			echo wp_title(' | ', false, 'right');
 			bloginfo('name');
 		}
 		?>

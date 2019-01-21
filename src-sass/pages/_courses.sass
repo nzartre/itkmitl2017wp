@@ -14,22 +14,16 @@ section.page--courses
 			margin-right: auto
 
 section.all-courses
-	.bg-box
-		h3
-			color: #fff
-		div.btn-wrap
-			margin-bottom: 0.5em
-			&:last-child
-				margin-bottom: 0
-		&.half
-			min-width: 49%
-	.box-wrap
-		display: flex
-		justify-content: space-between
-
-@media screen and (max-width: 1000px)
-	section.all-courses
-		.box-wrap
-			flex-direction: column
-			.bg-box:last-child
+	div[class*="col-"]
+		margin-bottom: 1.2em
+	div.card
+		&.master
+			border-color: #bde6ff
+		&.phd
+			border-color: #78bdff
+	div.arrow-wrap
+		margin-bottom: 1.2em
+		p
+			margin-bottom: 0.3em
+			&:last-of-type
 				margin-bottom: 0
