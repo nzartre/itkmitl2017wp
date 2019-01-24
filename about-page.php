@@ -49,6 +49,11 @@ if (have_posts()) :
 				<div class="about--dean">
 					<img src="<?php echo get_theme_file_uri('img/about-dean-avatar.jpg'); ?>" alt="Dean">
 					<p class="large dean-words"><?php pll_e('about_description_word'); ?></p>
+					<div style="margin-bottom: 1em">
+						<a href="./deans-message/" class="button round inverted outline">
+                    		<?php pll_e('misc_read-more'); ?>
+                		</a>
+					</div>
 					<p class="big dean-name" id="scroll-history"><?php pll_e('about_description_person'); ?></p>
 					<p class="dean-position"><?php pll_e('about_description_position'); ?></p>
 				</div>
