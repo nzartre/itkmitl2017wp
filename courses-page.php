@@ -23,47 +23,54 @@ if (have_posts()) :
 										"pll_deg_name" => "programs_bachelor_name",
 										"years" => 4,
 										"link" => "it-program",
-										"deg" => "bachelor"
+										"deg" => "bachelor",
+										"img" => "course-bach-it.jpg"
 									],
 									"dsba" => [
 										"pll_prog_name" => "programs_bachelor_dsba",
 										"pll_deg_name" => "programs_bachelor_name",
 										"years" => 4,
 										"link" => "datasci-program",
-										"deg" => "bachelor"
+										"deg" => "bachelor",
+										"img" => "course-bach-dsba.jpg"
 									],
 									"bit" => [
 										"pll_prog_name" => "programs_bachelor_bit",
 										"pll_deg_name" => "programs_bachelor_name",
 										"years" => 4,
 										"link" => "bit-program",
-										"deg" => "bachelor"
+										"deg" => "bachelor",
+										"img" => "course-bach-bit.jpg"
 									],
 									"adv" => [
 										"pll_prog_name" => "programs_bachelor_adv",
 										"pll_deg_name" => "programs_bachelor_name",
 										"years" => 2,
 										"link" => "adv-bachelor",
-										"deg" => "bachelor"
+										"deg" => "bachelor",
+										"img" => "course-honors.jpg"
 									],
 									"master" => [
 										"pll_prog_name" => "programs_master_it",
 										"pll_deg_name" => "programs_master_name",
 										"years" => 2,
 										"link" => "master-degree",
-										"deg" => "master"
+										"deg" => "master",
+										"img" => "course-master.jpg"
 									],
 									"phd" => [
 										"pll_prog_name" => "programs_phd_it",
 										"pll_deg_name" => "programs_phd_name",
 										"link" => "doctoral-degree",
-										"deg" => "phd"
+										"deg" => "phd",
+										"img" => "course-phd.jpg"
 									]
 								];
 							?>
 							<?php foreach ($bach_programs as $prog): ?>
 							<div class="col-mb-12 col-6 col-dt-4">
 								<div class="card simple-card no-bottom-mg <?php echo $prog["deg"]; ?>">
+									<img src="<?php echo get_theme_file_uri('img/' . $prog['img']) ?>">
 									<div class="padded">
 										<h4><?php pll_e($prog["pll_prog_name"]); ?></h4>
 										<p><?php pll_e($prog["pll_deg_name"]); ?></p>
