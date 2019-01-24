@@ -73,7 +73,6 @@ if (have_posts()) :
 									<img src="<?php echo get_theme_file_uri('img/' . $prog['img']) ?>">
 									<div class="padded">
 										<h4><?php pll_e($prog["pll_prog_name"]); ?></h4>
-										<p><?php pll_e($prog["pll_deg_name"]); ?></p>
 										<?php
 										$pll_deg_lvl = "";
 										switch ($prog["deg"]) {
