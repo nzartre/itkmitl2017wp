@@ -2,6 +2,7 @@
 A 2017 WordPress theme for Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang.
 
 ## Theme Features
+* Gutenberg-ready
 * Small codebase
 * Responsive
 * Kube CSS as the main framework
