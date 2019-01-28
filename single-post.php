@@ -28,6 +28,10 @@ if (have_posts()) :
                         <div class="col-12 col-dt-9">
                             <?php if (has_post_thumbnail()):
                                 the_post_thumbnail('full', array('class' => 'featured-image', 'id' => 'main-feat-image'));
+                            else:
+                                ?>
+                                <img id="main-feat-image" class="featured-image" src="<?php echo get_template_directory_uri() . '/img/300x200-thumb.png' ?>" alt="">
+                                <?php
                             endif;
                             the_content(); ?>
                         </div><!-- post content -->
