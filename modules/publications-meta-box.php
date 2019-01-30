@@ -41,10 +41,15 @@ function itkmitl_save_publications_meta( $post_id ) {
         return;
     }
     // Check for input and sanitize/save if needed
-    $fields = ['author', 'presentation_date', 'book'];
+    $fields = ['author', 'book', 'presentation_date'];
     foreach ($fields as $field) {
         if( isset( $_POST[$field] ) ) {
-            update_post_meta( $post_id, $field, sanitize_text_field( $_POST[$field] ) );
+            if ($field == 'presentation_date') {
+                $date_to_save = strtotime($_POST[$field]);
+                update_post_meta($post_id, $field, sanitize_text_field($date_to_save));
+            } else {
+                update_post_meta($post_id, $field, sanitize_text_field($_POST[$field]));
+            }
         }
     }
 }

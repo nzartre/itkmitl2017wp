@@ -15,9 +15,11 @@ if (have_posts()) :
                             $taxonomies = get_the_terms($post->ID, 'publications-category');
                             $meta = get_post_meta($post->ID);
                             ?>
+                            <?php if ($taxonomies): ?>
                             <div>
                                 <?php foreach ($taxonomies as $tx) echo "<span class=\"label\">$tx->name</span>&nbsp;"; ?>
                             </div>
+                            <?php endif; ?>
                             <table class="stack-on-tl" style="margin-top: 1em">
                                 <tr>
                                     <th>ผู้เขียนและผู้เขียนร่วม</th>
@@ -25,7 +27,7 @@ if (have_posts()) :
                                 </tr>
                                 <tr>
                                     <th>ปี</th>
-                                    <td><?php echo $meta['year'][0]; ?></td>
+                                    <td><?php echo $meta['presentation_date'][0]; ?></td>
                                 </tr>
                                 <tr>
                                     <th>ชื่อวารสาร/การประชุม</th>
