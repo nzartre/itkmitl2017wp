@@ -26,8 +26,8 @@ if (have_posts()) :
                                     <td><?php echo $meta['author'][0]; ?></td>
                                 </tr>
                                 <tr>
-                                    <th>ปี</th>
-                                    <td><?php echo $meta['presentation_date'][0]; ?></td>
+                                    <th>วันที่เผยแพร่</th>
+                                    <td><?php echo date('F j, Y', $meta['presentation_date'][0]); ?></td>
                                 </tr>
                                 <tr>
                                     <th>ชื่อวารสาร/การประชุม</th>
