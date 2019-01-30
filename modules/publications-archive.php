@@ -12,7 +12,7 @@
                         'nopaging' => true,
                         'order' => 'DSC',
                         'orderby' => 'meta_value_num',
-                        'meta_key' => 'year');
+                        'meta_key' => 'presentation_date');
                     $publications_query = new WP_Query($pub_query_args);
                     $prev_year = '';
                     $is_first_year = true;
@@ -20,7 +20,7 @@
                     if ($publications_query->have_posts()) :
                         while ($publications_query->have_posts()) : $publications_query->the_post();
 
-                            $current_year = get_post_meta($post->ID, 'year', true);
+                            $current_year = date('Y', (int)get_post_meta($post->ID, 'presentation_date', true));
                             if ($current_year != $prev_year) {
                                 // close tags when not the first table
                                 if (!$is_first_year) echo '</tbody></table></div></div>';
@@ -45,17 +45,18 @@
                             $is_first_year = false;
                             $prev_year = $current_year;
                             $taxonomies = get_the_terms($post->ID, 'publications-category');
-                            $taxo_amount = count($taxonomies); ?>
+                            $taxo_amount = $taxonomies ? count($taxonomies) : 0; ?>
 
                             <tr>
                                 <td><a href="<?php the_permalink(); ?>" class="black"><?php the_title(); ?></a></td>
                                 <td><?php echo get_post_meta(get_the_id(), 'author', true); ?></td>
-                                <td><?php $c = 1;
+                                <td><?php if ($taxonomies):
+                                    $c = 1;
                                     foreach ($taxonomies as $tx) {
                                         echo $tx->name;
                                         if ($c < $taxo_amount) echo ', ';
                                         $c++;
-                                    } ?></td>
+                                    } endif; ?></td>
                             </tr>
 
                         <?php endwhile; echo '</tbody></table></div></div>'; endif; ?>
