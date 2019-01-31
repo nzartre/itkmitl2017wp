@@ -23,7 +23,6 @@
                                 <?php the_post_thumbnail('medium', array('id' => 'staff-' . get_the_id() . '-img')); ?>
                                 <div class="padded">
                                     <h3><?php echo $lecmeta['prefix'][0] . ' ' . $lecmeta['first_name'][0] . ' ' . $lecmeta['last_name'][0]; ?></h3>
-                                    <p class="role"><?php echo $lecmeta['role'][0]; ?></p>
                                     <p class="email"><?php echo $lecmeta['email'][0]; ?></p>
                                 </div>
                             </a>
