@@ -47,7 +47,7 @@ if (have_posts()) :
 										"pll_deg_name" => "programs_bachelor_adv_name",
 										"years" => 4,
 										"link" => "adv-bachelor",
-										"deg" => "bachelor",
+										"deg" => "bachelor-and-master",
 										"img" => "course-honors.jpg"
 									],
 									"master" => [
@@ -78,6 +78,9 @@ if (have_posts()) :
 										switch ($prog["deg"]) {
 											case 'bachelor':
 												$pll_deg_lvl = "programs_bachelor_title";
+												break;
+											case 'bachelor-and-master':
+												$pll_deg_lvl = "programs_bachelor_adv_name";
 												break;
 											case 'master':
 												$pll_deg_lvl = "programs_master_title";
