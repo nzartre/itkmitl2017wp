@@ -57,6 +57,7 @@ pll_register_string('Programs: Bachelor: IT', 'programs_bachelor_it', 'programs'
 pll_register_string('Programs: Bachelor: DSBA', 'programs_bachelor_dsba', 'programs', 0);
 pll_register_string('Programs: Bachelor: BIT', 'programs_bachelor_bit', 'programs', 0);
 pll_register_string('Programs: Honors', 'programs_bachelor_adv', 'programs', 0);
+pll_register_string('Programs: Honors degree name', 'programs_bachelor_adv_name', 'programs', 0);
 pll_register_string('Programs: Master title', 'programs_master_title', 'programs', 0);
 pll_register_string('Programs: Master degree name', 'programs_master_name', 'programs', 1);
 pll_register_string('Programs: Master degree: IT', 'programs_master_it', 'programs', 0);

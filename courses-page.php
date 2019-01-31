@@ -44,7 +44,7 @@ if (have_posts()) :
 									],
 									"adv" => [
 										"pll_prog_name" => "programs_bachelor_adv",
-										"pll_deg_name" => "programs_bachelor_name",
+										"pll_deg_name" => "programs_bachelor_adv_name",
 										"years" => 2,
 										"link" => "adv-bachelor",
 										"deg" => "bachelor",
