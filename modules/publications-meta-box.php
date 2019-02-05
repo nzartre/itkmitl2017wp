@@ -20,13 +20,16 @@ function itkmitl_publications_meta_cb( $post ) {
     wp_nonce_field( basename( __FILE__ ), 'itkmitl_publications_meta_fields' );
     // Get the data if it's already been entered
     $stored_publications_meta = get_post_meta( $post->ID );
+    $presentation_date_to_display =
+        $stored_publications_meta['presentation_date'][0] ?
+        date("Y/m/d", $stored_publications_meta['presentation_date'][0]) : '';
 
     echo '<label for="author">ผู้เขียนและผู้เขียนร่วม</label>';
     echo '<input type="text" class="widefat" name="author" value="' . esc_textarea($stored_publications_meta['author'][0]) . '">';
 
-    echo '<label for="presentation_date">ปี  เดือร วัน ที่ตีพิมพ์/เผยแพร่</label>';
+    echo '<label for="presentation_date">ปี  เดือน วัน ที่ตีพิมพ์/เผยแพร่</label>';
     echo '<input type="text" class="widefat datepicker-here" data-language="en" data-date-format="yyyy/mm/dd" name="presentation_date"';
-    echo ' value="' . esc_textarea(date("Y/m/d", $stored_publications_meta['presentation_date'][0])) . '">';
+    echo ' value="' . esc_textarea($presentation_date_to_display) . '">';
 
     echo '<label for="book">ชื่อวารสาร/การประชุม</label>';
     echo '<input type="text" class="widefat" name="book" value="' . esc_textarea($stored_publications_meta['book'][0]) . '">';
