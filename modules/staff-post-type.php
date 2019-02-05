@@ -27,7 +27,7 @@ function create_staff_post_type() {
 add_action( 'init', 'create_staff_post_type' );
 
 /* Add meta to REST API */
-function filter_staff_json( $data, $post, $context ) {
+/* function filter_staff_json( $data, $post, $context ) {
     $custom_meta = get_post_meta($post->ID);
     $featured_image_url = wp_get_attachment_image_src( $data->data['featured_media'], 'original' );
     return [
@@ -48,5 +48,5 @@ function filter_staff_json( $data, $post, $context ) {
         'scopus'    => $custom_meta['scopus'][0]
     ];
 }
-add_filter( 'rest_prepare_staff', 'filter_staff_json', 10, 3 );
+add_filter( 'rest_prepare_staff', 'filter_staff_json', 10, 3 ); */
 ?>
