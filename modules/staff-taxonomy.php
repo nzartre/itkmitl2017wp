@@ -13,6 +13,7 @@ function itkmitl_create_staff_category() {
             ),
             'rewrite' => array('slug' => 'position'),
             'hierarchical' => true,
+            'show_in_rest' => true,
         )
     );
 }
