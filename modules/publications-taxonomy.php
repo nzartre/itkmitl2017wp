@@ -13,6 +13,7 @@ function itkmitl_create_publications_category() {
             ),
             'rewrite' => array('slug' => 'pub-category'),
             'hierarchical' => true,
+            'show_in_rest' => true,
         )
     );
 }
