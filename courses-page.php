@@ -98,7 +98,7 @@ if (have_posts()) :
 											</p>
 											<?php endif; ?>
 										</div>
-										<a href="<?php echo $prog["link"] ?>" class="button outline">
+										<a href="<?php echo $prog["link"] ?>" class="button outline round">
 											<?php pll_e('misc_read-more'); ?>
 										</a>
 	                                </div>
