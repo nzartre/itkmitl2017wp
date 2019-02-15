@@ -61,6 +61,7 @@ if (have_posts()) :
 									"phd" => [
 										"pll_prog_name" => "programs_phd_it",
 										"pll_deg_name" => "programs_phd_name",
+										"years" => 3,
 										"link" => "doctoral-degree",
 										"deg" => "phd",
 										"img" => "course-phd.jpg"
@@ -71,7 +72,7 @@ if (have_posts()) :
 							<div class="col-mb-12 col-6 col-dt-4">
 								<div class="card simple-card no-bottom-mg <?php echo $prog["deg"]; ?>">
 									<img src="<?php echo get_theme_file_uri('img/' . $prog['img']) ?>">
-									<div class="padded">
+									<div class="padded info">
 										<h4><?php pll_e($prog["pll_prog_name"]); ?></h4>
 										<?php
 										$pll_deg_lvl = "";
@@ -97,7 +98,7 @@ if (have_posts()) :
 											</p>
 											<?php endif; ?>
 										</div>
-										<a href="<?php echo $prog["link"] ?>" class="button outline">
+										<a href="<?php echo $prog["link"] ?>" class="button outline round fluid">
 											<?php pll_e('misc_read-more'); ?>
 										</a>
 	                                </div>

@@ -14,6 +14,7 @@
 @import components/hero
 @import components/nav
 @import components/card
+@import components/button
 @import components/footer
 @import components/table
 @import components/bg-box
@@ -118,13 +119,15 @@ section
 	&.single
 		h1.post-title
 			margin-top: 1em
+			font-size: 2.3em
+			font-weight: 300
 		span.post-meta
 			font-family: $font-main
 			display: block
 			margin-bottom: 2em
 		img.featured-image
 			display: block
-			margin: 0 auto 1.8em
+			margin: 0 auto 2em
 			width: 100%
 			box-shadow: 0 0.5em 14px rgba(0,0,0,0.2)
 			border-radius: 5px
@@ -201,6 +204,8 @@ ul.share-buttons
 		justify-content: space-between
 	&.wrap
 		flex-wrap: wrap
+	&.justify-center
+		justify-content: center
 
 // Responsiveness rules
 @media screen and (max-width: 991px)
