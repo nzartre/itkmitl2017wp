@@ -49,7 +49,7 @@ if ($the_query_1->have_posts() || $the_query_2->have_posts()):
     ?>
     <h1 class="title"><?php pll_e('home_news-updates'); ?></h1>
     <div class="container" id="news">
-        <div class="col-group flex-row justify-center">
+        <div class="col-group flex-row justify-center wrap">
             <?php
                 while ($the_query_2->have_posts()) : $the_query_2->the_post();
                     ?>
