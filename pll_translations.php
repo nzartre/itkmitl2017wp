@@ -30,6 +30,7 @@ pll_register_string('Read more', 'misc_read-more', 'misc', 0); /* front-news, co
 pll_register_string('View all news', 'misc_view-all-news', 'misc', 0); /* front-news */
 pll_register_string('View all achievements', 'misc_view-all-achievements', 'misc', 0); /* front-news */
 pll_register_string('Years', 'misc_years', 'misc', 0);
+pll_register_string('Old Website Link', 'misc_old-site', 'misc', 0);
 
 // Home
 pll_register_string('Home: Programs', 'home_programs', 'home', 0);
