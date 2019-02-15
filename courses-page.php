@@ -61,6 +61,7 @@ if (have_posts()) :
 									"phd" => [
 										"pll_prog_name" => "programs_phd_it",
 										"pll_deg_name" => "programs_phd_name",
+										"years" => 3,
 										"link" => "doctoral-degree",
 										"deg" => "phd",
 										"img" => "course-phd.jpg"
