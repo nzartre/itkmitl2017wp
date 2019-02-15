@@ -85,6 +85,7 @@
 
 			gtag('config', 'UA-90533167-1');
 		</script-->
+	<?php endif; ?>
 </head>
 
 <body <?php body_class(); ?>>
