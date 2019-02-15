@@ -9,9 +9,9 @@ $the_query_2 = new WP_Query(array(
 ));
 
 if ($the_query_1->have_posts() || $the_query_2->have_posts()):
-if ($the_query_1->have_posts()):
 ?>
 <section style="background-color: #f2f7ff" id="home-news-section">
+    <?php if ($the_query_1->have_posts()): ?>
     <h1 class="title"><?php pll_e('home_achievements'); ?></h1>
     <div class="container" id="achievement">
         <div class="owl-carousel owl-theme owl-news-slider" id="home-achievement">
@@ -49,11 +49,11 @@ if ($the_query_1->have_posts()):
     ?>
     <h1 class="title"><?php pll_e('home_news-updates'); ?></h1>
     <div class="container" id="news">
-        <div class="flex-row space-between wrap">
+        <div class="col-group flex-row justify-center">
             <?php
                 while ($the_query_2->have_posts()) : $the_query_2->the_post();
                     ?>
-                    <article>
+                    <article class="col-mb-12 col-6 col-dt-3">
                         <a href="<?php echo get_the_permalink() ?>" class="card news-card">
                                 <?php if (has_post_thumbnail()) {
                                     the_post_thumbnail('medium', array('class' => 'featured-image'));
