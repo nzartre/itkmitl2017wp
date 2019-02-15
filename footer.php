@@ -30,7 +30,7 @@
                     </a>
                 </div>
                 <p><a href="/sitemap" class="text-link"><?php pll_e('page_sitemap'); ?></a></p>
-
+                <p><a href="www1.it.kmitl.ac.th" class="text-link"><?php pll_e('misc_old-site'); ?></a></p>
             </div>
         </div>
     </div>
