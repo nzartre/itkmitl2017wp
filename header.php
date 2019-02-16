@@ -8,7 +8,10 @@
 	<!-- BTW, check out our courses because people like you should find it happy to study here! -->
 	<meta property="og:url" content="<?php echo home_url(add_query_arg(array(), $wp->request)); ?>">
 	<meta property="og:type" content="article">
-	<?php if (has_post_thumbnail()) $ogimage = get_the_post_thumbnail_url(); else $ogimage = get_theme_file_uri('img/ogimage.png'); ?>
+	<?php
+	if (is_single() && has_post_thumbnail()) $ogimage = get_the_post_thumbnail_url();
+	else $ogimage = get_theme_file_uri('img/ogimage.png');
+	?>
 	<meta property="og:image" content="<?php echo $ogimage; ?>">
 	<meta property="og:video" content="<?php echo get_theme_file_uri('img/itkmitl-h264.mp4'); ?>">
 	<meta property="og:locale" content="<?php echo get_locale() ?>">
