@@ -71,7 +71,7 @@ if (have_posts()) :
                             <div class="col-6">
                                 <h3 class="title">IT Journal</h3>
                                 <p><?php pll_e('research_journal_details'); ?></p>
-                                <a href="http://www.it.kmitl.ac.th/~journal/"
+                                <a href="http://www1.it.kmitl.ac.th/~journal/"
                                    class="button outline inverted"><?php pll_e('research_view-journal'); ?></a>
                             </div>
                             <div class="col-6">
