@@ -15,7 +15,7 @@
         </div>
         <div class="overlay"></div>
         <div class="wrapper">
-            <video autoplay loop id="hero-video"></video>            
+            <video muted autoplay loop id="hero-video"></video>            
         </div>
         <div class="container">
             <div class="secondary-nav" style="display: none">
