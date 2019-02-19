@@ -22,8 +22,7 @@ if (have_posts()) :
                             }
                             echo trim($output, $separator);
                         }
-                        ?>
-                        | โดย <?php the_author(); ?></span>
+                        ?></span>
                     <div class="col-group">
                         <div class="col-12 col-dt-9">
                             <?php if (has_post_thumbnail()):
