@@ -40,7 +40,10 @@ else:
                                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                             </h2>
                                             <div class="the_content">
-                                                <?php the_content(''); ?>
+                                                <?php
+                                                if (has_exerpt()) the_excerpt;
+                                                else echo this_excerpt(140);
+                                                ?>
                                             </div>
                                             <span class="post-meta"><?php the_time('j F Y'); ?></span>
                                         </div>
