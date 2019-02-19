@@ -41,7 +41,7 @@ else:
                                             </h2>
                                             <div class="the_content">
                                                 <?php
-                                                if (has_exerpt()) the_excerpt;
+                                                if (has_excerpt()) the_excerpt();
                                                 else echo this_excerpt(140);
                                                 ?>
                                             </div>
