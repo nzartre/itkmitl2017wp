@@ -5,7 +5,8 @@ $achievement_query = new WP_Query(array(
 ));
 $news_query = new WP_Query(array(
     'posts_per_page' => 4,
-    'category_name' => 'news'
+    'category_name' => 'news',
+    'post__not_in' => get_option( 'sticky_posts' )
     // TODO: Add approval constraint
 ));
 $stickies = get_option('sticky_posts');
