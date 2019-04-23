@@ -106,7 +106,7 @@
 		</div>
 		<div class="nav-links">
 				<span class="normal-links">
-					<a href="#" data-component="modal" data-target="#search-modal" onclick="focusSearchForm()">
+					<a href="#" id="search-magnifier" data-component="modal" data-target="#search-modal" onclick="focusSearchForm()">
                         <span class="typcn typcn-zoom"></span>
                         <?php pll_e('func_search'); ?>
                     </a>
