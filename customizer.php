@@ -44,10 +44,36 @@ function themeName_customize_register( $wp_customize ) {
         'type' => 'text',
         'section' => 'splash_section',
         'label' => __( 'URL Link' ),
-        'description' => __( 'URL ที่จะไปเมื่อรูปภาพบน Splash ถูกคลิ๊ก ถ้าเว้นว่าง รูปภาพบน Splash จะไม่สามารถถูกคลิ๊กได้' ),
+        'description' => __( 'URL ที่จะไปเมื่อรูปภาพบน Splash ถูกคลิก ถ้าเว้นว่าง รูปภาพบน Splash จะไม่สามารถถูกคลิกได้' ),
     ));
 
+    // Home notice
+    $wp_customize->add_section('home_notice_section', array(
+        'title' => __('Home notice', 'itkmitl2017'),
+        'description' => __('แถบข้อความประกาศบนหน้าแรก')
+    ));
+
+    $wp_customize->add_setting('home_notice_text', array());
+    $wp_customize->add_setting('home_notice_btn_text', array());
+    $wp_customize->add_setting('home_notice_btn_link', array());
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'home_notice_text', array(
+        'label'      => __('Message', 'itkmitl2017'),
+        'section'    => 'home_notice_section',
+        'settings'   => 'home_notice_text'
+    )));
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'home_notice_btn_text', array(
+        'label'      => __('Button text', 'itkmitl2017'),
+        'section'    => 'home_notice_section',
+        'settings'   => 'home_notice_btn_text'
+    )));
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'home_notice_btn_link', array(
+        'label'      => __('Button link', 'itkmitl2017'),
+        'section'    => 'home_notice_section',
+        'settings'   => 'home_notice_btn_link'
+    )));
 }
+
 add_action('customize_register', 'themeName_customize_register');
 
 ?>
