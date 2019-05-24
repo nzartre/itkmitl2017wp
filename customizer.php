@@ -57,17 +57,17 @@ function themeName_customize_register( $wp_customize ) {
     $wp_customize->add_setting('home_notice_btn_text', array());
     $wp_customize->add_setting('home_notice_btn_link', array());
 
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'home_notice_text', array(
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_notice_text', array(
         'label'      => __('Message', 'itkmitl2017'),
         'section'    => 'home_notice_section',
         'settings'   => 'home_notice_text'
     )));
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'home_notice_btn_text', array(
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_notice_btn_text', array(
         'label'      => __('Button text', 'itkmitl2017'),
         'section'    => 'home_notice_section',
         'settings'   => 'home_notice_btn_text'
     )));
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'home_notice_btn_link', array(
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'home_notice_btn_link', array(
         'label'      => __('Button link', 'itkmitl2017'),
         'section'    => 'home_notice_section',
         'settings'   => 'home_notice_btn_link'

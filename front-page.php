@@ -2,6 +2,7 @@
 get_header();
 
 get_template_part( 'components/front', 'hero' );
+get_template_part( 'components/front', 'notice' );
 get_template_part( 'components/front', 'news' );
 get_template_part( 'components/front', 'info' );
 
