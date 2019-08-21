@@ -107,6 +107,11 @@ if (have_posts()) :
 							<?php endforeach; ?>
 						</div>
 					</div>
+                    <div style="margin: 1em auto; text-align: center;">
+                        <a href="./course-booklets/" class="button round large">
+                            <?php pll_e('programs_booklets'); ?>
+                        </a>
+                    </div>
 				</section>
 			</div><!-- .page-content -->
 		</section><!-- section.page.page-research -->
