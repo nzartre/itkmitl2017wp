@@ -41,40 +41,28 @@
     	</script>
 	<?php endif; ?>
 
-	<title>
-		<?php
-		if (is_category()) {
-			echo 'Category Archive for &quot;';
-			single_cat_title();
-			echo '&quot; | ';
-			bloginfo('name');
-		} elseif (is_tag()) {
-			echo 'กำลังดู tag &quot;';
-			single_tag_title();
-			echo '&quot; | ';
-			bloginfo('name');
-		} elseif (is_archive()) {
-			wp_title('');
-			echo ' Archive | ';
-			bloginfo('name');
-		} elseif (is_search()) {
-			echo 'Search for &quot;' . wp_specialchars($s) . '&quot; | ';
-			bloginfo('name');
-		} elseif (is_home() || is_front_page()) {
-			bloginfo('name');
-			echo ' | ';
-			bloginfo('description');
-		} elseif (is_404()) {
-			echo 'Error 404 Not Found | ';
-			bloginfo('name');
-		} elseif (is_single()) {
-			wp_title('');
-		} else {
-			echo wp_title(' | ', false, 'right');
-			bloginfo('name');
-		}
-		?>
-	</title>
+	<?php
+	$title = '';
+	if (is_category()) {
+		$title = 'Category Archive for &quot;' . single_cat_title() . '&quot; | ' . bloginfo('name');
+	} elseif (is_tag()) {
+		$title = 'กำลังดู tag &quot;' . single_tag_title() . '&quot; | ' . bloginfo('name');
+	} elseif (is_archive()) {
+		$title = wp_title('') . ' Archive | ' . bloginfo('name');
+	} elseif (is_search()) {
+		$title = 'Search for &quot;' . wp_specialchars($s) . '&quot; | ' . bloginfo('name');
+	} elseif (is_home() || is_front_page()) {
+		$title = bloginfo('name') . ' | ' . bloginfo('description');
+	} elseif (is_404()) {
+		$title = 'Error 404 Not Found | ' . bloginfo('name');
+	} elseif (is_single()) {
+		$title = wp_title('');
+	} else {
+		$title = wp_title(' | ', false, 'right') . bloginfo('name');
+	}
+	?>
+	<title><?php echo $pageTitle ?></title>
+	<meta property="og:title" content="<?php echo $title; ?>">
 
 	<?php
 	$enable_analytics = true;
