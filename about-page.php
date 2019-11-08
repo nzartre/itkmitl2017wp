@@ -44,6 +44,11 @@ if (have_posts()) :
                             <h3><?php pll_e('about_life'); ?></h3>
                             <p><?php pll_e('about_life_details'); ?></p>
                         </a>
+                        <a href="./donate/" class="stat-box">
+                            <img src="<?php echo get_theme_file_uri('img/about-donate.png'); ?>" alt="about-donate">
+                            <h3><?php pll_e('about_donate'); ?></h3>
+                            <p><?php pll_e('about_donate_details'); ?></p>
+                        </a>
 					</div><!-- .container -->
 				</section><!-- section.about——stats -->
 				<div class="about--dean">
