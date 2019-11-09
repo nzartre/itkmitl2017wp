@@ -126,6 +126,8 @@ pll_register_string('About: Contact', 'about_contact', 'about', 0);
 pll_register_string('About: Contact details', 'about_contact_details', 'about', 0);
 pll_register_string('About: Life', 'about_life', 'about', 0);
 pll_register_string('About: Life details', 'about_life_details', 'about', 0);
+pll_register_string('About: Donate', 'about_donate', 'about', 0);
+pll_register_string('About: Donate details', 'about_donate_details', 'about', 0);
 pll_register_string('About: Description Word', 'about_description_word', 'about', 1);
 pll_register_string('About: Description Person', 'about_description_person', 'about', 0);
 pll_register_string('About: Description Position', 'about_description_position', 'about', 0);
