@@ -19,7 +19,7 @@ if (have_posts()) :
                                  style="background-image: url(<?php echo get_theme_file_uri('img/services/moodle.jpg'); ?>); text-align: center;">
                                 <h3 style="color: white">E-Learning</h3>
                                 <div class="btn-wrap">
-                                    <a href="http://elearning.it.kmitl.ac.th/" class="button inverted">
+                                    <a href="https://onlearn.it.kmitl.ac.th/" class="button inverted">
                                         <i class="fas fa-sign-in-alt"></i> E-Learning
                                     </a>
                                 </div>
