@@ -72,6 +72,18 @@ function themeName_customize_register( $wp_customize ) {
         'section'    => 'home_notice_section',
         'settings'   => 'home_notice_btn_link'
     )));
+
+    // Dean section in About page
+    $wp_customize->add_section('dean_section', array(
+        'title' => __('Dean message', 'itkmitl2017'),
+        'description' => __('ข้อความคณบดีในหน้า About')
+    ));
+    $wp_customize->add_setting('dean_visibility', array());
+    $wp_customize->add_control('dean_visibility', array(
+        'type' => 'checkbox',
+        'label' => 'Show Dean section',
+        'section' => 'dean_section',
+    ));
 }
 
 add_action('customize_register', 'themeName_customize_register');
