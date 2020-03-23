@@ -31,11 +31,6 @@ if (have_posts()) :
                                         </a>
                                     </li>
                                     <?php endforeach; ?>
-									<li>
-										<a href="bach-scholarship">
-											<span class="caret right"></span> <?php pll_e('admissions_scholarship'); ?>
-										</a>
-									</li>
 								</ul>
 							</div>
 						</div>
@@ -48,11 +43,6 @@ if (have_posts()) :
 									<li>
 										<a href="adv-bach-entrance">
 											<span class="caret right"></span> <?php pll_e('admissions_adv-bach_entrance'); ?>
-										</a>
-									</li>
-									<li>
-										<a href="adv-bach-scholarship">
-											<span class="caret right"></span> <?php pll_e('admissions_scholarship'); ?>
 										</a>
 									</li>
 								</ul>
@@ -72,11 +62,6 @@ if (have_posts()) :
 									<li>
 										<a href="master-doctor-govt">
 											<span class="caret right"></span> <?php pll_e('admissions_master-doctor_govt'); ?>
-										</a>
-									</li>
-									<li>
-										<a href="master-doctor-scholarship">
-											<span class="caret right"></span> <?php pll_e('admissions_scholarship'); ?>
 										</a>
 									</li>
 								</ul>
