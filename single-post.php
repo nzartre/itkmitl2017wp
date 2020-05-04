@@ -11,7 +11,9 @@ if (have_posts()) :
             <div class="page-content">
                 <div class="container">
                     <h1 class="post-title"><?php echo $post_title; ?></h1>
-                    <span class="post-meta"><?php the_time('j F Y'); ?> |
+                    <span class="post-meta">
+                        <?php the_time('j F Y'); ?> |
+                        <?php the_author(); ?> |
                         <?php
                         $category_list = get_the_category();
                         $separator = ', ';
