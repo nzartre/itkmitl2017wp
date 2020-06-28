@@ -49,11 +49,17 @@ if (have_posts()) :
                         </div>
                         <div class="col-mb-12 col-6 col-dt-4">
                             <div class="bg-box"
-                                 style="background-image: url(<?php echo get_theme_file_uri('img/services/imagine.jpg'); ?>); text-align: center;">
-                                <h3 style="color: white">MS Imagine</h3>
+                                 style="background-image: url(<?php echo get_theme_file_uri('img/services/teachtable.jpg'); ?>); text-align: center;">
+                                <h3 style="color: white">Classroom table</h3>
                                 <div class="btn-wrap">
-                                    <a href="http://e5.onthehub.com/d.ashx?s=457ogzrofp" class="button inverted">
-                                        <i class="fas fa-sign-in-alt"></i> MS Imagine
+                                    <?php
+                                    $teachtable_link = "/th/program/teachtable";
+                                    if (pll_current_language() == "en") {
+                                        $teachtable_link = "/en/program-en/teachtable";
+                                    }
+                                    ?>
+                                    <a href="<?php echo $teachtable_link; ?>" class="button inverted">
+                                        <i class="fas fa-sign-in-alt"></i> View
                                     </a>
                                 </div>
                             </div>
