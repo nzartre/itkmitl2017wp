@@ -77,7 +77,6 @@ pll_register_string('Admissions: Scholarship', 'admissions_scholarship', 'admiss
 pll_register_string('Admissions: Bachelor: overview', 'admissions_bach_overview', 'admissions', 0);
 pll_register_string('Admissions: Bachelor: portfolio', 'admissions_bach_portfolio', 'admissions', 0);
 pll_register_string('Admissions: Bachelor: quota', 'admissions_bach_quota', 'admissions', 0);
-pll_register_string('Admissions: Bachelor: tcas', 'admissions_bach_tcas', 'admissions', 0);
 pll_register_string('Admissions: Bachelor: admission', 'admissions_bach_admission', 'admissions', 0);
 pll_register_string('Admissions: Bachelor: entrance', 'admissions_bach_entrance', 'admissions', 0);
 pll_register_string('Admissions: Adv. Bachelor: entrance', 'admissions_adv-bach_entrance', 'admissions', 0);

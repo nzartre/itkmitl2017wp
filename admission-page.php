@@ -22,7 +22,7 @@ if (have_posts()) :
 								<hr>
 								<ul class="unstyled">
                                     <?php
-                                    $bachSuffixes = ['overview', 'portfolio', 'quota', 'tcas', 'admission', 'entrance'];
+                                    $bachSuffixes = ['overview', 'portfolio', 'quota', 'admission', 'entrance'];
                                     foreach ($bachSuffixes as $s):
                                     ?>
                                     <li>
