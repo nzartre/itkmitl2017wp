@@ -71,7 +71,7 @@ if (have_posts()) :
 										"pll_deg_name" => "programs_master_programs_name",
 										"years" => 1,
 										"link" => "master-ai-degree",
-										"deg" => "master",
+										"deg" => "master_programs",
 										"img" => "course-master-ai.jpg"
 									]
 								];
