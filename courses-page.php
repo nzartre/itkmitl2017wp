@@ -65,6 +65,14 @@ if (have_posts()) :
 										"link" => "doctoral-degree",
 										"deg" => "phd",
 										"img" => "course-phd.jpg"
+									],
+									"master_ai" => [
+										"pll_prog_name" => "programs_master_ai",
+										"pll_deg_name" => "programs_master_name",
+										"years" => 1,
+										"link" => "master-ai-degree",
+										"deg" => "master",
+										"img" => "course-master-ai.jpg"
 									]
 								];
 							?>
