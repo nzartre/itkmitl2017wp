@@ -67,6 +67,7 @@ pll_register_string('Programs: Ph.D degree name', 'programs_phd_name', 'programs
 pll_register_string('Programs: Ph.D degree: IT', 'programs_phd_it', 'programs', 0);
 pll_register_string('Programs: Download booklets', 'programs_booklets', 'programs', 0);
 
+pll_register_string('Programs: Master programs name', 'programs_master_programs_name', 'programs', 1);
 pll_register_string('Programs: Master degree: AI', 'programs_master_ai', 'programs', 0);
 
 // Admissions page

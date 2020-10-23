@@ -68,7 +68,7 @@ if (have_posts()) :
 									],
 									"master_ai" => [
 										"pll_prog_name" => "programs_master_ai",
-										"pll_deg_name" => "programs_master_name",
+										"pll_deg_name" => "programs_master_programs_name",
 										"years" => 1,
 										"link" => "master-ai-degree",
 										"deg" => "master",
