@@ -47,6 +47,16 @@ if (have_posts()) :
 								</ul>
 							</div>
 						</div>
+						<div class="box-w-image">
+							<div class="the-text">
+								<h3><?php pll_e('acad-serv_banner-4_title'); ?></h3>
+								<p><?php pll_e('acad-serv_banner-4_details'); ?></p>
+								<ul>
+                                    <?php pll_e('acad-serv_banner-4_list'); ?>
+								</ul>
+							</div>
+							<div class="the-img" style="background-image: url(<?php echo get_theme_file_uri('img/acad-serv-4.jpg'); ?>)"></div>
+						</div>
 					</div>
 				</section>
 			</div><!-- .page-content -->

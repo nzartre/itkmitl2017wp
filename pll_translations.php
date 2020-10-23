@@ -67,7 +67,7 @@ pll_register_string('Programs: Ph.D degree name', 'programs_phd_name', 'programs
 pll_register_string('Programs: Ph.D degree: IT', 'programs_phd_it', 'programs', 0);
 pll_register_string('Programs: Download booklets', 'programs_booklets', 'programs', 0);
 
-pll_register_string('Programs: Master programs name', 'master_programs', 'programs', 1);
+pll_register_string('Programs: Master minor programs title', 'master_minor_programs', 'programs', 1);
 pll_register_string('Programs: Master degree: AI', 'programs_master_ai', 'programs', 0);
 
 // Admissions page
@@ -99,6 +99,10 @@ pll_register_string('Acad Services: Banner 2: list', 'acad-serv_banner-2_list', 
 pll_register_string('Acad Services: Banner 3: title', 'acad-serv_banner-3_title', 'acad-serv', 0);
 pll_register_string('Acad Services: Banner 3: details', 'acad-serv_banner-3_details', 'acad-serv', 1);
 pll_register_string('Acad Services: Banner 3: list', 'acad-serv_banner-3_list', 'acad-serv', 1);
+
+pll_register_string('Acad Services: Banner 4: title', 'acad-serv_banner-4_title', 'acad-serv', 0);
+pll_register_string('Acad Services: Banner 4: details', 'acad-serv_banner-4_details', 'acad-serv', 1);
+pll_register_string('Acad Services: Banner 4: list', 'acad-serv_banner-4_list', 'acad-serv', 1);
 
 // Research page
 pll_register_string('Research: Subtitle', 'research_subtitle', 'research', 0);

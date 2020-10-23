@@ -71,7 +71,7 @@ if (have_posts()) :
 										"pll_deg_name" => "programs_master_programs_name",
 										"years" => 1,
 										"link" => "master-ai-degree",
-										"deg" => "master_programs",
+										"deg" => "minor-programs",
 										"img" => "course-master-ai.jpg"
 									]
 								];
@@ -96,6 +96,9 @@ if (have_posts()) :
 												break;
 											case 'phd':
 												$pll_deg_lvl = "programs_phd_title";
+												break;
+											case 'minor-programs':
+												$pll_deg_lvl = "master_minor_programs";
 												break;
 										} ?>
 										<div class="arrow-wrap">
