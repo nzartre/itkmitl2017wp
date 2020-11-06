@@ -20,7 +20,6 @@ if (have_posts()) :
 								$bach_programs = [
 									"it" => [
 										"pll_prog_name" => "programs_bachelor_it",
-										"pll_deg_name" => "programs_bachelor_name",
 										"years" => 4,
 										"link" => "it-program",
 										"deg" => "bachelor",
@@ -28,7 +27,6 @@ if (have_posts()) :
 									],
 									"dsba" => [
 										"pll_prog_name" => "programs_bachelor_dsba",
-										"pll_deg_name" => "programs_bachelor_name",
 										"years" => 4,
 										"link" => "datasci-program",
 										"deg" => "bachelor",
@@ -36,7 +34,6 @@ if (have_posts()) :
 									],
 									"bit" => [
 										"pll_prog_name" => "programs_bachelor_bit",
-										"pll_deg_name" => "programs_bachelor_name",
 										"years" => 4,
 										"link" => "bit-program",
 										"deg" => "bachelor",
@@ -44,7 +41,6 @@ if (have_posts()) :
 									],
 									"adv" => [
 										"pll_prog_name" => "programs_bachelor_adv",
-										"pll_deg_name" => "programs_bachelor_adv_name",
 										"years" => 5,
 										"link" => "adv-bachelor",
 										"deg" => "bachelor-and-master",
@@ -52,7 +48,6 @@ if (have_posts()) :
 									],
 									"master" => [
 										"pll_prog_name" => "programs_master_it",
-										"pll_deg_name" => "programs_master_name",
 										"years" => 2,
 										"link" => "master-degree",
 										"deg" => "master",
@@ -60,7 +55,6 @@ if (have_posts()) :
 									],
 									"phd" => [
 										"pll_prog_name" => "programs_phd_it",
-										"pll_deg_name" => "programs_phd_name",
 										"years" => 3,
 										"link" => "doctoral-degree",
 										"deg" => "phd",
@@ -68,7 +62,6 @@ if (have_posts()) :
 									],
 									"master_ai" => [
 										"pll_prog_name" => "programs_master_ai",
-										"pll_deg_name" => "programs_master_programs_name",
 										"years" => 1,
 										"link" => "minor",
 										"deg" => "minor-programs",
