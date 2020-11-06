@@ -70,7 +70,7 @@ if (have_posts()) :
 										"pll_prog_name" => "programs_master_ai",
 										"pll_deg_name" => "programs_master_programs_name",
 										"years" => 1,
-										"link" => "master-ai-degree",
+										"link" => "minor",
 										"deg" => "minor-programs",
 										"img" => "course-master-ai.jpg"
 									]
