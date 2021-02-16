@@ -26,7 +26,7 @@ if (have_posts()) :
                                     foreach ($bachSuffixes as $s):
                                     ?>
                                     <li>
-                                        <a href="<?php echo 'bach-' . $s ?>">
+                                        <a href="<?php echo 'bach-' . $s . '/' ?>">
                                             <span class="caret right"></span> <?php pll_e('admissions_bach_' . $s); ?>
                                         </a>
                                     </li>
