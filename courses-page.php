@@ -76,7 +76,7 @@ if (have_posts()) :
 									],
 									"phd_ai_biz_intl" => [
 										"pll_prog_name" => "programs_phd_ai_biz_intl",
-										"years" => 2,
+										"years" => "3-4",
 										"link" => "phd-ai-biz-intl",
 										"deg" => "phd",
 										"img" => "course-phd-ai-biz-intl.jpg"
