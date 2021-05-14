@@ -66,6 +66,13 @@ if (have_posts()) :
 										"link" => "minor",
 										"deg" => "minor-programs",
 										"img" => "course-master-ai.jpg"
+									],
+									"master_ai_biz" => [
+										"pll_prog_name" => "programs_master_ai_biz",
+										"years" => 2,
+										"link" => "master-ai-biz",
+										"deg" => "master",
+										"img" => "course-master-ai-biz.jpg"
 									]
 								];
 							?>
