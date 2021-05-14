@@ -73,6 +73,13 @@ if (have_posts()) :
 										"link" => "master-ai-biz",
 										"deg" => "master",
 										"img" => "course-master-ai-biz.jpg"
+									],
+									"phd_ai_biz_intl" => [
+										"pll_prog_name" => "programs_phd_ai_biz_intl",
+										"years" => 2,
+										"link" => "phd-ai-biz-intl",
+										"deg" => "phd",
+										"img" => "course-phd-ai-biz-intl.jpg"
 									]
 								];
 							?>

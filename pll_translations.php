@@ -67,6 +67,7 @@ pll_register_string('Programs: Master degree: AI-Business', 'programs_master_ai_
 pll_register_string('Programs: Ph.D title', 'programs_phd_title', 'programs', 0);
 pll_register_string('Programs: Ph.D degree name', 'programs_phd_name', 'programs', 1);
 pll_register_string('Programs: Ph.D degree: IT', 'programs_phd_it', 'programs', 0);
+pll_register_string('Programs: Ph.D degree: AI-Business Intl', 'programs_phd_ai_biz_intl', 'programs', 0)
 pll_register_string('Programs: Download booklets', 'programs_booklets', 'programs', 0);
 pll_register_string('Programs: Master minor programs title', 'master_minor_programs', 'programs', 1);
 
