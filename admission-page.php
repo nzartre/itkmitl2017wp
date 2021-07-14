@@ -55,6 +55,11 @@ if (have_posts()) :
 								<hr>
 								<ul class="unstyled">
 									<li>
+										<a href="master-doctor-information">
+											<span class="caret right"></span> <?php pll_e('admissions_master-doctor_information'); ?>
+										</a>
+									</li>
+									<li>
 										<a href="master-doctor-entrance">
 											<span class="caret right"></span> <?php pll_e('admissions_master-doctor_entrance'); ?>
 										</a>

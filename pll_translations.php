@@ -86,6 +86,7 @@ pll_register_string('Admissions: Bachelor: entrance', 'admissions_bach_entrance'
 pll_register_string('Admissions: Adv. Bachelor: entrance', 'admissions_adv-bach_entrance', 'admissions', 0);
 pll_register_string('Admissions: Master and Ph.D: entrance', 'admissions_master-doctor_entrance', 'admissions', 0);
 pll_register_string('Admissions: Master and Ph.D: government', 'admissions_master-doctor_govt', 'admissions', 0);
+pll_register_string('Admissions: Master and Ph.D: information', 'admissions_master-doctor_information', 'admissions', 0);
 
 // Academic Services page
 pll_register_string('Acad Services: Subtitle', 'acad-serv_subtitle', 'acad-serv', 1);
