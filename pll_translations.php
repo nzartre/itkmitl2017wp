@@ -84,9 +84,12 @@ pll_register_string('Admissions: Bachelor: quota', 'admissions_bach_quota', 'adm
 pll_register_string('Admissions: Bachelor: admission', 'admissions_bach_admission', 'admissions', 0);
 pll_register_string('Admissions: Bachelor: entrance', 'admissions_bach_entrance', 'admissions', 0);
 pll_register_string('Admissions: Adv. Bachelor: entrance', 'admissions_adv-bach_entrance', 'admissions', 0);
-pll_register_string('Admissions: Master and Ph.D: entrance', 'admissions_master-doctor_entrance', 'admissions', 0);
-pll_register_string('Admissions: Master and Ph.D: government', 'admissions_master-doctor_govt', 'admissions', 0);
-pll_register_string('Admissions: Master and Ph.D: information', 'admissions_master-doctor_information', 'admissions', 0);
+
+pll_register_string('Admissions: Graduate: at a glance', 'admissions_adv-bach_entrance', 'admissions_grad_glance', 0);
+pll_register_string('Admissions: Graduate: info', 'admissions_adv-bach_entrance', 'admissions_grad_info', 0);
+pll_register_string('Admissions: Graduate: research profile', 'admissions_adv-bach_entrance', 'admissions_grad_research', 0);
+pll_register_string('Admissions: Graduate: scholarship', 'admissions_adv-bach_entrance', 'admissions_grad_scholarship', 0);
+pll_register_string('Admissions: Graduate: officers', 'admissions_adv-bach_entrance', 'admissions_grad_govt', 0);
 
 // Academic Services page
 pll_register_string('Acad Services: Subtitle', 'acad-serv_subtitle', 'acad-serv', 1);

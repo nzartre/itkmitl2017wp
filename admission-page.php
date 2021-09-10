@@ -55,18 +55,28 @@ if (have_posts()) :
 								<hr>
 								<ul class="unstyled">
 									<li>
-										<a href="master-doctor-information">
-											<span class="caret right"></span> <?php pll_e('admissions_master-doctor_information'); ?>
+										<a href="<?php echo get_permalink( get_page_by_path( 'program' ) );?>">
+											<span class="caret right"></span> <?php pll_e('admissions_grad_glance'); ?>
 										</a>
 									</li>
 									<li>
-										<a href="master-doctor-entrance">
-											<span class="caret right"></span> <?php pll_e('admissions_master-doctor_entrance'); ?>
+										<a href="master-doctor-information">
+											<span class="caret right"></span> <?php pll_e('admissions_grad_info'); ?>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo get_permalink( get_page_by_path( 'research-profile' ) );?>">
+											<span class="caret right"></span> <?php pll_e('admissions_grad_research'); ?>
+										</a>
+									</li>
+									<li>
+										<a href="<?php echo get_permalink( get_page_by_path( 'scholarship' ) );?>">
+											<span class="caret right"></span> <?php pll_e('admissions_grad_scholarship'); ?>
 										</a>
 									</li>
 									<li>
 										<a href="master-doctor-govt">
-											<span class="caret right"></span> <?php pll_e('admissions_master-doctor_govt'); ?>
+											<span class="caret right"></span> <?php pll_e('admissions_grad_govt'); ?>
 										</a>
 									</li>
 								</ul>
