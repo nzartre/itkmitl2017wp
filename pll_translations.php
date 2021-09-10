@@ -85,11 +85,11 @@ pll_register_string('Admissions: Bachelor: admission', 'admissions_bach_admissio
 pll_register_string('Admissions: Bachelor: entrance', 'admissions_bach_entrance', 'admissions', 0);
 pll_register_string('Admissions: Adv. Bachelor: entrance', 'admissions_adv-bach_entrance', 'admissions', 0);
 
-pll_register_string('Admissions: Graduate: at a glance', 'admissions_adv-bach_entrance', 'admissions_grad_glance', 0);
-pll_register_string('Admissions: Graduate: info', 'admissions_adv-bach_entrance', 'admissions_grad_info', 0);
-pll_register_string('Admissions: Graduate: research profile', 'admissions_adv-bach_entrance', 'admissions_grad_research', 0);
-pll_register_string('Admissions: Graduate: scholarship', 'admissions_adv-bach_entrance', 'admissions_grad_scholarship', 0);
-pll_register_string('Admissions: Graduate: officers', 'admissions_adv-bach_entrance', 'admissions_grad_govt', 0);
+pll_register_string('Admissions: Graduate: at a glance', 'admissions_grad_glance', 'admissions', 0);
+pll_register_string('Admissions: Graduate: info', 'admissions_grad_info', 'admissions', 0);
+pll_register_string('Admissions: Graduate: research profile', 'admissions_grad_research', 'admissions', 0);
+pll_register_string('Admissions: Graduate: scholarship', 'admissions_grad_scholarship', 'admissions', 0);
+pll_register_string('Admissions: Graduate: officers', 'admissions_grad_govt', 'admissions', 0);
 
 // Academic Services page
 pll_register_string('Acad Services: Subtitle', 'acad-serv_subtitle', 'acad-serv', 1);
