@@ -11,7 +11,6 @@ if (have_posts()) :
 			<div class="page-content">
 				<div class="page-hero">
 					<h1 class="text-center"><?php the_title(); ?></h1>
-					<!--h3 class="text-center"><?php //pll_e('admissions_subtitle'); ?></h3-->
 				</div>
 				<section class="admission--admssn-types">
 					<div class="container">
@@ -55,7 +54,7 @@ if (have_posts()) :
 								<hr>
 								<ul class="unstyled">
 									<li>
-										<a href="<?php echo get_permalink( get_page_by_path( 'program' ) );?>">
+										<a href="<?php echo pll_get_post( get_page_by_path( 'program' )->ID );?>">
 											<span class="caret right"></span> <?php pll_e('admissions_grad_glance'); ?>
 										</a>
 									</li>
@@ -65,12 +64,12 @@ if (have_posts()) :
 										</a>
 									</li>
 									<li>
-										<a href="<?php echo get_permalink( get_page_by_path( 'research-profile' ) );?>">
+										<a href="<?php echo pll_get_post( get_page_by_path( 'research-profile'->ID ) );?>">
 											<span class="caret right"></span> <?php pll_e('admissions_grad_research'); ?>
 										</a>
 									</li>
 									<li>
-										<a href="<?php echo get_permalink( get_page_by_path( 'scholarship' ) );?>">
+										<a href="<?php echo pll_get_post( get_page_by_path( 'scholarship' )->ID );?>">
 											<span class="caret right"></span> <?php pll_e('admissions_grad_scholarship'); ?>
 										</a>
 									</li>
