@@ -64,7 +64,7 @@ if (have_posts()) :
 										</a>
 									</li>
 									<li>
-										<a href="<?php echo get_permalink(pll_get_post( get_page_by_path( 'research-profile' )->ID ));?>">
+										<a href="<?php echo get_permalink(pll_get_post('12127', pll_current_language()));?>">
 											<span class="caret right"></span> <?php pll_e('admissions_grad_research'); ?>
 										</a>
 									</li>
