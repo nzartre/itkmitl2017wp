@@ -45,6 +45,9 @@ if (have_posts()) :
                         </div><!-- #research-highlight -->
                     </div>
                 </section><!-- #research-highlight-section -->
+                <?php
+                get_template_part( 'components/research', 'news' );
+                ?>
                 <section class="research--lab">
                     <h1 class="title"><?php pll_e('research_labs'); ?></h1>
                     <div class="container">
