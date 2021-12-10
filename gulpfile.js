@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')((require('node-sass')));
 const rename = require('gulp-rename');
 const srcmaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
@@ -10,7 +10,7 @@ function _sass() {
 		.pipe(srcmaps.init())
 		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
 		.pipe(autoprefixer({
-			browsers: ['last 2 versions'],
+			overrideBrowserslist: ['last 2 versions'],
 			cascade: false
 		}))
 		.pipe(rename('style.css'))
