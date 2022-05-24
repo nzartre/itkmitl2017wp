@@ -80,7 +80,7 @@ if (have_posts()) :
                                  style="background-image: url(<?php echo get_theme_file_uri('img/services/workspace.png'); ?>); text-align: center;">
                                 <h3 style="color: white">Workspace</h3>
                                 <div class="btn-wrap">
-                                    <a href="https://workspace.it.kmitl.ac.th" class="button inverted">
+                                    <a href="http://workspace.it.kmitl.ac.th/login/" class="button inverted">
                                         <i class="fas fa-sign-in-alt"></i> Workspace
                                     </a>
                                 </div>
