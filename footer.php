@@ -10,7 +10,7 @@
             </div>
             <?php elseif (pll_current_language() == 'en'): ?>
             <div class="col-4">
-                <p>Faculty of Information Technology<br>King Mongkut&#39;s Institute of Technology Ladkrabang</p>
+                <p>School of Information Technology<br>King Mongkut&#39;s Institute of Technology Ladkrabang</p>
                 <p>1, Chalong Krung 1, Ladkrabang, Bangkok 10520</p>
                 <p><i class="fas fa-fw fa-phone fa-flip-horizontal"></i> +66 (0) 2723 4900<br>
                     <i class="fas fa-fw fa-fax"></i> +66 (0) 2723 4910</p>
