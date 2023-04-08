@@ -39,6 +39,13 @@ if (have_posts()) :
 										"deg" => "bachelor",
 										"img" => "course-bach-bit.jpg"
 									],
+									"ait" => [
+										"pll_prog_name" => "programs_bachelor_ait",
+										"years" => 4,
+										"link" => "ait-program",
+										"deg" => "bachelor",
+										"img" => "course-bach-ait.jpg"
+									],
 									"adv" => [
 										"pll_prog_name" => "programs_bachelor_adv",
 										"years" => 5,
